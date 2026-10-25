@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SparkSync | Radiant Spark LLC Client Portal</title>
+  <link rel="icon" href="/radiant-sparkle-logo.png">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { width: 100%; height: 100%; overflow: hidden; background-color: #0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .top-bar {
+      height: 48px;
+      background: #090d16;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      color: #fff;
+    }
+    .top-bar a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-bar a:hover { color: #f59e0b; }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .logo-container img { height: 24px; width: 24px; object-fit: contain; }
+    iframe {
+      width: 100%;
+      height: calc(100% - 48px);
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div class="logo-container">
+      <img src="/radiant-sparkle-logo.png" alt="Radiant Spark Logo" onerror="this.style.display='none'">
+      <span>Radiant Spark LLC &bull; <strong>SparkSync</strong></span>
+    </div>
+    <a href="/">&larr; Back to radiantsparkllc.com</a>
+  </div>
+  <iframe 
+    src="https://ais-pre-uyxr5wcpvt7oyi2qiwj2al-815682526465.us-east1.run.app" 
+    allow="geolocation; camera; microphone; payment; clipboard-write" 
+    loading="eager" 
+    title="SparkSync - Radiant Spark LLC">
+  </iframe>
+</body>
+</html>
