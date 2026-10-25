@@ -3,43 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SparkSync | Radiant Spark LLC Client Portal</title>
-  <link rel="icon" href="/radiant-sparkle-logo.png">
+  <title>SparkSync App | Radiant Spark LLC</title>
+  <meta name="description" content="SparkSync platform by Radiant Spark LLC, Atlanta, GA.">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body, html { width: 100%; height: 100%; overflow: hidden; background-color: #0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    html, body { 
+      width: 100%; 
+      height: 100%; 
+      overflow: hidden; 
+      background-color: #030712; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+    }
     .top-bar {
-      height: 48px;
-      background: #090d16;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
+      height: 50px;
+      background: #0b0f19;
+      border-bottom: 1px solid #1f2937;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 16px;
-      color: #fff;
+      padding: 0 20px;
     }
     .top-bar a {
       color: #94a3b8;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 14px;
       font-weight: 500;
-      transition: color 0.2s;
       display: flex;
       align-items: center;
       gap: 6px;
+      transition: color 0.2s;
     }
-    .top-bar a:hover { color: #f59e0b; }
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-weight: 600;
+    .top-bar a:hover { color: #f8fafc; }
+    .top-bar .title {
+      color: #f8fafc;
       font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
     }
-    .logo-container img { height: 24px; width: 24px; object-fit: contain; }
+    .top-bar .badge {
+      font-size: 12px;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 3px 8px;
+      border-radius: 4px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
     iframe {
       width: 100%;
-      height: calc(100% - 48px);
+      height: calc(100% - 50px);
       border: none;
       display: block;
     }
@@ -47,17 +58,14 @@
 </head>
 <body>
   <div class="top-bar">
-    <div class="logo-container">
-      <img src="/radiant-sparkle-logo.png" alt="Radiant Spark Logo" onerror="this.style.display='none'">
-      <span>Radiant Spark LLC &bull; <strong>SparkSync</strong></span>
-    </div>
-    <a href="/">&larr; Back to radiantsparkllc.com</a>
+    <a href="index.html">← Back to Radiant Spark LLC</a>
+    <span class="title">⚡ SparkSync Platform · Radiant Spark LLC</span>
+    <span class="badge">Atlanta, GA</span>
   </div>
   <iframe 
     src="https://ais-pre-uyxr5wcpvt7oyi2qiwj2al-815682526465.us-east1.run.app" 
-    allow="geolocation; camera; microphone; payment; clipboard-write" 
-    loading="eager" 
-    title="SparkSync - Radiant Spark LLC">
+    title="SparkSync Platform" 
+    allow="clipboard-write; fullscreen">
   </iframe>
 </body>
 </html>
