@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "SparkSync: Tasks, Health & Markets",
+  "short_name": "SparkSync",
+  "description": "Cross-platform mobile application by Radiant Spark LLC. Real-time tasks, Apple Watch vitals, stock markets, and smart photo cleaner.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#090d16",
+  "theme_color": "#0f172a",
+  "categories": ["productivity", "health", "finance", "news"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

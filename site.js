@@ -172,3 +172,9 @@ if (year) year.textContent = new Date().getFullYear();
 })();
 
 
+
+// Enable installable app support when hosted over HTTPS (such as GitHub Pages).
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+}
+
