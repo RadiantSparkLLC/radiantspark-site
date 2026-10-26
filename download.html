@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download SparkSync & Radiant Spark LLC Deployment ZIP</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #030712;
+      color: #f8fafc;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: #0b1329;
+      border: 1px solid #1e293b;
+      border-radius: 24px;
+      padding: 40px;
+      max-width: 580px;
+      width: 90%;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, #10b981, #06b6d4);
+      border-radius: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
+    }
+    p {
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 0 24px;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #059669, #0d9488);
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 12px;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 10px 20px rgba(5, 150, 105, 0.3);
+      transition: all 0.2s;
+      border: none;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(5, 150, 105, 0.4);
+    }
+    .file-details {
+      margin-top: 28px;
+      padding: 16px;
+      background: #030712;
+      border: 1px solid #1e293b;
+      border-radius: 14px;
+      text-align: left;
+      font-size: 12px;
+      color: #cbd5e1;
+    }
+    .file-details ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+      color: #94a3b8;
+    }
+    .file-details li {
+      margin-bottom: 4px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 99px;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </div>
+    <div class="badge">Verified Package (2.2 MB)</div>
+    <h1>Downloading SparkSync Deployment ZIP</h1>
+    <p id="status-text">Your download should begin automatically in a moment. If it does not start, click the button below.</p>
+    
+    <a href="/sparksync-radiantspark-llc.zip" download="sparksync-radiantspark-llc.zip" class="btn" id="dl-btn">
+      Download ZIP Now (.zip)
+    </a>
+
+    <div class="file-details">
+      <strong>Package Contents:</strong>
+      <ul>
+        <li><code>index.html</code> — Radiant Spark LLC Corporate Website (Robinhood & Kalshi Rules, Atlanta GA Legal Shield)</li>
+        <li><code>app.html</code> — SparkSync Mobile & Web App (Full PWA)</li>
+        <li><code>portal.html</code> — Customer Enterprise Portal</li>
+        <li><code>styles.css</code> &amp; <code>site.js</code> — Website styles & scripts</li>
+        <li><code>assets/</code> — Application JS/CSS bundles and all image assets</li>
+        <li><code>manifest.json</code> &amp; <code>icon.svg</code> — Apple iOS & Android icon assets</li>
+        <li><code>README_DEPLOYMENT.md</code> — Complete hosting deployment guide</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Trigger download automatically
+    setTimeout(() => {
+      try {
+        const link = document.createElement('a');
+        link.href = '/sparksync-radiantspark-llc.zip';
+        link.download = 'sparksync-radiantspark-llc.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        document.getElementById('status-text').innerText = 'Download started! You can re-download anytime using the button below.';
+      } catch (e) {
+        console.error(e);
+      }
+    }, 500);
+  </script>
+</body>
+</html>
