@@ -1,71 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SparkSync App | Radiant Spark LLC</title>
-  <meta name="description" content="SparkSync platform by Radiant Spark LLC, Atlanta, GA.">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { 
-      width: 100%; 
-      height: 100%; 
-      overflow: hidden; 
-      background-color: #030712; 
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-    }
-    .top-bar {
-      height: 50px;
-      background: #0b0f19;
-      border-bottom: 1px solid #1f2937;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-    .top-bar a {
-      color: #94a3b8;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-    .top-bar a:hover { color: #f8fafc; }
-    .top-bar .title {
-      color: #f8fafc;
-      font-size: 14px;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-    .top-bar .badge {
-      font-size: 12px;
-      color: #38bdf8;
-      background: rgba(56, 189, 248, 0.1);
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid rgba(56, 189, 248, 0.2);
-    }
-    iframe {
-      width: 100%;
-      height: calc(100% - 50px);
-      border: none;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <div class="top-bar">
-    <a href="index.html">← Back to Radiant Spark LLC</a>
-    <span class="title">⚡ SparkSync Platform · Radiant Spark LLC</span>
-    <span class="badge">Atlanta, GA</span>
-  </div>
-  <iframe 
-    src="https://ais-pre-uyxr5wcpvt7oyi2qiwj2al-815682526465.us-east1.run.app" 
-    title="SparkSync Platform" 
-    allow="clipboard-write; fullscreen">
-  </iframe>
-</body>
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>SparkSync — Tasks, Health, Markets & Gallery</title>
+    <meta name="description" content="Cross-platform mobile application by Radiant Spark LLC. Real-time collaborative tasks, Apple Watch vitals, live markets, and smart photo cleaner." />
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="SparkSync — Tasks, Health, Markets & Gallery" />
+    <meta property="og:description" content="Cross-platform mobile application by Radiant Spark LLC. Real-time collaborative tasks, Apple Watch vitals, live markets, and smart photo cleaner." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SparkSync — Tasks, Health, Markets & Gallery" />
+    <meta name="twitter:description" content="Official mobile platform from Radiant Spark LLC." />
+    
+    <!-- PWA & Mobile Web App Meta -->
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="theme-color" content="#090d16" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SparkSync" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-B4PDl2W3.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BmFEHqMl.css">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500/30 selection:text-indigo-200">
+    <div id="root"></div>
+  </body>
 </html>
+
