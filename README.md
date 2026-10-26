@@ -1,23 +1,29 @@
-# Radiant Spark website
+# SparkSync
 
-One responsive website with a Global overview and separate U.S. and India company views. The header includes working links for Technology USA, Industries India, About, Careers, Contact, and Privacy.
+SparkSync is a mobile-first React and Vite app from Radiant Spark LLC. The current release is a polished product preview with a dashboard, task list, wellness screens, market watchlist, practice prediction markets, news cards, gallery, and 3D visuals.
 
-- Global overview: Radiant Spark Global, with the two companies shown separately.
-- United States: Radiant Spark LLC and Spark IT Consulting, including six service practices.
-- India: RDNT Sparkle Industries LLP and four divisions.
-- Careers and Contact: `info@radiantsparkllc.com` is used for both companies as requested. Include the relevant company and division in the email subject.
-- Privacy: the static site includes no forms, analytics, or advertising trackers. The hosting and email providers may process data under their own terms.
-- Radiant Intelligence: a floating site assistant that answers common questions using prepared website information. It is not connected to a live AI service.
+## Run the app
 
-The site uses the supplied logo and images, a locally drawn particle sphere, responsive layouts, and expandable FAQs. The animation does not load an external library.
+- Install Node.js 20 or newer.
+- Run `npm install`.
+- Run `npm run dev` and open the local URL printed in the terminal.
+- Run `npm run build` to create the production files in `dist/`.
+- Run `npm start` with `NODE_ENV=production` after building to serve the production app.
 
-## Preview
+## Current release status
 
-Open `index.html` in a browser. The header switches among Global, U.S., and India views. Use `#usa` or `#india` to open a country view directly. Use the floating **Ask Radiant Intelligence** button in the lower-right corner to open the chat assistant.
+This release uses sample wellness, market, and news data. It does not connect to Apple HealthKit, Health Connect, Oura, Garmin, or WHOOP. Device linking is a preview flow only; displayed pulse and other health values are not live measurements.
 
-## Publish on GitHub Pages
+Prediction markets are paper-trading demonstrations. Their events, prices, balance, orders, and fee estimates are sample data. There are no real-money trades or payouts. Stock prices and news are not live feeds.
 
-Upload `index.html`, `styles.css`, `site.js`, and the full `assets/` folder to the repository root. Then in **Settings → Pages**, choose **Deploy from a branch**, `main`, and `/ (root)`. `usa.html` remains an optional redirect for older preview links.
+Stripe is not configured. The checkout endpoint intentionally reports that setup is required and does not take payment or unlock a paid plan. Before charging customers, implement hosted Stripe Checkout with recurring Price IDs, signed webhook handling, user authentication, and a database to verify and store subscription status. Keep secret keys on the server; never put them in the browser or upload them to GitHub.
 
-The supplied product images are crops from screenshots, not original 4K source files.
+## Before a customer launch
 
+- Connect actual wearable data through supported native iOS/Android integrations with explicit user consent.
+- Choose licensed and reliable market/news data providers and show timestamps and source information.
+- Add account authentication and a server-side database for customer profiles, subscriptions, and settings.
+- Complete Stripe Checkout, webhook verification, cancellations, refunds, and subscription access checks.
+- Review product, health, privacy, financial, and prediction-market requirements for your target regions.
+
+See [GITHUB_DEPLOYMENT.md](./GITHUB_DEPLOYMENT.md) for preparing the source archive and deploying the Node app.

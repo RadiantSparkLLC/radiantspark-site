@@ -1,0 +1,6 @@
+{
+  "name": "SparkSync: Tasks, Health, Markets & Gallery",
+  "description": "Cross-platform mobile application by Radiant Spark LLC. Features real-time collaborative tasks, Apple Watch vitals, live markets, and smart photo duplicate cleaner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
