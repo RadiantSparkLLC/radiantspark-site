@@ -178,3 +178,53 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
 }
 
+
+// SparkDeal Hub: Category filter & upvote handling
+(() => {
+  const filterButtons = document.querySelectorAll('.deal-filter-btn');
+  const cards = document.querySelectorAll('.deal-card');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => {
+        b.classList.remove('active');
+        b.style.background = 'rgba(255,255,255,0.06)';
+        b.style.color = '#cbd5e1';
+        b.style.borderColor = 'rgba(255,255,255,0.1)';
+      });
+      btn.classList.add('active');
+      btn.style.background = '#2563eb';
+      btn.style.color = '#ffffff';
+      btn.style.borderColor = '#3b82f6';
+
+      const filter = btn.dataset.dealFilter;
+      cards.forEach(card => {
+        const cat = card.dataset.category || '';
+        if (filter === 'all' || cat.includes(filter)) {
+          card.style.display = 'flex';
+          card.style.opacity = '1';
+        } else {
+          card.style.display = 'none';
+          card.style.opacity = '0';
+        }
+      });
+    });
+  });
+
+  // Upvote fire counter with micro-interaction
+  document.querySelectorAll('.deal-upvote-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      let votes = parseInt(btn.dataset.votes || '100', 10);
+      votes += 1;
+      btn.dataset.votes = String(votes);
+      const span = btn.querySelector('.vote-count');
+      if (span) span.textContent = String(votes);
+      btn.style.borderColor = '#ef4444';
+      btn.style.color = '#ef4444';
+      btn.style.background = 'rgba(239, 68, 68, 0.18)';
+      btn.style.transform = 'scale(1.08)';
+      setTimeout(() => { btn.style.transform = 'scale(1)'; }, 180);
+    });
+  });
+})();
