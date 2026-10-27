@@ -87,3 +87,19 @@ body[data-country="global"] .brand-copy small{font-size:8px;font-weight:750;lett
 /* Radiant Intelligence chat styling */
 .assistant-panel{border-radius:18px;background:rgba(9,12,20,.985);border-color:rgba(255,255,255,.1);box-shadow:0 24px 72px rgba(0,0,0,.62)}.assistant-header{min-height:60px;background:#090d17;padding:11px 13px}.assistant-mark{border-radius:50%;background:linear-gradient(145deg,#ffca52,#bb7713);color:#192234;font-size:15px}.assistant-header small{display:flex;align-items:center;gap:6px;color:#43d6a2}.assistant-status-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#31d39a;box-shadow:0 0 9px rgba(49,211,154,.6)}.assistant-close{font-size:21px}.assistant-messages{gap:11px;padding:13px}.assistant-message{max-width:100%;border-radius:16px;font-size:11px;line-height:1.65}.assistant-reply{background:#171b25;border:1px solid rgba(255,255,255,.075);color:#cbd3df}.assistant-user{max-width:90%;background:#2864ee;border:1px solid rgba(255,255,255,.07);border-radius:16px 16px 5px 16px;color:#fff}.assistant-prompts{background:#0a0d15;padding:9px 8px}.assistant-prompts button{border-radius:99px;background:#181c25;color:#c6cfdd;padding:7px 9px}.assistant-form{background:#080b12}.assistant-form button{background:#2864ee}.assistant-footnote{padding-top:2px}
 .assistant-toggle{background:linear-gradient(135deg,rgba(13,21,37,.98),rgba(5,9,17,.98))}.assistant-toggle>span{background:linear-gradient(145deg,#ffca52,#bb7713);color:#182234}
+
+/* Award-Winning Consolidated Corporate Hub & SparkDeals Styling */
+.corporate-tabs-bar{display:flex;gap:10px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:14px;margin-bottom:28px;overflow-x:auto;scrollbar-width:thin}
+.corp-tab-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.05);color:#cbd5e1;font-size:11px;font-weight:750;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:all .2s ease}
+.corp-tab-btn:hover{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.25)}
+.corp-tab-btn.active{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;border-color:#3b82f6;box-shadow:0 4px 18px rgba(37,99,235,.4)}
+.corp-tab-panel[hidden]{display:none}
+.job-listing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:20px 0}
+.job-listing-card{background:linear-gradient(145deg,rgba(17,28,46,.85),rgba(8,14,25,.95));border:1px solid rgba(166,192,225,.16);border-radius:18px;padding:22px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}
+.job-listing-card:hover{transform:translateY(-3px);border-color:rgba(59,130,246,.45)}
+.job-badge{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:6px;font-size:10px;font-weight:750;text-transform:uppercase}
+.job-badge.remote{background:rgba(52,211,153,.15);color:#34d399;border:1px solid rgba(52,211,153,.3)}
+.job-badge.us{background:rgba(59,130,246,.15);color:#60a5fa;border:1px solid rgba(59,130,246,.3)}
+.job-badge.india{background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3)}
+body[data-country="sparkdeals"]{--gold:#f59e0b;--blue:#38bdf8}
+

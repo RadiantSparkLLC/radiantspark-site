@@ -9,7 +9,7 @@ if (menuButton && nav) {
   });
 }
 function showCountry(country, updateHash = true) {
-  const selected = country === 'usa' ? 'usa' : country === 'india' ? 'india' : 'global';
+  const selected = country === 'usa' ? 'usa' : country === 'india' ? 'india' : country === 'sparkdeals' ? 'sparkdeals' : 'global';
   document.querySelectorAll('[data-country-page]').forEach(page => {
     page.hidden = page.dataset.countryPage !== selected;
   });
@@ -20,15 +20,15 @@ function showCountry(country, updateHash = true) {
   });
   const cta = document.querySelector('.nav-cta');
   if (cta) {
-    cta.href = selected === 'india' ? '#india-contact' : selected === 'usa' ? '#usa-contact' : '#global-companies';
-    cta.textContent = selected === 'india' ? 'India business ↘' : selected === 'usa' ? 'U.S. technology ↘' : 'Explore companies ↘';
+    cta.href = selected === 'india' ? '#india-contact' : selected === 'usa' ? '#usa-contact' : selected === 'sparkdeals' ? '#sparkdeals-legal-shield' : '#global-companies';
+    cta.textContent = selected === 'india' ? 'India business ↘' : selected === 'usa' ? 'U.S. technology ↘' : selected === 'sparkdeals' ? 'Deals Legal Shield ↘' : 'Explore companies ↘';
   }
-  document.title = selected === 'india' ? 'RDNT Sparkle Industries LLP | India' : selected === 'usa' ? 'Radiant Spark LLC | Spark IT Consulting · USA' : 'Radiant Spark Global | India & U.S. Companies';
+  document.title = selected === 'india' ? 'RDNT Sparkle Industries LLP | India' : selected === 'usa' ? 'Radiant Spark LLC | Spark IT Consulting · USA' : selected === 'sparkdeals' ? 'SparkDeals Hub | Real-Time Black Friday & Price Drop Radar' : 'Radiant Spark Global | India & U.S. Companies';
   document.body.dataset.country = selected;
   const brandName = document.querySelector('[data-brand-name]');
   const brandSubtitle = document.querySelector('[data-brand-subtitle]');
-  if (brandName) brandName.textContent = selected === 'india' ? 'RDNT Sparkle Industries LLP' : selected === 'usa' ? 'Radiant Spark LLC' : 'Radiant Spark Global';
-  if (brandSubtitle) brandSubtitle.textContent = selected === 'india' ? 'India' : selected === 'usa' ? 'Spark IT Consulting · USA' : 'United States · India';
+  if (brandName) brandName.textContent = selected === 'india' ? 'RDNT Sparkle Industries LLP' : selected === 'usa' ? 'Radiant Spark LLC' : selected === 'sparkdeals' ? 'SparkDeals Portal' : 'Radiant Spark Global';
+  if (brandSubtitle) brandSubtitle.textContent = selected === 'india' ? 'India' : selected === 'usa' ? 'Spark IT Consulting · USA' : selected === 'sparkdeals' ? 'Live Deal Radar' : 'United States · India';
   document.querySelectorAll('[data-country-footer]').forEach(label => { label.hidden = label.dataset.countryFooter !== selected; });
   if (updateHash) history.replaceState(null, '', selected === 'global' ? location.pathname : '#' + selected);
   if (nav && menuButton) {
@@ -40,18 +40,53 @@ function showCountry(country, updateHash = true) {
 }
 document.querySelectorAll('[data-country]').forEach(button => button.addEventListener('click', () => { showCountry(button.dataset.country); if (button.dataset.scrollTo) document.getElementById(button.dataset.scrollTo)?.scrollIntoView({behavior:'smooth'}); else window.scrollTo({top:0,behavior:'smooth'}); }));
 document.querySelector('[data-country-contact]')?.addEventListener('click', () => { const selected = document.body.dataset.country || 'global'; const target = selected === 'usa' ? 'usa-contact' : selected === 'india' ? 'india-contact' : 'global-companies'; document.getElementById(target)?.scrollIntoView({behavior:'smooth'}); });
+
+function switchCorpTab(tabId) {
+  const buttons = document.querySelectorAll('.corp-tab-btn');
+  const panels = document.querySelectorAll('.corp-tab-panel');
+  buttons.forEach(btn => {
+    const active = btn.dataset.corpTab === tabId;
+    btn.classList.toggle('active', active);
+  });
+  panels.forEach(panel => {
+    panel.hidden = panel.id !== tabId;
+  });
+}
+document.querySelectorAll('.corp-tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    switchCorpTab(btn.dataset.corpTab);
+  });
+});
+
 function countryFromHash(hash) {
   if (hash === '#usa' || hash.startsWith('#usa-') || hash === '#services') return 'usa';
   if (hash === '#india' || hash.startsWith('#india-') || hash === '#divisions') return 'india';
-  if (['#about','#careers','#contact','#privacy'].includes(hash)) return 'global';
+  if (hash === '#sparkdeals' || hash.startsWith('#deal') || hash === '#sparkdeals-legal-shield') return 'sparkdeals';
+  if (['#about','#careers','#contact','#privacy','#corporate-center'].includes(hash)) {
+    const tabMap = {
+      '#about': 'corp-about',
+      '#careers': 'corp-careers',
+      '#contact': 'corp-contact',
+      '#privacy': 'corp-legal'
+    };
+    if (tabMap[hash]) switchCorpTab(tabMap[hash]);
+    return 'global';
+  }
   return 'global';
 }
 document.querySelectorAll('[data-global-section]').forEach(link => link.addEventListener('click', event => {
   event.preventDefault();
   const section = link.dataset.globalSection;
   showCountry('global', false);
+  const tabMap = {
+    'about': 'corp-about',
+    'careers': 'corp-careers',
+    'contact': 'corp-contact',
+    'privacy': 'corp-legal'
+  };
+  if (tabMap[section]) switchCorpTab(tabMap[section]);
   history.pushState(null, '', '#' + section);
-  document.getElementById(section)?.scrollIntoView({behavior:'smooth'});
+  document.getElementById('corporate-center')?.scrollIntoView({behavior:'smooth'});
 }));
 window.addEventListener('hashchange', () => showCountry(countryFromHash(location.hash), false));
 showCountry(countryFromHash(location.hash), false);
