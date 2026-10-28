@@ -1,8 +1,7 @@
-// SparkSync Service Worker for PWA Offline Caching
-const CACHE_NAME = 'sparksync-v1';
+// SparkSync Service Worker
+const CACHE_NAME = 'sparksync-v2.4';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
+  '/app.html',
   '/manifest.json',
   '/icon.svg'
 ];
@@ -26,17 +25,13 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  if (event.request.method !== 'GET') return;
-  
+  // Network first, falling back to cache
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).catch(() => {
-        // Return cached index for navigation fallbacks
+    fetch(event.request).catch(() => {
+      return caches.match(event.request).then((response) => {
+        if (response) return response;
         if (event.request.mode === 'navigate') {
-          return caches.match('/index.html');
+          return caches.match('/app.html');
         }
       });
     })

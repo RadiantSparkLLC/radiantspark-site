@@ -1,29 +1,21 @@
-# SparkSync
+# Radiant Spark LLC — Official Web & Mobile Apps Production Package
 
-SparkSync is a mobile-first React and Vite app from Radiant Spark LLC. The current release is a polished product preview with a dashboard, task list, wellness screens, market watchlist, practice prediction markets, news cards, gallery, and 3D visuals.
+This repository contains the complete production-ready build for Radiant Spark LLC, SparkSync OS, and SparkDeals Hub.
 
-## Run the app
+## Easy GitHub Deployment (GitHub Pages)
 
-- Install Node.js 20 or newer.
-- Run `npm install`.
-- Run `npm run dev` and open the local URL printed in the terminal.
-- Run `npm run build` to create the production files in `dist/`.
-- Run `npm start` with `NODE_ENV=production` after building to serve the production app.
+1. Unzip this package.
+2. Drag and drop all files (or run git add . && git commit -m "Deploy" && git push) into your GitHub repository root (main branch).
+3. On GitHub, go to Settings -> Pages:
+   - Source: Deploy from a branch
+   - Branch: main
+   - Folder: / (root)
+   - Click Save.
+4. Your website is live immediately at https://radiantsparkllc.com!
 
-## Current release status
-
-This release uses sample wellness, market, and news data. It does not connect to Apple HealthKit, Health Connect, Oura, Garmin, or WHOOP. Device linking is a preview flow only; displayed pulse and other health values are not live measurements.
-
-Prediction markets are paper-trading demonstrations. Their events, prices, balance, orders, and fee estimates are sample data. There are no real-money trades or payouts. Stock prices and news are not live feeds.
-
-Stripe is not configured. The checkout endpoint intentionally reports that setup is required and does not take payment or unlock a paid plan. Before charging customers, implement hosted Stripe Checkout with recurring Price IDs, signed webhook handling, user authentication, and a database to verify and store subscription status. Keep secret keys on the server; never put them in the browser or upload them to GitHub.
-
-## Before a customer launch
-
-- Connect actual wearable data through supported native iOS/Android integrations with explicit user consent.
-- Choose licensed and reliable market/news data providers and show timestamps and source information.
-- Add account authentication and a server-side database for customer profiles, subscriptions, and settings.
-- Complete Stripe Checkout, webhook verification, cancellations, refunds, and subscription access checks.
-- Review product, health, privacy, financial, and prediction-market requirements for your target regions.
-
-See [GITHUB_DEPLOYMENT.md](./GITHUB_DEPLOYMENT.md) for preparing the source archive and deploying the Node app.
+## Key Pages Included
+- index.html: Main Corporate Site with 3D Silicon Chip Emitter & World Globe
+- app.html: Standalone Mobile PWA (SparkSync OS with 3D Biometric Plexus + mobile SparkDeals store)
+- sparkdeals.html: Standalone Dedicated SparkDeals Live Hub
+- spardeals.html: Automatic instant redirect for typo safety
+- manifest.json & sw.js: PWA Mobile app install capabilities
