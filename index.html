@@ -23,18 +23,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
-    <!-- Auto-route to dedicated mobile app if launched on smartphone/tablet or from Home Screen / PWA Standalone Mode -->
-    <script>
-      (function() {
-        const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-        const isMobilePhone = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || (window.innerWidth <= 768 && 'ontouchstart' in window);
-        const urlParams = new URLSearchParams(window.location.search);
-        const forceDesktop = urlParams.get('view') === 'desktop';
-        if (!forceDesktop && (isStandalone || isMobilePhone || urlParams.get('mode') === 'app' || urlParams.get('download') === 'app')) {
-          window.location.replace('/app.html' + window.location.hash);
-        }
-      })();
-    </script>
     <script type="module" crossorigin src="/assets/index-4U-moePu.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CzDgXILB.css">
   </head>
