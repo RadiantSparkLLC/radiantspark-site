@@ -22,12 +22,273 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <script type="module" crossorigin src="/assets/index-Q3nSZppm.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BluS7nm1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="/assets/index-Bb8PwIUF.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CIz9e4UN.css">
   </head>
   <body class="bg-[#030712] text-slate-100 min-h-screen selection:bg-blue-500 selection:text-white font-sans antialiased overflow-x-hidden">
-    <div id="root"></div>
+    
+    <!-- Root Container: Displays pre-rendered corporate portal & mobile download hub immediately so page is NEVER blank, then hydrates smoothly when React loads -->
+    <div id="root">
+      <div class="min-h-screen bg-[#030712] text-slate-100 flex flex-col">
+        
+        <!-- Header -->
+        <header class="sticky top-0 z-50 px-4 pt-3 pb-2 bg-[#030712]/90 backdrop-blur-xl border-b border-slate-800/80">
+          <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 text-left">
+              <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center p-1.5 shadow-md">
+                <img src="/icon.svg" onerror="this.src='/assets/icon.svg'" alt="Radiant Spark Symbol" class="w-full h-full object-contain" />
+              </div>
+              <div class="leading-tight">
+                <span class="font-extrabold text-sm sm:text-base text-white tracking-tight block">Radiant Spark Global</span>
+                <span class="text-[9px] sm:text-[10px] font-mono tracking-widest text-slate-400 uppercase font-semibold block">UNITED STATES · INDIA</span>
+              </div>
+            </a>
+
+            <!-- Quick Navigation & Mobile App Buttons -->
+            <div class="flex items-center gap-2">
+              <a href="/app.html" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 border border-blue-400/50 shadow-md shadow-blue-500/20 transition-all">
+                <span>⚡</span>
+                <span class="hidden sm:inline">Launch SparkSync App</span>
+                <span class="sm:hidden">App</span>
+              </a>
+
+              <a href="/sparkdeals.html" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-slate-950 bg-amber-400 hover:bg-amber-300 border border-amber-300/60 shadow-md transition-all">
+                <span>🔥</span>
+                <span class="hidden sm:inline">SparkDeals</span>
+              </a>
+
+              <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold text-emerald-300 bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-500/50 shadow-md transition-all" title="Download Complete Production ZIP">
+                <span>📦</span>
+                <span class="hidden md:inline">Download ZIP</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Body -->
+        <main class="flex-1">
+          <!-- Hero Banner -->
+          <section class="relative pt-12 pb-14 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-xs font-mono text-slate-300">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Radiant Spark Global · United States + India Ecosystem</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight max-w-4xl mx-auto">
+              Intelligence across <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-emerald-400 bg-clip-text text-transparent italic">frontiers.</span>
+            </h1>
+
+            <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto leading-relaxed">
+              Connecting U.S. enterprise technology services through Radiant Spark LLC with India clean energy, beverages, and regional distribution through RDNT Sparkle Industries LLP.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="pt-2 flex flex-wrap items-center justify-center gap-3">
+              <a href="/app.html" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 text-white font-extrabold text-xs sm:text-sm shadow-xl shadow-blue-500/25 border border-blue-400/40 flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+                <span>⚡</span>
+                <span>Open SparkSync Mobile App</span>
+              </a>
+
+              <a href="/sparkdeals.html" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-extrabold text-xs sm:text-sm shadow-xl shadow-amber-500/25 flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+                <span>🔥</span>
+                <span>Open SparkDeals Portal</span>
+              </a>
+
+              <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3.5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-emerald-300 font-bold text-xs sm:text-sm border border-emerald-500/40 flex items-center gap-2 transition-transform hover:scale-105 active:scale-95">
+                <span>📦</span>
+                <span>Download radiantspark-final.zip</span>
+              </button>
+            </div>
+          </section>
+
+          <!-- MOBILE APPS DOWNLOAD & INSTALLATION SHOWCASE -->
+          <section id="mobile-apps" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-slate-950 via-blue-950/40 to-slate-950 border border-cyan-500/40 shadow-2xl space-y-6">
+              
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-800/80 pb-6">
+                <div class="space-y-2">
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-xs font-mono font-bold text-cyan-300">
+                    <span>📲</span>
+                    <span>OFFICIAL MOBILE APPS DOWNLOAD CENTER</span>
+                  </div>
+                  <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                    Instant PWA &amp; Mobile Web Apps
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
+                    High-performance mobile apps with zero corporate bloat. Install directly to your iOS or Android home screen with 1 tap.
+                  </p>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-3">
+                  <a href="/app.html" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-blue-600/30">
+                    <span>⚡</span>
+                    <span>Launch SparkSync</span>
+                  </a>
+                  <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs flex items-center gap-2 shadow-lg shadow-emerald-600/30">
+                    <span>📦</span>
+                    <span>Download Final ZIP</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Two Featured App Cards -->
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                
+                <!-- App 1: SparkSync OS (1,221-Line App) -->
+                <div class="p-6 rounded-2xl bg-slate-900/90 border border-blue-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-blue-400/60 transition-all">
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-mono font-bold text-cyan-300 bg-cyan-950/70 border border-cyan-500/30 px-2.5 py-0.5 rounded-full">
+                        Complete 1,221-Line Super-App
+                      </span>
+                      <span class="text-xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">SparkSync Mobile OS</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      Features Dynamic Island status bar, 3D rotating Biometric Plexus (75 bpm cardiac pulse), Apple Watch Health Telemetry, Smart Photo Cleaner (7.1 MB recoverable), Market Pulse (SPY, QQQ), and 8-tab native navigation.
+                    </p>
+                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                      <strong class="text-cyan-300 block">📱 How to Install to Phone Home Screen:</strong>
+                      <span>• <strong>iOS Safari:</strong> Open <code class="text-cyan-400">/app.html</code>, tap Share (⎋) ➔ "Add to Home Screen".</span><br>
+                      <span>• <strong>Android Chrome:</strong> Tap three dots (⋮) ➔ "Install App" or "Add to Home screen".</span>
+                    </div>
+                  </div>
+
+                  <div class="pt-2 flex items-center gap-3">
+                    <a href="/app.html" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+                      <span>⚡ Open SparkSync OS (/app.html)</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- App 2: SparkDeals Hub -->
+                <div class="p-6 rounded-2xl bg-slate-900/90 border border-amber-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-amber-400/60 transition-all">
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-mono font-bold text-amber-300 bg-amber-950/70 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
+                        Curated Deal Aggregator
+                      </span>
+                      <span class="text-xl">🔥</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white">SparkDeals Live Hub</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      Real-time deals aggregator for Amazon US, Amazon India, Walmart, SHEIN, and direct merchant portals. Backed by Section 79 IT Act safe-harbor legal protections.
+                    </p>
+                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                      <strong class="text-amber-300 block">🛡️ Statutory Protection Notice:</strong>
+                      <span>All product listings are direct deep-links to verified external merchant stores. Zero checkout markup or merchant dispute liabilities.</span>
+                    </div>
+                  </div>
+
+                  <div class="pt-2 flex items-center gap-3">
+                    <a href="/sparkdeals.html" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-md">
+                      <span>🔥 Open SparkDeals (/sparkdeals.html)</span>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- ZIP Package Card -->
+              <div class="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/40 border border-emerald-500/50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div class="space-y-1">
+                  <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                    <span>📦</span>
+                    <span>Download All Code &amp; Apps in One Single ZIP</span>
+                    <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono border border-emerald-500/30">radiantspark-final.zip</span>
+                  </h4>
+                  <p class="text-xs text-slate-300">
+                    Includes index.html, app.html (1,221 lines), sparkdeals.html, CNAME (radiantsparkllc.com), .nojekyll, and assets.
+                  </p>
+                </div>
+                <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shrink-0 flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-transform active:scale-95">
+                  <span>⬇️ Download ZIP Now</span>
+                </button>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Company Overview -->
+          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              
+              <!-- USA Entity -->
+              <div class="p-6 rounded-2xl bg-slate-900/60 border border-blue-500/30 space-y-3">
+                <span class="text-[11px] font-mono font-bold text-blue-400 tracking-wider uppercase">United States · Technology</span>
+                <h3 class="text-xl font-bold text-white">Radiant Spark LLC</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Enterprise cloud modernization, Oracle HCM architectures, AI automated workflows, and fintech algorithmic simulations under State of Georgia statutory laws.
+                </p>
+                <div class="pt-2 text-xs font-mono text-slate-400">
+                  <span>Website: </span><a href="https://radiantsparkllc.com" class="text-blue-400 underline">radiantsparkllc.com</a>
+                </div>
+              </div>
+
+              <!-- India Entity -->
+              <div class="p-6 rounded-2xl bg-slate-900/60 border border-amber-500/30 space-y-3">
+                <span class="text-[11px] font-mono font-bold text-amber-400 tracking-wider uppercase">India · Industrial Operations</span>
+                <h3 class="text-xl font-bold text-white">RDNT Sparkle Industries LLP</h3>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Incorporated July 7, 2026 in Andhra Pradesh. Four core divisions: Spark EV &amp; Solar, Sparkle Drinks, Spicy Sparkle Naturals, and Sparkle Regional Distribution.
+                </p>
+                <div class="pt-2 text-xs font-mono text-slate-400">
+                  <span>Jurisdiction: </span><span class="text-amber-400">Andhra Pradesh · LLP Registered</span>
+                </div>
+              </div>
+
+            </div>
+          </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-xs text-slate-500 space-y-2">
+          <p>© 2026 Radiant Spark Global. Operating as Radiant Spark LLC (USA) and RDNT Sparkle Industries LLP (India).</p>
+          <div class="flex items-center justify-center gap-4 text-[11px]">
+            <a href="/app.html" class="text-blue-400 hover:underline">SparkSync App</a>
+            <span>•</span>
+            <a href="/sparkdeals.html" class="text-amber-400 hover:underline">SparkDeals</a>
+            <span>•</span>
+            <a href="mailto:info@radiantsparkllc.com" class="text-slate-400 hover:underline">Contact</a>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- Client-side Download Function: Downloads directly via Blob with zero page redirects or 404s -->
+    <script>
+      async function downloadZip(filename = 'radiantspark-final.zip') {
+        try {
+          const res = await fetch('/' + filename);
+          if (!res.ok) throw new Error('Status ' + res.status);
+          const blob = await res.blob();
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.style.display = 'none';
+          a.href = url;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(() => {
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+          }, 300);
+        } catch (err) {
+          console.warn('Fetch fallback, triggering direct link:', err);
+          const a = document.createElement('a');
+          a.href = '/' + filename;
+          a.download = filename;
+          document.body.appendChild(a);
+          a.click();
+          setTimeout(() => document.body.removeChild(a), 300);
+        }
+      }
+    </script>
+
+    <!-- React App Hydration -->
+
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
