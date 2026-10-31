@@ -10,7 +10,7 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     
-    <!-- PWA & Mobile Install Manifest (Points directly to /app.html) -->
+    <!-- PWA & Mobile Install Manifest -->
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#030712" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -30,12 +30,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
     <style>body{color:#f8fafc;background-color:#030712;font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden}.font-mono{font-family:JetBrains Mono,monospace}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#030712}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:4px}</style>
-    <script type="module" crossorigin src="/assets/index-Df95RntY.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C7oLUPZU.css">
+    <script type="module" crossorigin src="/assets/index-CbU-mKIS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CA419A2c.css">
   </head>
   <body class="bg-[#030712] text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white font-sans antialiased overflow-x-hidden">
     
-    <!-- Root Container: Displays exact pixel-matched UI from image_ff37cf94.png immediately with 3D celestial globe and silicon microchips, then hydrates with React -->
+    <!-- Root Container: Multi-view architecture with instant tab switching between Global, Technology USA, Industries India (4 divisions + Legal Shield), and SparkDeals -->
     <div id="root">
       <div class="min-h-screen bg-[#030712] text-slate-100 flex flex-col font-sans selection:bg-blue-600 selection:text-white relative">
         
@@ -45,7 +45,7 @@
             <div class="relative rounded-2xl sm:rounded-3xl bg-[#030712]/80 backdrop-blur-xl border border-slate-800/80 shadow-2xl px-3 sm:px-4 py-2 flex items-center justify-between">
               
               <!-- Left Brand Badge -->
-              <a href="/" class="flex items-center gap-3 text-left focus:outline-none group shrink-0">
+              <button onclick="switchTab('global')" class="flex items-center gap-3 text-left focus:outline-none group shrink-0">
                 <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center p-1.5 shadow-md group-hover:border-blue-500/50 transition-colors">
                   <img src="/icon.svg" onerror="this.src='/assets/icon.svg'" alt="Radiant Spark Symbol" class="w-full h-full object-contain" />
                 </div>
@@ -57,38 +57,46 @@
                     UNITED STATES · INDIA
                   </span>
                 </div>
-              </a>
+              </button>
 
-              <!-- Desktop Center Navigation Pills matching image_ff37cf94.png -->
+              <!-- Desktop Center Navigation Pills with Active Highlight Logic -->
               <nav class="hidden xl:flex items-center gap-1">
                 <button
+                  id="tabBtn-global"
                   type="button"
-                  class="px-3.5 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider text-amber-300 bg-amber-500/15 border-2 border-amber-500/80 shadow-md shadow-amber-500/20"
+                  onclick="switchTab('global')"
+                  class="px-3.5 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider text-amber-300 bg-amber-500/15 border-2 border-amber-500/80 shadow-md shadow-amber-500/20 transition-all"
                 >
                   RADIANT SPARK GLOBAL
                 </button>
 
-                <a
-                  href="#companies"
+                <button
+                  id="tabBtn-usa"
+                  type="button"
+                  onclick="switchTab('usa')"
                   class="px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white hover:bg-slate-900/60 transition-all"
                 >
                   TECHNOLOGY USA
-                </a>
+                </button>
 
-                <a
-                  href="#companies"
+                <button
+                  id="tabBtn-india"
+                  type="button"
+                  onclick="switchTab('india')"
                   class="px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white hover:bg-slate-900/60 transition-all"
                 >
                   INDUSTRIES INDIA
-                </a>
+                </button>
 
-                <a
-                  href="/sparkdeals.html"
+                <button
+                  id="tabBtn-sparkdeals"
+                  type="button"
+                  onclick="switchTab('sparkdeals')"
                   class="px-3 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1"
                 >
                   <span>🔥</span>
                   <span>SPARKDEALS PORTAL</span>
-                </a>
+                </button>
 
                 <button
                   type="button"
@@ -99,36 +107,40 @@
                   <span>MOBILE APPS</span>
                 </button>
 
-                <a
-                  href="#about"
+                <button
+                  type="button"
+                  onclick="scrollToSection('about')"
                   class="px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors"
                 >
                   ABOUT
-                </a>
+                </button>
 
-                <a
-                  href="#careers"
+                <button
+                  type="button"
+                  onclick="scrollToSection('careers')"
                   class="px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors"
                 >
                   CAREERS
-                </a>
+                </button>
 
-                <a
-                  href="#contact"
+                <button
+                  type="button"
+                  onclick="scrollToSection('contact')"
                   class="px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 hover:text-white transition-colors"
                 >
                   CONTACT
-                </a>
+                </button>
 
-                <a
-                  href="#legal-shield"
+                <button
+                  type="button"
+                  onclick="switchTab('india'); scrollToSection('india-legal-shield')"
                   class="px-2.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400 hover:text-emerald-400 transition-colors"
                 >
                   PRIVACY
-                </a>
+                </button>
               </nav>
 
-              <!-- Right Actions: Download ZIP, Download Apps, and Launch SparkSync matching image_ff37cf94.png -->
+              <!-- Right Actions: Download ZIP, Download Apps, and Launch SparkSync -->
               <div class="flex items-center gap-2">
                 <!-- Direct Download GitHub ZIP Button -->
                 <button
@@ -160,7 +172,7 @@
                   class="group px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-[10px] sm:text-[11px] uppercase tracking-wider shadow-lg shadow-blue-600/30 border border-blue-400/40 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
                   title="Launch SparkSync App"
                 >
-                  <span class="text-amber-300">⚡</span>
+                  <span class="text-amber-300 font-bold">⚡</span>
                   <div class="text-left leading-tight font-extrabold">
                     <span class="block text-[9px] text-blue-200">LAUNCH</span>
                     <span class="block">SPARKSYNC APP</span>
@@ -172,326 +184,997 @@
           </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- Main Views Container -->
         <main class="flex-1 relative z-10">
           
-          <!-- Hero Section with 3D Celestial Wireframe Globe and Silicon Microchips matching image_ff37cf94.png -->
-          <section class="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[720px] flex items-center justify-center overflow-hidden pt-4 pb-12">
+          <!-- ============================================================== -->
+          <!-- VIEW 1: RADIANT SPARK GLOBAL (Hero, 3D Globe, Chips, Apps)    -->
+          <!-- ============================================================== -->
+          <div id="view-global" class="view-panel">
             
-            <!-- 3D Celestial Wireframe Earth Globe Canvas -->
-            <div id="globe-container" class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-              <canvas id="three-globe-canvas" class="w-full h-full max-w-5xl"></canvas>
-            </div>
-
-            <!-- Radial ambient atmosphere -->
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
-
-            <!-- Foreground Content Centered over 3D Globe matching image_ff37cf94.png -->
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+            <!-- Hero Section with 3D Celestial Wireframe Globe and Silicon Microchips matching image_ff37cf94.png -->
+            <section class="relative min-h-[580px] sm:min-h-[640px] lg:min-h-[720px] flex items-center justify-center overflow-hidden pt-4 pb-12">
               
-              <!-- Top Capsule Badge matching image_ff37cf94.png -->
-              <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 font-medium backdrop-blur-md shadow-lg">
-                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                <span>Radiant Spark Global · United States + India</span>
+              <!-- 3D Celestial Wireframe Earth Globe Canvas -->
+              <div id="globe-container" class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                <canvas id="three-globe-canvas" class="w-full h-full max-w-5xl"></canvas>
               </div>
 
-              <!-- Headline Typography matching image_ff37cf94.png -->
-              <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
-                Intelligence across <br />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-sky-200 to-blue-300 font-serif italic">
-                  frontiers.
-                </span>
-              </h1>
+              <!-- Radial ambient atmosphere -->
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+              <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[350px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
 
-              <!-- Subtitle matching image_ff37cf94.png -->
-              <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed font-normal">
-                Connecting U.S. technology services through <strong class="text-white">Radiant Spark LLC</strong> with India clean energy, products, and distribution through <strong class="text-white">RDNT Sparkle Industries LLP</strong>.
-              </p>
-
-              <!-- Action Buttons matching image_ff37cf94.png -->
-              <div class="pt-4 flex flex-wrap items-center justify-center gap-3.5">
-                <a
-                  href="#companies"
-                  class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-lg flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <span>Explore Portals</span>
-                  <span>⌄</span>
-                </a>
-
-                <button
-                  type="button"
-                  onclick="openModal('downloadModal')"
-                  class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/30 hover:from-emerald-500/30 hover:to-teal-500/40 border border-emerald-400/50 text-emerald-300 font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-emerald-500/10 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <span>📲</span>
-                  <span>Download Mobile Apps</span>
-                </button>
-
-                <a
-                  href="/app.html"
-                  class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600/40 to-indigo-600/50 hover:from-blue-600/60 hover:to-indigo-600/70 border border-blue-400/60 text-white font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-blue-500/30 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <span class="text-amber-300 font-bold">⚡</span>
-                  <span>Launch SparkSync</span>
-                </a>
-
-                <a
-                  href="/sparkdeals.html"
-                  class="px-5 py-2.5 rounded-xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 text-amber-300 font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-amber-500/10 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  <span>🔥</span>
-                  <span>SparkDeals Hub</span>
-                </a>
-              </div>
-
-              <!-- Jurisdiction Quick Jump Badges matching image_ff37cf94.png -->
-              <div class="pt-4 flex flex-wrap items-center justify-center gap-2.5 text-xs text-slate-400">
-                <span class="font-mono text-slate-500 text-[11px] uppercase tracking-wider">DIRECT ACCESS:</span>
-                <a
-                  href="#companies"
-                  class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 flex items-center gap-1.5 transition-colors text-xs"
-                >
-                  <span class="font-mono text-[10px] text-blue-400 font-bold">us</span> Technology USA (Spark IT)
-                </a>
-                <a
-                  href="#companies"
-                  class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 flex items-center gap-1.5 transition-colors text-xs"
-                >
-                  <span class="font-mono text-[10px] text-amber-400 font-bold">in</span> Industries India (RDNT Sparkle)
-                </a>
-              </div>
-
-            </div>
-          </section>
-
-          <!-- Metrics Band -->
-          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
-                <span class="text-4xl font-black text-white font-mono block">02</span>
-                <span class="text-sm font-bold text-slate-200 mt-1 block">Distinct Companies</span>
-                <p className="text-xs text-slate-400 mt-1">One U.S. corporate entity and one India LLP operating under separate jurisdictions.</p>
-              </div>
-              <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
-                <span class="text-4xl font-black text-cyan-400 font-mono block">06</span>
-                <span class="text-sm font-bold text-slate-200 mt-1 block">U.S. Technology Practices</span>
-                <p className="text-xs text-slate-400 mt-1">Under Spark IT Consulting: Cloud, AI, Systems Integration, and Oracle Fusion HCM.</p>
-              </div>
-              <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
-                <span class="text-4xl font-black text-amber-400 font-mono block">04</span>
-                <span class="text-sm font-bold text-slate-200 mt-1 block">India Divisions</span>
-                <p className="text-xs text-slate-400 mt-1">Under RDNT Sparkle Industries LLP: Spark EV, Drinks, Naturals, and Distribution.</p>
-              </div>
-            </div>
-          </section>
-
-          <!-- Two Teams / Clear Responsibilities -->
-          <section id="companies" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-24">
-            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
-              <div>
-                <span class="text-xs font-mono font-bold text-blue-400 tracking-wider uppercase block mb-1">CHOOSE A COMPANY</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Two teams. Clear responsibilities.</h2>
-              </div>
-              <p class="text-xs sm:text-sm text-slate-400 max-w-md">
-                The corporate switch keeps each company's services, operations, and contact paths strictly organized.
-              </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <!-- Radiant Spark LLC (USA) -->
-              <div class="p-8 rounded-3xl bg-slate-900/70 border border-blue-500/30 flex flex-col justify-between space-y-6 shadow-xl">
-                <div class="space-y-4">
-                  <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
-                    <img src="/spark-it.jpg" onerror="this.src='/assets/spark-it.jpg'" alt="Spark IT Consulting" class="w-full h-full object-cover" />
-                    <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-cyan-300 border border-cyan-500/40">United States · Technology</span>
-                  </div>
-                  <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider block">Radiant Spark LLC</span>
-                  <h3 class="text-2xl font-black text-white tracking-tight">Spark IT Consulting</h3>
-                  <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Enterprise cloud modernization, Oracle Fusion architectures, automated AI pipelines, systems integration, custom software, and fintech simulation algorithms under State of Georgia statutory laws.
-                  </p>
+              <!-- Foreground Content Centered over 3D Globe matching image_ff37cf94.png -->
+              <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+                
+                <!-- Top Capsule Badge matching image_ff37cf94.png -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-slate-700/80 text-xs text-slate-200 font-medium backdrop-blur-md shadow-lg">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                  <span>Radiant Spark Global · United States + India</span>
                 </div>
-                <a href="#about" class="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20">
-                  <span>Explore U.S. Technology Services</span>
-                  <span>↗</span>
-                </a>
-              </div>
 
-              <!-- RDNT Sparkle Industries LLP (India) -->
-              <div class="p-8 rounded-3xl bg-slate-900/70 border border-amber-500/30 flex flex-col justify-between space-y-6 shadow-xl">
-                <div class="space-y-4">
-                  <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
-                    <img src="/spark-ev.jpg" onerror="this.src='/assets/spark-ev.jpg'" alt="RDNT Sparkle Industries LLP" class="w-full h-full object-cover" />
-                    <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-amber-300 border border-amber-500/40">India · Products &amp; Operations</span>
-                  </div>
-                  <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider block">RDNT Sparkle Industries LLP</span>
-                  <h3 class="text-2xl font-black text-white tracking-tight">Four India Divisions</h3>
-                  <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                    Incorporated July 7, 2026 in Andhra Pradesh. Encompassing four core industrial pillars: Spark EV (solar/mobility), Sparkle Drinks (FSSAI beverages), Spicy Sparkle Naturals, and Sparkle Regional Distribution.
-                  </p>
-                </div>
-                <a href="/sparkdeals.html" class="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20">
-                  <span>Explore SparkDeals Hub (10+ Stores)</span>
-                  <span>↗</span>
-                </a>
-              </div>
-            </div>
-          </section>
+                <!-- Headline Typography matching image_ff37cf94.png -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05]">
+                  Intelligence across <br />
+                  <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-sky-200 to-blue-300 font-serif italic">
+                    frontiers.
+                  </span>
+                </h1>
 
-          <!-- MOBILE APPS DOWNLOAD & INSTALLATION SHOWCASE -->
-          <section id="mobile-apps" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-24">
-            <div class="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-slate-950 via-blue-950/40 to-slate-950 border border-cyan-500/40 shadow-2xl space-y-6">
-              
-              <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-800/80 pb-6">
-                <div class="space-y-2">
-                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-xs font-mono font-bold text-cyan-300">
+                <!-- Subtitle matching image_ff37cf94.png -->
+                <p class="max-w-2xl mx-auto text-sm sm:text-base md:text-lg text-slate-300 leading-relaxed font-normal">
+                  Connecting U.S. technology services through <strong class="text-white">Radiant Spark LLC</strong> with India clean energy, products, and distribution through <strong class="text-white">RDNT Sparkle Industries LLP</strong>.
+                </p>
+
+                <!-- Action Buttons matching image_ff37cf94.png -->
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-3.5">
+                  <a
+                    href="#companies"
+                    class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-lg flex items-center gap-2 hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <span>Explore Portals</span>
+                    <span>⌄</span>
+                  </a>
+
+                  <button
+                    type="button"
+                    onclick="openModal('downloadModal')"
+                    class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/30 hover:from-emerald-500/30 hover:to-teal-500/40 border border-emerald-400/50 text-emerald-300 font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-emerald-500/10 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  >
                     <span>📲</span>
-                    <span>OFFICIAL MOBILE APPS DOWNLOAD CENTER</span>
-                  </div>
-                  <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                    Instant PWA &amp; Mobile Web Apps
-                  </h2>
-                  <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
-                    High-performance mobile apps with zero corporate bloat. Install directly to your iOS or Android home screen with 1 tap.
-                  </p>
-                </div>
+                    <span>Download Mobile Apps</span>
+                  </button>
 
-                <div class="flex flex-wrap items-center gap-3">
-                  <a href="/app.html" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-blue-600/30">
-                    <span>⚡</span>
+                  <a
+                    href="/app.html"
+                    class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600/40 to-indigo-600/50 hover:from-blue-600/60 hover:to-indigo-600/70 border border-blue-400/60 text-white font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-blue-500/30 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <span class="text-amber-300 font-bold">⚡</span>
                     <span>Launch SparkSync</span>
                   </a>
-                  <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs flex items-center gap-2 shadow-lg shadow-emerald-600/30">
-                    <span>📦</span>
-                    <span>Download Final ZIP</span>
+
+                  <button
+                    type="button"
+                    onclick="switchTab('sparkdeals')"
+                    class="px-5 py-2.5 rounded-xl bg-amber-950/40 hover:bg-amber-900/50 border border-amber-500/40 text-amber-300 font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-amber-500/10 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <span>🔥</span>
+                    <span>SparkDeals Hub</span>
+                  </button>
+                </div>
+
+                <!-- Jurisdiction Quick Jump Badges matching image_ff37cf94.png -->
+                <div class="pt-4 flex flex-wrap items-center justify-center gap-2.5 text-xs text-slate-400">
+                  <span class="font-mono text-slate-500 text-[11px] uppercase tracking-wider">DIRECT ACCESS:</span>
+                  <button
+                    onclick="switchTab('usa')"
+                    class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 flex items-center gap-1.5 transition-colors text-xs"
+                  >
+                    <span class="font-mono text-[10px] text-blue-400 font-bold">us</span> Technology USA (Spark IT)
+                  </button>
+                  <button
+                    onclick="switchTab('india')"
+                    class="px-3 py-1 rounded-lg bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 flex items-center gap-1.5 transition-colors text-xs"
+                  >
+                    <span class="font-mono text-[10px] text-amber-400 font-bold">in</span> Industries India (RDNT Sparkle)
+                  </button>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Metrics Band -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-white font-mono block">02</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">Distinct Companies</span>
+                  <p className="text-xs text-slate-400 mt-1">One U.S. corporate entity and one India LLP operating under separate jurisdictions.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-cyan-400 font-mono block">06</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">U.S. Technology Practices</span>
+                  <p className="text-xs text-slate-400 mt-1">Under Spark IT Consulting: Cloud, AI, Systems Integration, and Oracle Fusion HCM.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-amber-400 font-mono block">04</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">India Divisions</span>
+                  <p className="text-xs text-slate-400 mt-1">Under RDNT Sparkle Industries LLP: Spark EV, Drinks, Naturals, and Distribution.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Two Teams / Clear Responsibilities -->
+            <section id="companies" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-24">
+              <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+                <div>
+                  <span class="text-xs font-mono font-bold text-blue-400 tracking-wider uppercase block mb-1">CHOOSE A COMPANY</span>
+                  <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Two teams. Clear responsibilities.</h2>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-400 max-w-md">
+                  Click a company below to open its dedicated full portal, operations, and services.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Radiant Spark LLC (USA) Card -->
+                <div class="p-8 rounded-3xl bg-slate-900/70 border border-blue-500/30 flex flex-col justify-between space-y-6 shadow-xl">
+                  <div class="space-y-4">
+                    <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
+                      <img src="/spark-it.jpg" onerror="this.src='/assets/spark-it.jpg'" alt="Spark IT Consulting" class="w-full h-full object-cover" />
+                      <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-cyan-300 border border-cyan-500/40">United States · Technology</span>
+                    </div>
+                    <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider block">Radiant Spark LLC</span>
+                    <h3 class="text-2xl font-black text-white tracking-tight">Spark IT Consulting</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      Enterprise cloud modernization, Oracle Fusion architectures, automated AI pipelines, systems integration, custom software, and fintech simulation algorithms under State of Georgia statutory laws.
+                    </p>
+                  </div>
+                  <button onclick="switchTab('usa')" class="w-full py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-blue-600/20">
+                    <span>Open U.S. Technology Portal (6 Practices)</span>
+                    <span>↗</span>
+                  </button>
+                </div>
+
+                <!-- RDNT Sparkle Industries LLP (India) Card -->
+                <div class="p-8 rounded-3xl bg-slate-900/70 border border-amber-500/30 flex flex-col justify-between space-y-6 shadow-xl">
+                  <div class="space-y-4">
+                    <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
+                      <img src="/spark-ev.jpg" onerror="this.src='/assets/spark-ev.jpg'" alt="RDNT Sparkle Industries LLP" class="w-full h-full object-cover" />
+                      <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-amber-300 border border-amber-500/40">India · Products &amp; Operations</span>
+                    </div>
+                    <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider block">RDNT Sparkle Industries LLP</span>
+                    <h3 class="text-2xl font-black text-white tracking-tight">Four India Divisions &amp; Legal Shield</h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      Incorporated July 7, 2026 in Andhra Pradesh. Encompassing four core industrial pillars: Spark EV (solar/mobility), Sparkle Drinks (FSSAI beverages), Spicy Sparkle Naturals, and Sparkle Regional Distribution.
+                    </p>
+                  </div>
+                  <button onclick="switchTab('india')" class="w-full py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20">
+                    <span>Open India Portal (4 Divisions &amp; Legal Shield)</span>
+                    <span>↗</span>
                   </button>
                 </div>
               </div>
+            </section>
 
-              <!-- Two Featured App Cards -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+            <!-- MOBILE APPS DOWNLOAD & INSTALLATION SHOWCASE -->
+            <section id="mobile-apps" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-24">
+              <div class="p-6 sm:p-10 rounded-3xl bg-gradient-to-r from-slate-950 via-blue-950/40 to-slate-950 border border-cyan-500/40 shadow-2xl space-y-6">
                 
-                <!-- App 1: SparkSync OS (1,221-Line App) -->
-                <div class="p-6 rounded-2xl bg-slate-900/90 border border-blue-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-blue-400/60 transition-all">
-                  <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                      <span class="text-xs font-mono font-bold text-cyan-300 bg-cyan-950/70 border border-cyan-500/30 px-2.5 py-0.5 rounded-full">
-                        Complete 1,221-Line Super-App
-                      </span>
-                      <span class="text-xl">⚡</span>
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-800/80 pb-6">
+                  <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-xs font-mono font-bold text-cyan-300">
+                      <span>📲</span>
+                      <span>OFFICIAL MOBILE APPS DOWNLOAD CENTER</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white">SparkSync Mobile OS</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                      Features Dynamic Island status bar, 3D rotating Biometric Plexus (75 bpm cardiac pulse), Apple Watch Health Telemetry, Smart Photo Cleaner (7.1 MB recoverable), Market Pulse (SPY, QQQ), and 8-tab native navigation.
+                    <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
+                      Instant PWA &amp; Mobile Web Apps
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-xl">
+                      High-performance mobile apps with zero corporate bloat. Install directly to your iOS or Android home screen with 1 tap.
                     </p>
-                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
-                      <strong class="text-cyan-300 block">📱 How to Install to Phone Home Screen:</strong>
-                      <span>• <strong>iOS Safari:</strong> Open <code class="text-cyan-400">/app.html</code>, tap Share (⎋) ➔ "Add to Home Screen".</span><br>
-                      <span>• <strong>Android Chrome:</strong> Tap three dots (⋮) ➔ "Install App" or "Add to Home screen".</span>
-                    </div>
                   </div>
 
-                  <div class="pt-2 flex items-center gap-3">
-                    <a href="/app.html" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
-                      <span>⚡ Open SparkSync OS (/app.html)</span>
+                  <div class="flex flex-wrap items-center gap-3">
+                    <a href="/app.html" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs flex items-center gap-2 shadow-lg shadow-blue-600/30">
+                      <span>⚡</span>
+                      <span>Launch SparkSync</span>
                     </a>
+                    <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-black text-xs flex items-center gap-2 shadow-lg shadow-emerald-600/30">
+                      <span>📦</span>
+                      <span>Download Final ZIP</span>
+                    </button>
                   </div>
                 </div>
 
-                <!-- App 2: SparkDeals Hub -->
-                <div class="p-6 rounded-2xl bg-slate-900/90 border border-amber-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-amber-400/60 transition-all">
-                  <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                      <span class="text-xs font-mono font-bold text-amber-300 bg-amber-950/70 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
-                        Curated Deal Aggregator
-                      </span>
-                      <span class="text-xl">🔥</span>
+                <!-- Two Featured App Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+                  
+                  <!-- App 1: SparkSync OS (1,221-Line App) -->
+                  <div class="p-6 rounded-2xl bg-slate-900/90 border border-blue-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-blue-400/60 transition-all">
+                    <div class="space-y-3">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono font-bold text-cyan-300 bg-cyan-950/70 border border-cyan-500/30 px-2.5 py-0.5 rounded-full">
+                          Complete 1,221-Line Super-App
+                        </span>
+                        <span class="text-xl">⚡</span>
+                      </div>
+                      <h3 class="text-xl font-bold text-white">SparkSync Mobile OS</h3>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Features Dynamic Island status bar, 3D rotating Biometric Plexus (75 bpm cardiac pulse), Apple Watch Health Telemetry, Smart Photo Cleaner (7.1 MB recoverable), Market Pulse (SPY, QQQ), and 8-tab native navigation.
+                      </p>
+                      <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                        <strong class="text-cyan-300 block">📱 How to Install to Phone Home Screen:</strong>
+                        <span>• <strong>iOS Safari:</strong> Open <code class="text-cyan-400">/app.html</code>, tap Share (⎋) ➔ "Add to Home Screen".</span><br>
+                        <span>• <strong>Android Chrome:</strong> Tap three dots (⋮) ➔ "Install App" or "Add to Home screen".</span>
+                      </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white">SparkDeals Live Hub</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed">
-                      Real-time deals aggregator for Amazon US, Amazon India, Walmart, SHEIN, and direct merchant portals. Backed by Section 79 IT Act safe-harbor legal protections.
+
+                    <div class="pt-2 flex items-center gap-3">
+                      <a href="/app.html" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-md">
+                        <span>⚡ Open SparkSync OS (/app.html)</span>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- App 2: SparkDeals Hub -->
+                  <div class="p-6 rounded-2xl bg-slate-900/90 border border-amber-500/30 flex flex-col justify-between space-y-4 shadow-lg hover:border-amber-400/60 transition-all">
+                    <div class="space-y-3">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-mono font-bold text-amber-300 bg-amber-950/70 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
+                          Curated Deal Aggregator
+                        </span>
+                        <span class="text-xl">🔥</span>
+                      </div>
+                      <h3 class="text-xl font-bold text-white">SparkDeals Live Hub</h3>
+                      <p class="text-xs text-slate-300 leading-relaxed">
+                        Real-time deals aggregator for Amazon US, Amazon India, Walmart, SHEIN, and direct merchant portals. Backed by Section 79 IT Act safe-harbor legal protections.
+                      </p>
+                      <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
+                        <strong class="text-amber-300 block">🛡️ Statutory Protection Notice:</strong>
+                        <span>All product listings are direct deep-links to verified external merchant stores. Zero checkout markup or merchant dispute liabilities.</span>
+                      </div>
+                    </div>
+
+                    <div class="pt-2 flex items-center gap-3">
+                      <button onclick="switchTab('sparkdeals')" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-md">
+                        <span>🔥 Open SparkDeals Live Hub</span>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- ZIP Package Card -->
+                <div class="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/40 border border-emerald-500/50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div class="space-y-1">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                      <span>📦</span>
+                      <span>Download All Code &amp; Apps in One Single ZIP</span>
+                      <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono border border-emerald-500/30">radiantspark-final.zip</span>
+                    </h4>
+                    <p class="text-xs text-slate-300">
+                      Includes index.html, app.html (1,221 lines), sparkdeals.html, CNAME (radiantsparkllc.com), .nojekyll, and assets.
                     </p>
-                    <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 text-[11px] text-slate-300 space-y-1">
-                      <strong class="text-amber-300 block">🛡️ Statutory Protection Notice:</strong>
-                      <span>All product listings are direct deep-links to verified external merchant stores. Zero checkout markup or merchant dispute liabilities.</span>
+                  </div>
+                  <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shrink-0 flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-transform active:scale-95">
+                    <span>⬇️ Download ZIP Now</span>
+                  </button>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Company Operations & Governance Center -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="corporate-center">
+              <div id="about" class="scroll-mt-24"></div>
+              <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
+                <div class="border-b border-slate-800 pb-4">
+                  <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">Company Operations &amp; Governance Center</span>
+                  <h3 class="text-2xl font-black text-white mt-1">Unified Enterprise Hub</h3>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <!-- About -->
+                  <div class="space-y-2">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                      <span>🏢</span>
+                      <span>Dual Entity Structure</span>
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      U.S. technology services provided by Radiant Spark LLC (Atlanta, Georgia). Clean energy, beverages, and regional distribution operated by RDNT Sparkle Industries LLP (Andhra Pradesh, India).
+                    </p>
+                  </div>
+
+                  <!-- Careers -->
+                  <div class="space-y-2" id="careers">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                      <span>💼</span>
+                      <span>Careers &amp; Talent (4 Active Roles)</span>
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      Currently hiring Senior Cloud Consultants (US), Full-Stack React Leads, EV Infrastructure Engineers (India), and Supply Chain Managers. Email: <a href="mailto:info@radiantsparkllc.com" class="text-blue-400 underline">info@radiantsparkllc.com</a>.
+                    </p>
+                  </div>
+
+                  <!-- Contact -->
+                  <div class="space-y-2" id="contact">
+                    <h4 class="text-sm font-bold text-white flex items-center gap-2">
+                      <span>📬</span>
+                      <span>Direct Router Contacts</span>
+                    </h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                      USA Office: Radiant Spark LLC, Atlanta, GA.<br>
+                      India Office: RDNT Sparkle Industries LLP, Guntur, AP.<br>
+                      Email: <a href="mailto:info@radiantsparkllc.com" class="text-blue-400 underline">info@radiantsparkllc.com</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+
+          <!-- ============================================================== -->
+          <!-- VIEW 2: RDNT SPARKLE INDUSTRIES INDIA & 4 DIVISIONS + SHIELD  -->
+          <!-- ============================================================== -->
+          <div id="view-india" class="view-panel hidden">
+            
+            <!-- India Hero -->
+            <section class="relative overflow-hidden pt-6 pb-12">
+              <div class="absolute top-1/3 left-10 w-[500px] h-[300px] bg-amber-500/10 rounded-full blur-[110px] pointer-events-none"></div>
+
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                  <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- Jurisdiction Pill -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-950/40 border border-amber-500/30 text-xs text-amber-300 font-medium">
+                      <span>🇮🇳</span>
+                      <span>India · Andhra Pradesh · Parent Company</span>
+                      <span class="text-slate-600">·</span>
+                      <span class="text-[11px] text-slate-400 font-mono">Est. July 7, 2026</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+                      Building a <br />
+                      <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-300 to-amber-200 font-serif italic">
+                        better future.
+                      </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                      <strong class="text-white">RDNT Sparkle Industries LLP</strong> drives sustainable industrial innovation across clean energy, botanical beverages, artisanal dry fruits, and regional cold-chain distribution across South India.
+                    </p>
+
+                    <!-- Hero Actions -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                      <a
+                        href="#divisions"
+                        class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-all shadow-md flex items-center gap-2"
+                      >
+                        <span>Explore India Divisions</span>
+                        <span>↘</span>
+                      </a>
+
+                      <a
+                        href="/app.html"
+                        class="px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-500 text-white font-extrabold text-xs sm:text-sm shadow-lg shadow-blue-500/30 border border-blue-400/40 flex items-center gap-2"
+                      >
+                        <span class="text-amber-300 font-bold">⚡</span>
+                        <span>Launch SparkSync App</span>
+                      </a>
+
+                      <button
+                        onclick="switchTab('usa')"
+                        class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold text-xs sm:text-sm border border-slate-800 flex items-center gap-2"
+                      >
+                        <span>View U.S. Company (Radiant Spark LLC)</span>
+                        <span class="text-cyan-400">↗</span>
+                      </button>
                     </div>
                   </div>
 
-                  <div class="pt-2 flex items-center gap-3">
-                    <a href="/sparkdeals.html" class="flex-1 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-xs flex items-center justify-center gap-2 shadow-md">
-                      <span>🔥 Open SparkDeals (/sparkdeals.html)</span>
-                    </a>
+                  <!-- Hero Image -->
+                  <div class="lg:col-span-5">
+                    <div class="relative h-72 sm:h-88 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
+                      <img
+                        src="/spark-ev.jpg"
+                        onerror="this.src='/assets/spark-ev.jpg'"
+                        alt="Spark EV concept: electric mobility and charging station"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+                      <div class="absolute bottom-3 left-3 bg-slate-900/90 text-amber-300 font-bold text-xs px-3 py-1.5 rounded-xl border border-amber-500/30 backdrop-blur-sm shadow-lg">
+                        RDNT Sparkle Industries LLP · India
+                      </div>
+                    </div>
                   </div>
                 </div>
+              </div>
+            </section>
 
+            <!-- India Facts Band -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-amber-400 font-mono block">04</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">India Divisions</span>
+                  <p className="text-xs text-slate-400 mt-1">Four specialized commercial operating units under RDNT Sparkle Industries LLP.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-white font-mono block">AP</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">Andhra Pradesh</span>
+                  <p className="text-xs text-slate-400 mt-1">Guntur commercial hub and regional clean energy distribution corridor.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800/80">
+                  <span class="text-4xl font-black text-cyan-400 font-mono block">2026</span>
+                  <span class="text-sm font-bold text-slate-200 mt-1 block">LLP Established</span>
+                  <p className="text-xs text-slate-400 mt-1">Formed on July 7, 2026 under the Limited Liability Partnership Act of India.</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- ============================================================== -->
+            <!-- THE 4 FULL COMMERCIAL DIVISIONS OF RDNT SPARKLE INDUSTRIES LLP -->
+            <!-- ============================================================== -->
+            <section id="divisions" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 scroll-mt-20">
+              <div class="mb-8">
+                <span class="text-xs font-mono uppercase tracking-widest text-amber-400 font-bold block mb-1">
+                  Commercial Divisions
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                  Clean energy, products <br />
+                  <span class="text-slate-400 font-serif italic">&amp; distribution.</span>
+                </h2>
+                <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+                  Operating units under RDNT Sparkle Industries LLP serving domestic and regional requirements with high sustainability standards.
+                </p>
               </div>
 
-              <!-- ZIP Package Card -->
-              <div class="p-5 rounded-2xl bg-gradient-to-r from-emerald-950/60 via-slate-900 to-teal-950/40 border border-emerald-500/50 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div class="space-y-1">
-                  <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                    <span>📦</span>
-                    <span>Download All Code &amp; Apps in One Single ZIP</span>
-                    <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded font-mono border border-emerald-500/30">radiantspark-final.zip</span>
-                  </h4>
-                  <p class="text-xs text-slate-300">
-                    Includes index.html, app.html (1,221 lines), sparkdeals.html, CNAME (radiantsparkllc.com), .nojekyll, and assets.
-                  </p>
-                </div>
-                <button type="button" onclick="downloadZip('radiantspark-final.zip')" class="px-5 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs shrink-0 flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-transform active:scale-95">
-                  <span>⬇️ Download ZIP Now</span>
-                </button>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Division 1: Spark EV -->
+                <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                  <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
+                    <img
+                      src="/spark-ev.jpg"
+                      onerror="this.src='/assets/spark-ev.jpg'"
+                      alt="Spark EV"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 bg-slate-900/90 text-amber-300 font-semibold text-xs px-3 py-1 rounded-lg border border-amber-500/30 backdrop-blur-sm">
+                      Clean Energy
+                    </div>
+                  </div>
+
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <h3 class="text-2xl font-bold text-white mb-1">Spark EV</h3>
+                      <p class="text-xs text-amber-400 font-mono mb-3">Clean Energy &amp; Electric Mobility Infrastructure</p>
+                      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                        Solar power solutions, EV charging infrastructure planning, commercial installation coordination, and battery-ready microgrid concepts across Andhra Pradesh and South India.
+                      </p>
+
+                      <ul class="space-y-2 mb-6 text-xs text-slate-400">
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Commercial &amp; Residential Solar Rooftop Planning
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> EV Charging Station Site Deployment &amp; Grid Interconnect
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> LiFePO4 Storage Systems &amp; Backup Integration
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Regional Clean Energy Transition Roadmaps
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                      <span class="text-[11px] text-slate-500 font-mono">RDNT Sparkle Industries LLP</span>
+                      <a href="#india-contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
+                        <span>Inquire for Spark EV</span>
+                        <span>↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Division 2: Sparkle Drinks -->
+                <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                  <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
+                    <img
+                      src="/sparkle-drinks.jpg"
+                      onerror="this.src='/assets/sparkle-drinks.jpg'"
+                      alt="Sparkle Drinks"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 bg-slate-900/90 text-amber-300 font-semibold text-xs px-3 py-1 rounded-lg border border-amber-500/30 backdrop-blur-sm">
+                      Beverages
+                    </div>
+                  </div>
+
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <h3 class="text-2xl font-bold text-white mb-1">Sparkle Drinks</h3>
+                      <p class="text-xs text-amber-400 font-mono mb-3">Contemporary Refreshment &amp; Botanical Beverages</p>
+                      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                        Beverage product formulation, contract manufacturing partnerships, wholesale supply distribution, and market expansion adhering to FSSAI standards and sustainable packaging.
+                      </p>
+
+                      <ul class="space-y-2 mb-6 text-xs text-slate-400">
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Zero Refined Sugar Botanical Spritzes &amp; Hydration
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> FSSAI &amp; BIS Certified Manufacturing Standards
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> B2B Wholesale &amp; Modern Trade Distribution
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Eco-Friendly Recyclable Aluminum Can Packaging
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                      <span class="text-[11px] text-slate-500 font-mono">RDNT Sparkle Industries LLP</span>
+                      <a href="#india-contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
+                        <span>Inquire for Sparkle Drinks</span>
+                        <span>↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Division 3: Spicy Sparkle Naturals -->
+                <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                  <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
+                    <img
+                      src="/spicy-sparkle-naturals.jpg"
+                      onerror="this.src='/assets/spicy-sparkle-naturals.jpg'"
+                      alt="Spicy Sparkle Naturals"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 bg-slate-900/90 text-amber-300 font-semibold text-xs px-3 py-1 rounded-lg border border-amber-500/30 backdrop-blur-sm">
+                      Food &amp; Wellness
+                    </div>
+                  </div>
+
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <h3 class="text-2xl font-bold text-white mb-1">Spicy Sparkle Naturals</h3>
+                      <p class="text-xs text-amber-400 font-mono mb-3">Artisanal Natural Foods &amp; Dry Fruit Provisions</p>
+                      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                        Premium natural snacks, dry-fruit provisions, and ethically sourced spices celebrating Andhra Pradesh’s rich culinary agricultural heritage with uncompromised quality.
+                      </p>
+
+                      <ul class="space-y-2 mb-6 text-xs text-slate-400">
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> W240 Jumbo Cashews &amp; California Nonpareil Almonds
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Authentic Guntur Sun-Dried Chili &amp; Turmeric Extracts
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Zero Palm Oil, Cold-Pressed Roasting Technique
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Multi-Tier Vacuum Sealed Freshness Packaging
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                      <span class="text-[11px] text-slate-500 font-mono">RDNT Sparkle Industries LLP</span>
+                      <a href="#india-contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
+                        <span>Inquire for Naturals</span>
+                        <span>↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Division 4: Sparkle Distribution Network -->
+                <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
+                  <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
+                    <img
+                      src="/sparkle-distribution.jpg"
+                      onerror="this.src='/assets/sparkle-distribution.jpg'"
+                      alt="Sparkle Distribution Network"
+                      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute top-3 left-3 bg-slate-900/90 text-amber-300 font-semibold text-xs px-3 py-1 rounded-lg border border-amber-500/30 backdrop-blur-sm">
+                      Distribution &amp; Fleet
+                    </div>
+                  </div>
+
+                  <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <h3 class="text-2xl font-bold text-white mb-1">Sparkle Distribution Network</h3>
+                      <p class="text-xs text-amber-400 font-mono mb-3">Regional Supply Chain &amp; Sustainable Last-Mile Logistics</p>
+                      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                        In-house regional supply-chain operations supporting Sparkle Drinks, local FMCG cargo, regional merchant logistics, and pilot solar-assisted shared delivery fleets in Andhra Pradesh.
+                      </p>
+
+                      <ul class="space-y-2 mb-6 text-xs text-slate-400">
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Intra-City Delivery Corridors (Guntur, Vijayawada, Vizag)
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Temperature-Controlled Transit for Beverage &amp; Food Lines
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Smart Route Optimization &amp; GPS Fleet Telematics
+                        </li>
+                        <li class="flex items-center gap-2">
+                          <span class="text-amber-400 font-bold">✓</span> Pilot Solar Charging Depot Integration
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+                      <span class="text-[11px] text-slate-500 font-mono">RDNT Sparkle Industries LLP</span>
+                      <a href="#india-contact" class="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
+                        <span>Inquire for Logistics</span>
+                        <span>↗</span>
+                      </a>
+                    </div>
+                  </div>
+                </article>
+
               </div>
+            </section>
 
-            </div>
-          </section>
-
-          <!-- Company Operations & Governance Center -->
-          <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" id="corporate-center">
-            <div id="about" class="scroll-mt-24"></div>
-            <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
-              <div class="border-b border-slate-800 pb-4">
-                <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider">Company Operations &amp; Governance Center</span>
-                <h3 class="text-2xl font-black text-white mt-1">Unified Enterprise Hub</h3>
-              </div>
-              
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- About -->
-                <div class="space-y-2">
-                  <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                    <span>🏢</span>
-                    <span>Dual Entity Structure</span>
-                  </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    U.S. technology services provided by Radiant Spark LLC (Atlanta, Georgia). Clean energy, beverages, and regional distribution operated by RDNT Sparkle Industries LLP (Andhra Pradesh, India).
-                  </p>
-                </div>
-
-                <!-- Careers -->
-                <div class="space-y-2" id="careers">
-                  <h4 class="text-sm font-bold text-white flex items-center gap-2">
-                    <span>💼</span>
-                    <span>Careers &amp; Talent (4 Roles)</span>
-                  </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    Currently hiring Senior Cloud Consultants (US), Full-Stack React Leads, EV Infrastructure Engineers (India), and Supply Chain Managers. Email: <a href="mailto:info@radiantsparkllc.com" class="text-blue-400 underline">info@radiantsparkllc.com</a>.
-                  </p>
-                </div>
-
-                <!-- Legal Shield -->
-                <div class="space-y-2" id="legal-shield">
-                  <h4 class="text-sm font-bold text-white flex items-center gap-2">
+            <!-- ============================================================== -->
+            <!-- COMPREHENSIVE STATUTORY INDIA LEGAL & PRIVACY SHIELD          -->
+            <!-- ============================================================== -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 scroll-mt-20" id="india-legal-shield">
+              <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-slate-950 via-[#0e1828] to-slate-950 border border-amber-500/40 shadow-2xl space-y-6">
+                <div>
+                  <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono font-bold uppercase tracking-wider mb-3">
                     <span>🛡️</span>
-                    <span>Statutory Legal Shield</span>
-                  </h4>
-                  <p class="text-xs text-slate-300 leading-relaxed">
-                    SparkDeals operates with 100% Intermediary Immunity under Section 79 IT Act 2000 and Rule 3 Intermediary Guidelines. Direct merchant deep-links only.
+                    <span>Statutory Legal Fortress · Republic of India</span>
+                  </div>
+                  <h2 class="text-2xl sm:text-3xl font-black text-amber-300 tracking-tight">
+                    India Privacy, Consumer Protection &amp; Intermediary Legal Shield
+                  </h2>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed max-w-4xl">
+                    RDNT Sparkle Industries LLP (LLP Identification registered in Andhra Pradesh) operates in strict compliance with the <strong>Information Technology Act, 2000</strong>, the <strong>Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</strong>, and the <strong>Consumer Protection Act, 2019</strong> read with the <strong>Consumer Protection (E-Commerce) Rules, 2020</strong>.
                   </p>
                 </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-4 text-xs text-slate-300">
+                  
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-blue-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-blue-400 block">🛡️ 01. Section 79 Intermediary Safe Harbor</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      RDNT Sparkle Industries LLP acts purely as an intermediary technological conduit under Section 79 of the Information Technology Act, 2000 for SparkDeal Hub. We do not initiate data transmission, select receivers, or tamper with third-party merchant transmissions. All product warranties and deliveries remain the exclusive legal responsibility of the selling merchants.
+                    </p>
+                  </div>
+
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-amber-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-amber-400 block">⚖️ 02. Consumer Protection &amp; E-Commerce Rules</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      Under the Consumer Protection (E-Commerce) Rules, 2020, SparkDeal Hub operates as an inventory-free aggregator and price comparison directory. We do not handle consumer payments, collect card credentials, issue invoices, or arbitrate merchant return disputes. Consumers contract directly with the destination merchant.
+                    </p>
+                  </div>
+
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-emerald-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-emerald-400 block">🤝 03. Trademark Protection &amp; Fair Use</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      Amazon, Flipkart, and other trademark assets referenced are recognized under Section 30 of the Trade Marks Act, 1999 (nominative fair use). Commercial entities agree that RDNT Sparkle Industries LLP is immune from claims relating to price adjustments, coupon expirations, or merchant conduct.
+                    </p>
+                  </div>
+
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-purple-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-purple-400 block">🔒 04. Data Privacy, Encryption &amp; DPDP Act</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      This website does not store credit card numbers, CVVs, UPI PINs, or banking credentials. When a user clicks "Get Deal", they are redirected to the merchant's secure, 256-bit TLS encrypted checkout portal. Standard server logging complies with Indian Digital Personal Data Protection (DPDP) Act benchmarks.
+                    </p>
+                  </div>
+
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-rose-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-rose-400 block">⚖️ 05. Absolute Limitation of Liability</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      To the maximum extent permitted under applicable law, RDNT Sparkle Industries LLP, Radiant Spark LLC, and their partners disclaim all implied warranties or fitness for a particular purpose. In no event shall aggregate liability for any claim exceed ₹1,000 INR.
+                    </p>
+                  </div>
+
+                  <div class="p-5 rounded-2xl bg-slate-900/90 border border-cyan-500/30 space-y-2">
+                    <strong class="text-sm font-bold text-cyan-400 block">📜 06. Grievance Officer &amp; Statutory Takedown</strong>
+                    <p class="text-slate-400 leading-relaxed">
+                      In compliance with Rule 3(2) of the Information Technology (Intermediary Guidelines) Rules, 2021, any intellectual property or consumer grievance may be submitted to: <strong>Grievance Officer, Legal Compliance, RDNT Sparkle Industries LLP, Andhra Pradesh, India</strong>. Email: <a href="mailto:legal@radiantsparkllc.com" class="text-amber-300 underline font-semibold">legal@radiantsparkllc.com</a>. Notices acknowledged within 24 hours.
+                    </p>
+                  </div>
+
+                </div>
+
+                <div class="pt-6 border-t border-slate-800 text-center">
+                  <a
+                    href="/app.html"
+                    class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-lg shadow-blue-600/30"
+                  >
+                    <span>⚡ Launch SparkSync App (app.html)</span>
+                  </a>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+
+            <!-- India Direct Contact Section -->
+            <section id="india-contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 scroll-mt-20">
+              <div class="p-8 rounded-3xl bg-slate-900/80 border border-amber-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                <div>
+                  <span class="text-xs font-mono text-amber-400 uppercase tracking-widest font-bold block mb-1">
+                    Direct Contact Desk · Andhra Pradesh
+                  </span>
+                  <h3 class="text-2xl font-bold text-white">RDNT Sparkle Industries LLP</h3>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-xl">
+                    For Spark EV clean energy, Sparkle Drinks distribution, Spicy Sparkle Naturals bulk procurement, or vendor onboarding for the SparkDeal Hub.
+                  </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+                  <a
+                    href="mailto:info@radiantsparkllc.com?subject=RDNT%20Sparkle%20Industries%20LLP%20Inquiry"
+                    class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs sm:text-sm transition-colors shadow"
+                  >
+                    Email info@radiantsparkllc.com ↗
+                  </a>
+                  <a
+                    href="mailto:legal@radiantsparkllc.com?subject=Legal%20Grievance%20Notice"
+                    class="px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold"
+                  >
+                    Legal &amp; Grievance Desk
+                  </a>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+
+          <!-- ============================================================== -->
+          <!-- VIEW 3: TECHNOLOGY USA (Radiant Spark LLC & 6 Practices)       -->
+          <!-- ============================================================== -->
+          <div id="view-usa" class="view-panel hidden">
+            
+            <!-- USA Hero -->
+            <section class="relative overflow-hidden pt-6 pb-12">
+              <div class="absolute top-1/3 left-10 w-[500px] h-[300px] bg-blue-600/10 rounded-full blur-[110px] pointer-events-none"></div>
+
+              <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                  <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- Jurisdiction Pill -->
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-950/40 border border-blue-500/30 text-xs text-blue-300 font-medium">
+                      <span>🇺🇸</span>
+                      <span>United States · Atlanta, GA · Technology Entity</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+                      Architecting <br />
+                      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-200 font-serif italic">
+                        digital velocity.
+                      </span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
+                      <strong class="text-white">Radiant Spark LLC</strong> provides enterprise cloud engineering, Oracle Fusion HCM transformations, custom AI automation, and resilient software architecture under State of Georgia statutory laws.
+                    </p>
+
+                    <!-- Hero Actions -->
+                    <div class="flex flex-wrap items-center gap-3 pt-2">
+                      <a
+                        href="#usa-practices"
+                        class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm transition-all shadow-md flex items-center gap-2"
+                      >
+                        <span>Explore 6 Practices</span>
+                        <span>↘</span>
+                      </a>
+
+                      <a
+                        href="/app.html"
+                        class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 font-bold text-xs sm:text-sm border border-cyan-500/40 flex items-center gap-2"
+                      >
+                        <span class="text-amber-300">⚡</span>
+                        <span>Launch SparkSync OS</span>
+                      </a>
+
+                      <button
+                        onclick="switchTab('india')"
+                        class="px-4 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 font-semibold text-xs sm:text-sm border border-slate-800 flex items-center gap-2"
+                      >
+                        <span>View India Company (RDNT Sparkle)</span>
+                        <span class="text-amber-400">↗</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- Hero Image -->
+                  <div class="lg:col-span-5">
+                    <div class="relative h-72 sm:h-88 rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl bg-slate-950 group">
+                      <img
+                        src="/spark-it.jpg"
+                        onerror="this.src='/assets/spark-it.jpg'"
+                        alt="Spark IT Consulting"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+                      <div class="absolute bottom-3 left-3 bg-slate-900/90 text-blue-300 font-bold text-xs px-3 py-1.5 rounded-xl border border-blue-500/30 backdrop-blur-sm shadow-lg">
+                        Radiant Spark LLC · Technology
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- USA 6 Practices Section -->
+            <section id="usa-practices" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 scroll-mt-20">
+              <div class="mb-8">
+                <span class="text-xs font-mono uppercase tracking-widest text-blue-400 font-bold block mb-1">
+                  Enterprise Capabilities
+                </span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                  Six Core Consulting Practices
+                </h2>
+                <p class="text-sm text-slate-400 mt-2 max-w-2xl">
+                  Delivered by Radiant Spark LLC for enterprise modernization, Oracle cloud migration, and AI implementations.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                  <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950/80 border border-blue-500/30 px-2 py-0.5 rounded">01 · TRANSFORMATION</span>
+                  <h3 class="text-lg font-bold text-white">Business Transformation</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Enterprise process re-engineering, workflow modernization, and governance redesign to accelerate cross-functional operational velocity.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">BPMN 2.0</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Process Mining</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Change Mgmt</span>
+                  </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                  <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950/80 border border-blue-500/30 px-2 py-0.5 rounded">02 · MODERNIZATION</span>
+                  <h3 class="text-lg font-bold text-white">Digital &amp; Cloud Modernization</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Cloud-first re-architecting, multi-cloud strategy, infrastructure as code, and containerized microservices replacing legacy bottlenecks.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">AWS</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Google Cloud</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Kubernetes</span>
+                  </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                  <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950/80 border border-blue-500/30 px-2 py-0.5 rounded">03 · INTELLIGENCE</span>
+                  <h3 class="text-lg font-bold text-white">Artificial Intelligence &amp; ML</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Enterprise AI strategy, custom LLM fine-tuning, retrieval-augmented generation (RAG), automated document intelligence, and AI governance.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Gemini API</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Vector DBs</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Enterprise RAG</span>
+                  </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                  <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950/80 border border-blue-500/30 px-2 py-0.5 rounded">04 · PLATFORMS</span>
+                  <h3 class="text-lg font-bold text-white">Technology &amp; Systems Integration</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Robust API middleware architecture, enterprise service bus (ESB) retirement, secure webhook pipelines, and real-time event brokers.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">REST / GraphQL</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Apache Kafka</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">MuleSoft</span>
+                  </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-blue-400/50 space-y-3 shadow-lg shadow-blue-500/10">
+                  <span class="text-xs font-mono font-bold text-amber-300 bg-amber-950/80 border border-amber-500/40 px-2 py-0.5 rounded">05 · CORE PRACTICE</span>
+                  <h3 class="text-lg font-bold text-white">Oracle Fusion HCM &amp; ERP</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Architecture, data migration, automated fast formulas, integration pipelines, and release management for Global Oracle Cloud transformations.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Oracle Cloud</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">HCM / ERP</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">Fast Formulas</span>
+                  </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-3">
+                  <span class="text-xs font-mono font-bold text-blue-400 bg-blue-950/80 border border-blue-500/30 px-2 py-0.5 rounded">06 · ENGINEERING</span>
+                  <h3 class="text-lg font-bold text-white">Custom Software Engineering</h3>
+                  <p class="text-xs text-slate-300 leading-relaxed">Full-stack React, TypeScript, serverless microservices, and mobile PWA application development for enterprise client portals.</p>
+                  <div class="pt-2 flex flex-wrap gap-1.5 text-[10px] font-mono text-slate-400">
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">React</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">TypeScript</span>
+                    <span class="px-2 py-0.5 rounded bg-slate-950 border border-slate-800">PWA</span>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- USA Contact -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div class="p-8 rounded-3xl bg-slate-900/80 border border-blue-500/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+                <div>
+                  <span class="text-xs font-mono text-blue-400 uppercase tracking-widest font-bold block mb-1">
+                    Corporate Headquarters · Atlanta, Georgia
+                  </span>
+                  <h3 class="text-2xl font-bold text-white">Radiant Spark LLC</h3>
+                  <p class="text-xs sm:text-sm text-slate-300 mt-2 max-w-xl">
+                    For enterprise technology consulting, Oracle Fusion transformations, or AI software delivery inquiries.
+                  </p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row items-center gap-3 shrink-0">
+                  <a
+                    href="mailto:info@radiantsparkllc.com?subject=Radiant%20Spark%20LLC%20Inquiry"
+                    class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm transition-colors shadow"
+                  >
+                    Email info@radiantsparkllc.com ↗
+                  </a>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+
+          <!-- ============================================================== -->
+          <!-- VIEW 4: SPARKDEALS LIVE HUB                                    -->
+          <!-- ============================================================== -->
+          <div id="view-sparkdeals" class="view-panel hidden">
+            
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+              <div class="p-8 rounded-3xl bg-gradient-to-r from-amber-950/60 via-slate-900 to-amber-950/40 border border-amber-500/50 shadow-2xl space-y-6">
+                
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                  <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-mono font-bold mb-2">
+                      <span>🔥</span>
+                      <span>LIVE PRICE DROP AGGREGATOR</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">SparkDeals Live Hub</h2>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1">Verified deals across Amazon US, Amazon India, Walmart, and authorized merchant stores.</p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <a href="/sparkdeals.html" class="px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 shadow-md">
+                      <span>🔥 Open Dedicated SparkDeals Page</span>
+                      <span>↗</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 text-xs text-slate-300">
+                  <strong class="text-amber-400 block mb-1">🛡️ Section 79 IT Act Legal Disclaimer:</strong>
+                  <span>SparkDeals acts as an intermediary directory. Products are purchased directly on destination merchant portals with zero checkout markup.</span>
+                </div>
+
+                <div class="text-center py-6">
+                  <a
+                    href="/sparkdeals.html"
+                    class="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/25 transition-transform hover:scale-105 active:scale-95"
+                  >
+                    <span>🔥 Access Full SparkDeals Hub (10+ Stores)</span>
+                  </a>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
 
         </main>
 
@@ -499,11 +1182,17 @@
         <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-xs text-slate-500 space-y-2">
           <p>© 2026 Radiant Spark Global. Operating as Radiant Spark LLC (USA) and RDNT Sparkle Industries LLP (India).</p>
           <div class="flex items-center justify-center gap-4 text-[11px]">
+            <button onclick="switchTab('global')" class="text-slate-400 hover:underline">Global</button>
+            <span>•</span>
+            <button onclick="switchTab('usa')" class="text-blue-400 hover:underline">Technology USA</button>
+            <span>•</span>
+            <button onclick="switchTab('india')" class="text-amber-400 hover:underline">Industries India (4 Divisions)</button>
+            <span>•</span>
             <a href="/app.html" class="text-blue-400 hover:underline">SparkSync App</a>
             <span>•</span>
             <a href="/sparkdeals.html" class="text-amber-400 hover:underline">SparkDeals</a>
             <span>•</span>
-            <a href="mailto:info@radiantsparkllc.com" class="text-slate-400 hover:underline">Contact: info@radiantsparkllc.com</a>
+            <a href="mailto:info@radiantsparkllc.com" class="text-slate-400 hover:underline">info@radiantsparkllc.com</a>
           </div>
         </footer>
 
@@ -548,7 +1237,7 @@
       </div>
     </div>
 
-    <!-- Interactive Download Modal for Standalone Use -->
+    <!-- Interactive Download Modal -->
     <div id="downloadModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
       <div class="w-full max-w-2xl bg-slate-950 border border-blue-500/40 rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[92vh]">
         <div class="p-5 bg-gradient-to-r from-blue-950/70 via-slate-900 to-amber-950/40 border-b border-slate-800 flex items-center justify-between">
@@ -591,14 +1280,95 @@
       </div>
     </div>
 
-    <!-- Modal helper scripts -->
+    <!-- Assistant Modal -->
+    <div id="assistantModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+      <div class="w-full max-w-lg bg-slate-950 border border-blue-500/40 rounded-3xl shadow-2xl overflow-hidden flex flex-col p-6 space-y-4">
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span>❔</span>
+            <span>Radiant Intelligence Guide</span>
+          </h3>
+          <button onclick="closeModal('assistantModal')" class="w-8 h-8 rounded-xl bg-slate-900 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">
+          Radiant Spark Global bridges U.S. enterprise technology services with India clean energy, beverages, and regional distribution.
+        </p>
+        <div class="space-y-2 text-xs">
+          <button onclick="closeModal('assistantModal'); switchTab('india');" class="w-full p-3 rounded-xl bg-slate-900 border border-amber-500/30 text-left text-amber-300 font-bold hover:bg-slate-800 flex justify-between">
+            <span>🇮🇳 Explore RDNT Sparkle Industries LLP (4 Divisions)</span>
+            <span>↗</span>
+          </button>
+          <button onclick="closeModal('assistantModal'); switchTab('usa');" class="w-full p-3 rounded-xl bg-slate-900 border border-blue-500/30 text-left text-blue-300 font-bold hover:bg-slate-800 flex justify-between">
+            <span>🇺🇸 Explore Radiant Spark LLC (6 Practices)</span>
+            <span>↗</span>
+          </button>
+          <a href="/app.html" class="block w-full p-3 rounded-xl bg-blue-600 text-white font-bold text-center hover:bg-blue-500">
+            ⚡ Launch SparkSync Mobile OS
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Tab Switching, Modal, and Download Controller -->
     <script>
+      function switchTab(tab) {
+        // Update URL hash
+        if (tab === 'global') {
+          history.pushState(null, '', window.location.pathname);
+        } else {
+          window.location.hash = tab;
+        }
+
+        // Hide all view panels
+        document.querySelectorAll('.view-panel').forEach(el => el.classList.add('hidden'));
+
+        // Show selected panel
+        const target = document.getElementById('view-' + tab);
+        if (target) {
+          target.classList.remove('hidden');
+        }
+
+        // Reset all tab button styles
+        const tabs = ['global', 'usa', 'india', 'sparkdeals'];
+        tabs.forEach(t => {
+          const btn = document.getElementById('tabBtn-' + t);
+          if (!btn) return;
+          if (t === tab) {
+            if (t === 'global') {
+              btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider text-amber-300 bg-amber-500/15 border-2 border-amber-500/80 shadow-md shadow-amber-500/20 transition-all';
+            } else if (t === 'usa') {
+              btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-blue-600/20 text-blue-300 border border-blue-500/50 shadow-sm transition-all';
+            } else if (t === 'india') {
+              btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow-sm transition-all';
+            } else if (t === 'sparkdeals') {
+              btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-sm transition-all flex items-center gap-1';
+            }
+          } else {
+            if (t === 'sparkdeals') {
+              btn.className = 'px-3 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1';
+            } else {
+              btn.className = 'px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white hover:bg-slate-900/60 transition-all';
+            }
+          }
+        });
+
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+
+      function scrollToSection(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
       function openModal(id) {
         document.getElementById(id)?.classList.remove('hidden');
       }
       function closeModal(id) {
         document.getElementById(id)?.classList.add('hidden');
       }
+
       async function downloadZip(filename = 'radiantspark-final.zip') {
         try {
           const res = await fetch('/' + filename);
@@ -624,6 +1394,20 @@
           setTimeout(() => document.body.removeChild(a), 300);
         }
       }
+
+      // Read initial URL hash on load
+      window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.replace('#', '');
+        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals') {
+          switchTab(hash);
+        }
+      });
+      window.addEventListener('hashchange', () => {
+        const hash = window.location.hash.replace('#', '');
+        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals' || hash === 'global') {
+          switchTab(hash);
+        }
+      });
     </script>
 
     <!-- Standalone Three.js 3D Celestial Wireframe Globe and Silicon Microchip Emitter -->
