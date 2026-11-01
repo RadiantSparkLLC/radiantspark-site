@@ -29,9 +29,22 @@
     <!-- Three.js CDN for standalone 3D Celestial Globe and Silicon Microchip Emitter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <style>body{color:#f8fafc;background-color:#030712;font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden}.font-mono{font-family:JetBrains Mono,monospace}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#030712}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:4px}</style>
-    <script type="module" crossorigin src="/assets/index-CbU-mKIS.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CA419A2c.css">
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #030712;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #030712; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Dz6n6Whr.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DFwPHuUK.css">
   </head>
   <body class="bg-[#030712] text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white font-sans antialiased overflow-x-hidden">
     
@@ -86,6 +99,19 @@
                   class="px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white hover:bg-slate-900/60 transition-all"
                 >
                   INDUSTRIES INDIA
+                </button>
+
+                <button
+                  id="tabBtn-brain"
+                  type="button"
+                  onclick="switchTab('brain')"
+                  class="px-3 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-purple-300 hover:text-white hover:bg-purple-600/20 border border-purple-500/40 transition-all flex items-center gap-1.5"
+                >
+                  <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                  </span>
+                  <span>🧠 AI BRAIN (10 AGENTS)</span>
                 </button>
 
                 <button
@@ -260,6 +286,15 @@
                   >
                     <span>🔥</span>
                     <span>SparkDeals Hub</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onclick="switchTab('brain')"
+                    class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-900/50 to-indigo-900/50 hover:from-purple-800/60 hover:to-indigo-800/60 border border-purple-500/50 text-purple-200 font-bold text-xs sm:text-sm backdrop-blur-md shadow-lg shadow-purple-500/20 flex items-center gap-2 transition-all hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    <span>🧠</span>
+                    <span>AI Brain (10 Agents)</span>
                   </button>
                 </div>
 
@@ -1176,17 +1211,1226 @@
 
           </div>
 
-        </main>
+          <!-- ============================================================== -->
+          <!-- VIEW 5: AUTONOMOUS ENTERPRISE AI BRAIN (10 AI EMPLOYEES)        -->
+          <!-- ============================================================== -->
+          <div id="view-brain" class="view-panel hidden">
+            
+            <!-- Executive Hero & Live Operations Status -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-4">
+              <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-purple-950/70 via-slate-900 to-indigo-950/70 border-2 border-purple-500/50 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-20 -bottom-20 w-80 h-80 bg-blue-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6 pb-6 border-b border-purple-500/30">
+                  <div class="space-y-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/40 text-xs font-mono font-bold">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>AUTONOMOUS ENTERPRISE AI BRAIN · 10 AI EMPLOYEES ONLINE</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+                      Intelligence Engine &amp; Global Operations
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-300 max-w-3xl leading-relaxed">
+                      Orchestrating worldwide business across <strong class="text-white">Radiant Spark LLC</strong> (USA Enterprise IT) and <strong class="text-white">RDNT Sparkle Industries LLP</strong> (India Clean Energy &amp; Sparkle Drinks). 100% automated customer/dealer intake, raw material factory requisitions, statutory 28% GST tax invoices, and refrigerated EV logistics.
+                    </p>
+                  </div>
+
+                  <!-- Quick Stats Bar -->
+                  <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 shrink-0">
+                    <div class="p-3 rounded-2xl bg-slate-950/80 border border-purple-500/30 text-center">
+                      <span class="block text-2xl font-black text-purple-300 font-mono">10 / 10</span>
+                      <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Agents Active</span>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-950/80 border border-purple-500/30 text-center">
+                      <span class="block text-2xl font-black text-emerald-400 font-mono">99.98%</span>
+                      <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Auto Accuracy</span>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-950/80 border border-purple-500/30 text-center">
+                      <span class="block text-2xl font-black text-blue-400 font-mono">&lt; 1.2s</span>
+                      <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Intake ➔ Dispatch</span>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-slate-950/80 border border-purple-500/30 text-center">
+                      <span class="block text-2xl font-black text-amber-400 font-mono">0</span>
+                      <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Human Bottlenecks</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Jump Links inside Brain -->
+                <div class="relative z-10 pt-4 flex flex-wrap gap-2 text-xs">
+                  <a href="#brain-pipeline" class="px-4 py-2 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold transition-colors flex items-center gap-1.5">
+                    <span>⚡ Order-to-Shipment Automated Pipeline</span>
+                  </a>
+                  <a href="#brain-employees" class="px-4 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-purple-200 border border-purple-500/30 font-bold transition-colors flex items-center gap-1.5">
+                    <span>👥 Meet the 10 AI Employees</span>
+                  </a>
+                  <a href="#brain-chat" class="px-4 py-2 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-blue-200 border border-blue-500/30 font-bold transition-colors flex items-center gap-1.5">
+                    <span>💬 Direct AI Agent Terminal</span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- INTERACTIVE ORDER-TO-SHIPMENT AUTOMATED PIPELINE -->
+            <section id="brain-pipeline" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+              <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-purple-500/40 shadow-2xl space-y-6">
+                
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                  <div>
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-mono font-bold mb-1">
+                      <span>🥤</span>
+                      <span>INDIA SPARKLE DRINKS DIVISION · AUTOMATED WORKFLOW</span>
+                    </span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+                      End-to-End Autonomous Order-to-Shipment Engine
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1">
+                      Select or configure a dealer/customer order. The 10 AI Employees autonomously generate the factory requisition, compute 28% GST, create the statutory E-Invoice, and dispatch refrigerated EV transport.
+                    </p>
+                  </div>
+
+                  <!-- Preset Dealer Selector Buttons -->
+                  <div class="flex flex-wrap gap-2 items-center">
+                    <span class="text-xs font-mono text-slate-400">Presets:</span>
+                    <button onclick="loadOrderPreset('andhra')" class="px-2.5 py-1.5 rounded-lg bg-purple-900/40 border border-purple-500/40 text-purple-200 text-xs font-bold hover:bg-purple-900/70">
+                      🏢 Andhra Mega (200 cs)
+                    </button>
+                    <button onclick="loadOrderPreset('telangana')" class="px-2.5 py-1.5 rounded-lg bg-blue-900/40 border border-blue-500/40 text-blue-200 text-xs font-bold hover:bg-blue-900/70">
+                      🏪 Telangana Hub (500 cs)
+                    </button>
+                    <button onclick="loadOrderPreset('bangalore')" class="px-2.5 py-1.5 rounded-lg bg-emerald-900/40 border border-emerald-500/40 text-emerald-200 text-xs font-bold hover:bg-emerald-900/70">
+                      🌿 Bangalore Marts (80 cs)
+                    </button>
+                    <button onclick="loadOrderPreset('d2c')" class="px-2.5 py-1.5 rounded-lg bg-amber-900/40 border border-amber-500/40 text-amber-200 text-xs font-bold hover:bg-amber-900/70">
+                      🛒 Online D2C (15 cs)
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Config Form and Live Summary -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                  
+                  <!-- Left Form: Order Configuration -->
+                  <div class="lg:col-span-7 space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Dealer / Customer Name
+                        </label>
+                        <input
+                          id="ord-client-name"
+                          type="text"
+                          value="Andhra Mega Distributors Ltd"
+                          oninput="recalcOrderPipeline()"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Customer Type &amp; Tier
+                        </label>
+                        <select
+                          id="ord-client-type"
+                          onchange="handleClientTypeChange()"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                        >
+                          <option value="wholesale_a">Wholesale Dealer - Tier A (12% Discount)</option>
+                          <option value="super_stockist">Super-Stockist - Tier B (18% Discount)</option>
+                          <option value="dealer_c">Regional Dealer - Tier C (5% Discount)</option>
+                          <option value="d2c">Direct-to-Consumer (D2C Standard)</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Buyer GSTIN / ID
+                        </label>
+                        <input
+                          id="ord-gstin"
+                          type="text"
+                          value="37AABCR9912C1Z4"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-mono font-semibold focus:border-purple-500 focus:outline-none"
+                        />
+                      </div>
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Delivery City / State
+                        </label>
+                        <input
+                          id="ord-destination"
+                          type="text"
+                          value="Vijayawada Central Depot, Andhra Pradesh"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- SKU and Quantity Selection -->
+                    <div class="p-4 rounded-2xl bg-slate-950/60 border border-purple-500/30 space-y-3">
+                      <div class="text-xs font-bold text-purple-300 uppercase tracking-wider flex items-center justify-between">
+                        <span>Sparkle Drinks SKU Selection (HSN 2202 · 28% GST)</span>
+                        <span class="text-slate-400 font-mono text-[11px]">24 Cans / Case</span>
+                      </div>
+                      
+                      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Select Beverage</label>
+                          <select
+                            id="ord-sku"
+                            onchange="recalcOrderPipeline()"
+                            class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                          >
+                            <option value="drk-1" data-price="1560" data-fssai="10126999000142" data-hsn="2202">Botanical Berry Spritz (₹1,560 / cs)</option>
+                            <option value="drk-2" data-price="1440" data-fssai="10126999000142" data-hsn="2202">Citrus Herbal Tonic (₹1,440 / cs)</option>
+                            <option value="drk-3" data-price="1320" data-fssai="10126999000142" data-hsn="2202">Ginger Mint Sparkler (₹1,320 / cs)</option>
+                            <option value="drk-4" data-price="1680" data-fssai="10126999000142" data-hsn="2202">Active Electrolyte Fusion (₹1,680 / cs)</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label class="block text-[11px] font-semibold text-slate-400 mb-1">Quantity (Cases)</label>
+                          <div class="flex items-center gap-2">
+                            <input
+                              id="ord-cases"
+                              type="number"
+                              min="1"
+                              max="5000"
+                              value="200"
+                              oninput="recalcOrderPipeline()"
+                              class="w-full px-3.5 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs font-mono font-bold focus:border-purple-500 focus:outline-none"
+                            />
+                            <div class="flex gap-1">
+                              <button type="button" onclick="adjustCases(50)" class="px-2 py-2 rounded-lg bg-slate-800 text-slate-200 text-xs font-bold hover:bg-slate-700">+50</button>
+                              <button type="button" onclick="adjustCases(100)" class="px-2 py-2 rounded-lg bg-slate-800 text-slate-200 text-xs font-bold hover:bg-slate-700">+100</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Real-Time On-Hand Quantity Check & Stock Matrix -->
+                    <div class="p-4 rounded-2xl bg-cyan-950/30 border border-cyan-500/40 space-y-3">
+                      <div class="flex items-center justify-between">
+                        <span class="text-[11px] font-mono font-bold text-cyan-300 uppercase tracking-wider flex items-center gap-1.5">
+                          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                          Live On-Hand Inventory Check (Priya Sharma &amp; Rajesh Varma)
+                        </span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-bold">
+                          Available: 29,450 Cases
+                        </span>
+                      </div>
+
+                      <div class="grid grid-cols-3 gap-2 text-[10px] font-mono text-center">
+                        <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+                          <span class="text-slate-400 block text-[9px]">🏭 Vizag Plant</span>
+                          <strong class="text-white text-xs block">18,450 cs</strong>
+                          <span class="text-emerald-400 text-[9px]">Active Line #3</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+                          <span class="text-slate-400 block text-[9px]">🏬 Vijayawada Depot</span>
+                          <strong class="text-cyan-300 text-xs block">6,200 cs</strong>
+                          <span class="text-cyan-400 text-[9px]">Cross-Dock Hub</span>
+                        </div>
+                        <div class="p-2 rounded-xl bg-slate-900/90 border border-slate-800">
+                          <span class="text-slate-400 block text-[9px]">📦 Amazon FBA (HYD1)</span>
+                          <strong class="text-amber-300 text-xs block">4,800 cs</strong>
+                          <span class="text-amber-400 text-[9px]">Prime 1-Day Stock</span>
+                        </div>
+                      </div>
+
+                      <div class="p-2.5 rounded-xl bg-slate-900/80 border border-cyan-500/30 flex items-center justify-between text-xs font-mono">
+                        <span class="text-slate-300">
+                          Stock Check for <strong class="text-white" id="stock-check-cases">200 Cases</strong>:
+                        </span>
+                        <span class="text-emerald-400 font-bold flex items-center gap-1">
+                          <span>✓ In Stock &amp; Ready to Ship</span>
+                          <span class="text-[10px] text-slate-400" id="stock-check-buffer">(29,250 cs buffer)</span>
+                        </span>
+                      </div>
+                    </div>
+
+                    <!-- Factory & Cold Chain Options -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Manufacturing Plant
+                        </label>
+                        <select
+                          id="ord-plant"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                        >
+                          <option value="vizag">Visakhapatnam Bottling Line #3 (Active)</option>
+                          <option value="chittoor">Chittoor Herbal Extraction Facility #1</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                          Refrigerated Cold-Chain Fleet
+                        </label>
+                        <select
+                          id="ord-reefer"
+                          class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-purple-500 focus:outline-none"
+                        >
+                          <option value="AP-31-EV-8840">Tata Ace EV Reefer (AP-31-EV-8840 · 3.2°C)</option>
+                          <option value="AP-03-EV-7120">Ashok Leyland Bada Dost EV (AP-03-EV-7120 · 2.8°C)</option>
+                          <option value="AP-39-CC-4411">Mahindra Furio Reefer Heavy (AP-39-CC-4411 · 3.5°C)</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Trigger Button -->
+                    <button
+                      id="btn-run-pipeline"
+                      type="button"
+                      onclick="runAutonomousPipeline()"
+                      class="w-full py-4 rounded-2xl bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white font-black text-sm uppercase tracking-wider shadow-xl shadow-purple-600/30 flex items-center justify-center gap-2 transition-all hover:scale-[1.01] active:scale-[0.99]"
+                    >
+                      <span>⚡</span>
+                      <span>Run Autonomous AI Pipeline (10 AI Employees)</span>
+                    </button>
+                  </div>
+
+                  <!-- Right Panel: Live Financial Breakdown & Pipeline Status -->
+                  <div class="lg:col-span-5 space-y-4">
+                    <div class="p-5 rounded-2xl bg-slate-950 border border-purple-500/40 space-y-4">
+                      <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                        <span class="text-xs font-bold text-purple-300 uppercase tracking-wider">
+                          GST Calculation &amp; Financials
+                        </span>
+                        <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">
+                          HSN 2202 · 28% GST
+                        </span>
+                      </div>
+
+                      <div class="space-y-2 text-xs font-mono">
+                        <div class="flex justify-between text-slate-400">
+                          <span>Gross Value (<span id="calc-cases">200</span> cases @ ₹<span id="calc-unit">1,560</span>):</span>
+                          <span class="text-white font-bold" id="calc-gross">₹3,12,000</span>
+                        </div>
+                        <div class="flex justify-between text-emerald-400">
+                          <span>Volume Dealer Discount (<span id="calc-disc-pct">12%</span>):</span>
+                          <span class="font-bold" id="calc-disc-amt">- ₹37,440</span>
+                        </div>
+                        <div class="flex justify-between text-slate-300 border-t border-slate-800/80 pt-2 font-bold">
+                          <span>Taxable Value (Base):</span>
+                          <span class="text-white" id="calc-taxable">₹2,74,560</span>
+                        </div>
+                        <div class="flex justify-between text-blue-300">
+                          <span>CGST (14%):</span>
+                          <span id="calc-cgst">₹38,438.40</span>
+                        </div>
+                        <div class="flex justify-between text-blue-300">
+                          <span>SGST (14%):</span>
+                          <span id="calc-sgst">₹38,438.40</span>
+                        </div>
+                        <div class="flex justify-between text-amber-300 border-t border-slate-800 pt-2 text-sm font-black">
+                          <span>Total Invoice Payable:</span>
+                          <span class="text-amber-400 text-base" id="calc-total">₹3,51,436.80</span>
+                        </div>
+                      </div>
+
+                      <div class="p-3 rounded-xl bg-purple-950/30 border border-purple-500/30 text-[11px] text-purple-200">
+                        <strong class="text-white block mb-0.5">Automated Compliance Sentinel:</strong>
+                        <span>Compliant with Section 16 CGST Act &amp; FSSAI Lic #10126999000142. Zero tax miscalculation risk.</span>
+                      </div>
+                    </div>
+
+                    <!-- 4-Stage Autonomous Pipeline Progress Tracker -->
+                    <div class="p-5 rounded-2xl bg-slate-950 border border-purple-500/40 space-y-3">
+                      <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">
+                          Autonomous AI Execution Stages
+                        </span>
+                        <span id="pipeline-status-badge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold">
+                          Ready
+                        </span>
+                      </div>
+
+                      <div class="space-y-2 text-xs">
+                        <div id="step-1" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between transition-all">
+                          <div class="flex items-center gap-2">
+                            <span class="step-icon text-sm">✅</span>
+                            <div>
+                              <strong class="text-white text-xs block">1. Dealer Intake &amp; Validation</strong>
+                              <span class="text-[10px] text-slate-400">Agents: Arjun Reddy &amp; Maya Chen</span>
+                            </div>
+                          </div>
+                          <span class="text-[10px] font-mono text-emerald-400 font-bold">VERIFIED</span>
+                        </div>
+
+                        <div id="step-2" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between transition-all">
+                          <div class="flex items-center gap-2">
+                            <span class="step-icon text-sm">✅</span>
+                            <div>
+                              <strong class="text-white text-xs block">2. Factory Requisition Slip</strong>
+                              <span class="text-[10px] text-slate-400">Agents: Rajesh Varma &amp; Priya Sharma</span>
+                            </div>
+                          </div>
+                          <span class="text-[10px] font-mono text-emerald-400 font-bold">ALLOCATED</span>
+                        </div>
+
+                        <div id="step-3" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between transition-all">
+                          <div class="flex items-center gap-2">
+                            <span class="step-icon text-sm">✅</span>
+                            <div>
+                              <strong class="text-white text-xs block">3. Statutory 28% GST Invoice</strong>
+                              <span class="text-[10px] text-slate-400">Agents: Elena Rostova &amp; Ananya Iyer</span>
+                            </div>
+                          </div>
+                          <span class="text-[10px] font-mono text-emerald-400 font-bold">ISSUED</span>
+                        </div>
+
+                        <div id="step-4" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between transition-all">
+                          <div class="flex items-center gap-2">
+                            <span class="step-icon text-sm">✅</span>
+                            <div>
+                              <strong class="text-white text-xs block">4. Cold-Chain EV Logistics</strong>
+                              <span class="text-[10px] text-slate-400">Agent: Capt. Vikram Naidu</span>
+                            </div>
+                          </div>
+                          <span class="text-[10px] font-mono text-emerald-400 font-bold">DISPATCHED</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!-- AUTONOMOUS OUTPUT DOCUMENT VIEWER -->
+                <div class="border-t border-slate-800 pt-6 space-y-4">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs font-bold text-white uppercase tracking-wider">Generated Official Documents:</span>
+                      <div class="inline-flex flex-wrap rounded-xl bg-slate-950 p-1 border border-slate-800 gap-1">
+                        <button id="docTab-inv" onclick="showDocTab('inv')" class="px-3 py-1 rounded-lg text-xs font-bold bg-purple-600 text-white transition-all">
+                          📄 GST Tax Invoice
+                        </button>
+                        <button id="docTab-rcp" onclick="showDocTab('rcp')" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all">
+                          🧾 Customer Receipt &amp; GRN
+                        </button>
+                        <button id="docTab-amz" onclick="showDocTab('amz')" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all">
+                          📦 Amazon Shipping Label
+                        </button>
+                        <button id="docTab-req" onclick="showDocTab('req')" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all">
+                          🏭 Factory Requisition
+                        </button>
+                        <button id="docTab-way" onclick="showDocTab('way')" class="px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all">
+                          🚚 Cold-Chain Waybill
+                        </button>
+                      </div>
+                    </div>
+
+                    <button onclick="window.print()" class="px-3 py-1.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-bold flex items-center gap-1.5 self-start sm:self-auto">
+                      <span>🖨️</span>
+                      <span>Print Document</span>
+                    </button>
+                  </div>
+
+                  <!-- Document Container 1: GST TAX INVOICE -->
+                  <div id="docPanel-inv" class="p-6 rounded-2xl bg-slate-950 border-2 border-purple-500/50 shadow-xl space-y-4">
+                    <div class="flex flex-col sm:flex-row justify-between items-start gap-4 border-b border-slate-800 pb-4">
+                      <div>
+                        <span class="text-[10px] font-mono text-purple-400 uppercase tracking-widest font-bold block">
+                          FORM GST INV-01 · STATUTORY TAX INVOICE
+                        </span>
+                        <h4 class="text-xl font-black text-white">RDNT SPARKLE INDUSTRIES LLP</h4>
+                        <p class="text-xs text-slate-400">
+                          Gajuwaka Industrial Corridor, Visakhapatnam, Andhra Pradesh 530026<br />
+                          GSTIN: <strong class="text-purple-300 font-mono">37AAHFR1102K1Z9</strong> · FSSAI Central Lic: <strong class="text-emerald-400 font-mono">10126999000142</strong>
+                        </p>
+                      </div>
+                      <div class="text-left sm:text-right font-mono text-xs">
+                        <div class="text-purple-300 font-bold" id="doc-inv-no">INVOICE: INV-2026-9041</div>
+                        <div class="text-slate-400">Date: <span id="doc-inv-date">Today</span></div>
+                        <div class="text-emerald-400 text-[10px] mt-1">IRN: 8f9a2e6b1c4d7e8f9a0b1c2d3e4f5a6b7c8d9e0f</div>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Billed To (Customer / Dealer):</span>
+                        <strong class="text-white block text-sm" id="doc-client-title">Andhra Mega Distributors Ltd</strong>
+                        <span class="text-slate-300 block" id="doc-client-addr">Vijayawada Central Depot, Andhra Pradesh</span>
+                        <span class="text-purple-300 font-mono text-[11px] block mt-1" id="doc-client-gstin">GSTIN: 37AABCR9912C1Z4</span>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">Dispatch &amp; Supply Details:</span>
+                        <span class="text-slate-300 block">Supply State: <strong class="text-white">Andhra Pradesh (Code: 37)</strong></span>
+                        <span class="text-slate-300 block">Tax Category: <strong class="text-emerald-400">Intra-State (CGST 14% + SGST 14%)</strong></span>
+                        <span class="text-slate-300 block">Cold-Chain Status: <strong class="text-blue-400">2°C - 4°C Monitored Reefer</strong></span>
+                      </div>
+                    </div>
+
+                    <!-- Line Items Table -->
+                    <div class="overflow-x-auto">
+                      <table class="w-full text-xs text-left">
+                        <thead class="bg-slate-900 text-slate-400 border-b border-slate-800">
+                          <tr>
+                            <th class="p-2.5">Item Description</th>
+                            <th class="p-2.5">HSN Code</th>
+                            <th class="p-2.5">Qty</th>
+                            <th class="p-2.5">Rate / cs</th>
+                            <th class="p-2.5">Discount</th>
+                            <th class="p-2.5">Taxable</th>
+                            <th class="p-2.5">GST Rate</th>
+                            <th class="p-2.5 text-right">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800 font-mono">
+                          <tr>
+                            <td class="p-2.5 text-white font-sans font-bold" id="doc-sku-title">Botanical Berry Spritz (24x250ml)</td>
+                            <td class="p-2.5 text-slate-400">2202</td>
+                            <td class="p-2.5 text-white" id="doc-qty">200 Cases</td>
+                            <td class="p-2.5 text-slate-300">₹<span id="doc-rate">1,560.00</span></td>
+                            <td class="p-2.5 text-emerald-400">- ₹<span id="doc-disc">37,440.00</span></td>
+                            <td class="p-2.5 text-white font-bold">₹<span id="doc-taxable">2,74,560.00</span></td>
+                            <td class="p-2.5 text-blue-300">28% (14+14)</td>
+                            <td class="p-2.5 text-amber-400 font-bold text-right">₹<span id="doc-total">3,51,436.80</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-slate-800 pt-4 text-xs">
+                      <div class="flex items-center gap-3">
+                        <div class="w-16 h-16 rounded-xl bg-white p-1 flex items-center justify-center">
+                          <div class="w-full h-full bg-slate-950 flex flex-col items-center justify-center text-[7px] text-white font-mono text-center">
+                            <span>GST E-INV</span>
+                            <span>QR CODE</span>
+                            <span>VERIFIED</span>
+                          </div>
+                        </div>
+                        <div class="text-[11px] text-slate-400">
+                          <span>Digitally verified via NIC E-Invoice System.</span><br />
+                          <span>Authorized Signatory: <strong class="text-white">Elena Rostova (AI CFO)</strong></span>
+                        </div>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-xs text-slate-400 block">Total Amount Payable (INR):</span>
+                        <span class="text-2xl font-black text-amber-400 font-mono" id="doc-final-total">₹3,51,436.80</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Document Container: CUSTOMER PURCHASE RECEIPT & GRN -->
+                  <div id="docPanel-rcp" class="p-6 rounded-2xl bg-white text-slate-950 space-y-4 shadow-xl text-xs font-sans border-2 border-emerald-500/50 hidden">
+                    <div class="flex justify-between items-start border-b border-slate-200 pb-3">
+                      <div>
+                        <div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-mono font-bold text-[10px] uppercase">
+                          <span>✓ GOODS RECEIPT &amp; PURCHASE RECEIPT</span>
+                        </div>
+                        <h4 class="text-xl font-black text-slate-900 mt-1">CUSTOMER OFFICIAL RECEIPT</h4>
+                        <p class="text-[11px] text-slate-600">
+                          RDNT Sparkle Industries LLP · Finished Goods Inventory &amp; Distribution
+                        </p>
+                      </div>
+                      <div class="text-right font-mono text-[11px]">
+                        <strong class="text-emerald-700 block text-xs" id="rcp-no">RCP-2026-9041</strong>
+                        <span class="text-slate-500">Receipt Date: Today</span>
+                        <span class="text-slate-500 block">Payment: <span id="rcp-pay-mode">Net-30 Commercial Transfer</span></span>
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 p-3 bg-slate-50 rounded-xl border border-slate-200 text-[11px]">
+                      <div>
+                        <span class="text-slate-500 font-bold block uppercase text-[10px]">Customer / Consignee:</span>
+                        <strong class="text-slate-900 block" id="rcp-client-name">Andhra Mega Distributors Ltd</strong>
+                        <span class="text-slate-600 block" id="rcp-dest">Vijayawada Central Depot, Andhra Pradesh</span>
+                      </div>
+                      <div>
+                        <span class="text-slate-500 font-bold block uppercase text-[10px]">On-Hand Inventory Check &amp; Receipt:</span>
+                        <span class="text-slate-700 block">Warehouse Picked: <strong>Loading Bay 3 (Cold-Store)</strong></span>
+                        <span class="text-slate-700 block">On-Hand Stock Deducted: <strong class="text-emerald-700" id="rcp-cases-deducted">200 Cases (4,800 Cans)</strong></span>
+                        <span class="text-slate-700 block">Quality Signoff: <strong>Priya Sharma &amp; Rajesh Varma</strong></span>
+                      </div>
+                    </div>
+
+                    <table class="w-full text-left border-collapse text-[11px]">
+                      <thead>
+                        <tr class="border-b-2 border-slate-900 text-slate-800">
+                          <th class="py-2">Item Description</th>
+                          <th class="py-2 text-center">Cases</th>
+                          <th class="py-2 text-right">Unit Price</th>
+                          <th class="py-2 text-right">Discount</th>
+                          <th class="py-2 text-right">Total Paid (incl. 28% GST)</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-slate-200 font-mono">
+                        <tr>
+                          <td class="py-2 font-sans">
+                            <strong class="text-slate-900 block" id="rcp-sku-name">Botanical Berry Spritz</strong>
+                            <span class="text-[10px] text-slate-500">HSN 2202 · FSSAI Central Lic #10126999000142</span>
+                          </td>
+                          <td class="py-2 text-center font-bold" id="rcp-cases">200</td>
+                          <td class="py-2 text-right">₹<span id="rcp-unit">1,560.00</span></td>
+                          <td class="py-2 text-right text-emerald-700">-₹<span id="rcp-disc">37,440.00</span></td>
+                          <td class="py-2 text-right font-bold text-slate-900">₹<span id="rcp-total">3,51,436.80</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="flex justify-between items-center pt-3 border-t border-slate-200">
+                      <div class="text-[10px] text-slate-500">
+                        <span>Thank you for choosing Sparkle Drinks. Keep refrigerated at 2°C - 4°C.</span><br />
+                        <span class="font-mono text-emerald-700">Digital Seal: SHA-256 Verified by Elena Rostova &amp; Arjun Reddy</span>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-[10px] text-slate-500 block">AMOUNT RECEIVED (INR)</span>
+                        <span class="text-xl font-black text-slate-900 font-mono" id="rcp-final-total">₹3,51,436.80</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Document Container: AMAZON-STYLE CUSTOMER DISPATCH & SHIPPING LABEL -->
+                  <div id="docPanel-amz" class="max-w-md mx-auto p-6 rounded-2xl bg-white text-slate-950 space-y-4 shadow-2xl font-mono text-xs border-4 border-slate-950 hidden">
+                    <div class="flex justify-between items-center border-b-4 border-slate-950 pb-2">
+                      <div class="flex items-center gap-1.5">
+                        <span class="text-xl font-black tracking-tighter text-slate-950">amazon</span>
+                        <span class="text-xs font-bold px-1.5 py-0.5 bg-slate-950 text-white rounded">FBA / PRIME</span>
+                      </div>
+                      <div class="text-right leading-tight">
+                        <span class="text-sm font-black text-slate-950 block">PRIORITY 1-DAY</span>
+                        <span class="text-[10px] text-slate-600">DELIVERY BY 8:00 PM</span>
+                      </div>
+                    </div>
+
+                    <div class="border-b-2 border-slate-950 pb-3 leading-snug">
+                      <span class="text-[9px] uppercase text-slate-500 font-bold block">SHIP TO:</span>
+                      <strong class="text-sm text-slate-950 block font-sans font-black" id="amz-buyer-name">Andhra Mega Distributors Ltd</strong>
+                      <span class="text-xs block font-sans">Plot #42, Commercial Sector / Customer Address</span>
+                      <span class="text-xs block font-sans" id="amz-dest">Vijayawada Central Depot, Andhra Pradesh - 520001</span>
+                      <span class="text-[11px] block text-slate-700 mt-1">TEL: +91 98480 22331</span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-2 border-b-2 border-slate-950 pb-2 text-[11px]">
+                      <div>
+                        <span class="text-[9px] text-slate-500 uppercase block">SORT HUB / GATE:</span>
+                        <strong class="text-sm font-black text-slate-950">HYD1 - BAY 04</strong>
+                      </div>
+                      <div class="text-right">
+                        <span class="text-[9px] text-slate-500 uppercase block">PACKAGE WEIGHT:</span>
+                        <strong class="text-sm font-black text-slate-950" id="amz-weight">1,240 KG</strong>
+                      </div>
+                    </div>
+
+                    <div class="py-2 text-center space-y-1">
+                      <div class="h-14 w-full flex items-center justify-center gap-[2px] bg-white px-2">
+                        <div class="w-1 h-full bg-slate-950"></div>
+                        <div class="w-2 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-0.5 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-1.5 h-full bg-slate-950 ml-0.5"></div>
+                        <div class="w-3 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-0.5 h-full bg-slate-950 ml-0.5"></div>
+                        <div class="w-2 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-1 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-2.5 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-0.5 h-full bg-slate-950 ml-0.5"></div>
+                        <div class="w-3 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-1 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-2 h-full bg-slate-950 ml-1"></div>
+                        <div class="w-0.5 h-full bg-slate-950 ml-0.5"></div>
+                        <div class="w-3 h-full bg-slate-950 ml-1"></div>
+                      </div>
+                      <div class="font-mono text-xs font-black tracking-widest text-slate-950" id="amz-tracking">
+                        TRACKING: TBA3091829012-9041
+                      </div>
+                    </div>
+
+                    <div class="p-2.5 bg-slate-100 rounded border border-slate-300 text-[10px] space-y-1">
+                      <div class="flex justify-between items-center font-bold">
+                        <span class="text-blue-700">❄️ COLD-CHAIN CARGO: 2°C - 4°C</span>
+                        <span class="text-emerald-700">REEFER EV TRANSIT</span>
+                      </div>
+                      <div class="text-slate-600 font-sans" id="amz-contents">
+                        Contents: 200 Cases of Botanical Berry Spritz (4,800 Aluminum Cans)
+                      </div>
+                    </div>
+
+                    <div class="flex justify-between items-center text-[9px] text-slate-500 pt-1">
+                      <span>ORIGIN: RDNT VISAKHAPATNAM FC</span>
+                      <span>DISPATCH: CAPT. VIKRAM NAIDU</span>
+                    </div>
+                  </div>
+
+                  <!-- Document Container 2: FACTORY REQUISITION SLIP -->
+                  <div id="docPanel-req" class="p-6 rounded-2xl bg-slate-950 border-2 border-blue-500/50 shadow-xl space-y-4 hidden">
+                    <div class="flex justify-between items-start border-b border-slate-800 pb-3">
+                      <div>
+                        <span class="text-[10px] font-mono text-blue-400 uppercase tracking-widest font-bold block">
+                          INTERNAL PRODUCTION WORK-ORDER &amp; BOTTLING REQUISITION
+                        </span>
+                        <h4 class="text-lg font-black text-white">VISAKHAPATNAM BOTTLING COMPLEX · LINE 03</h4>
+                        <p class="text-xs text-slate-400">Automated Requisition Slip: <strong class="text-blue-300 font-mono">REQ-2026-9041</strong></p>
+                      </div>
+                      <span class="px-2.5 py-1 rounded bg-blue-500/20 text-blue-300 font-mono text-xs font-bold">
+                        STATUS: IN-PRODUCTION
+                      </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Allocated Bottling Run</span>
+                        <strong class="text-white text-sm" id="req-cans-total">4,800 Cans (200 Cases)</strong>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Carbonation &amp; Tank Temp</span>
+                        <strong class="text-emerald-400 text-sm">3.4 Bar @ 1.8°C</strong>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Quality Sentinel Signoff</span>
+                        <strong class="text-purple-300 text-sm">Rajesh Varma (AI Director)</strong>
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                      <strong class="text-slate-300 block uppercase tracking-wider text-[11px]">Bill of Materials (BOM) Automatically Deducted:</strong>
+                      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-mono text-[11px]">
+                        <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">🍃 Berry Extract: <span class="text-emerald-400 font-bold">120 kg</span></div>
+                        <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">💧 Spring Water: <span class="text-blue-400 font-bold">1,200 L</span></div>
+                        <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">🥫 250ml Cans: <span class="text-purple-400 font-bold">4,800 units</span></div>
+                        <div class="p-2 rounded-lg bg-slate-900 border border-slate-800">📦 Shipper Cartons: <span class="text-amber-400 font-bold">200 cases</span></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Document Container 3: COLD-CHAIN WAYBILL & TELEMATICS -->
+                  <div id="docPanel-way" class="p-6 rounded-2xl bg-slate-950 border-2 border-emerald-500/50 shadow-xl space-y-4 hidden">
+                    <div class="flex justify-between items-start border-b border-slate-800 pb-3">
+                      <div>
+                        <span class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest font-bold block">
+                          REFRIGERATED EV FLEET DISPATCH &amp; IOT TELEMATICS
+                        </span>
+                        <h4 class="text-lg font-black text-white">WAYBILL: DSP-2026-9041</h4>
+                        <p class="text-xs text-slate-400">Carrier: <strong class="text-white">RDNT Clean Fleet Logistics</strong> · Driver: <strong class="text-slate-200">Suresh Kumar (+91 98480 22331)</strong></p>
+                      </div>
+                      <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 font-mono text-xs font-bold">
+                        EN ROUTE · ON SCHEDULE
+                      </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs font-mono">
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Vehicle No</span>
+                        <strong class="text-white text-sm" id="way-veh">AP-31-EV-8840</strong>
+                        <span class="text-emerald-400 text-[10px] block">Tata Ace EV Reefer</span>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Chamber Temp</span>
+                        <strong class="text-blue-400 text-sm">3.2°C Active</strong>
+                        <span class="text-slate-400 text-[10px] block">Range: 2.0°C - 4.0°C</span>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Battery State</span>
+                        <strong class="text-emerald-400 text-sm">92% SOC</strong>
+                        <span class="text-slate-400 text-[10px] block">Range Remaining: 140 km</span>
+                      </div>
+                      <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                        <span class="text-slate-400 block text-[10px] uppercase">Transit ETA</span>
+                        <strong class="text-amber-400 text-sm">2h 45m</strong>
+                        <span class="text-slate-400 text-[10px] block">Via NH-16 Golden Quadrilateral</span>
+                      </div>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-xs">
+                      <div class="flex items-center gap-2">
+                        <span class="text-lg">📡</span>
+                        <div>
+                          <strong class="text-white block">Continuous IoT Cold-Chain Integrity:</strong>
+                          <span class="text-slate-400 text-[11px]">Temperature data streamed to FSSAI compliance register every 60 seconds. Zero thermal excursions.</span>
+                        </div>
+                      </div>
+                      <span class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[10px] font-bold">
+                        100% QUALITY SEALED
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </section>
+
+            <!-- ENTERPRISE CLOUD BACKBONE & SECURITY ASSURANCE -->
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+              <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-purple-500/30 shadow-2xl space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                  <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono font-bold mb-1">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>ENTERPRISE BACKBONE · ORACLE CLOUD &amp; HIGH-AVAILABILITY ERP</span>
+                    </div>
+                    <h3 class="text-2xl font-black text-white">
+                      Enterprise Cloud Integration &amp; Logistics Backbone
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 mt-1 max-w-2xl">
+                      Operated by <strong class="text-white">Marcus Vance (Enterprise Systems Engineer)</strong>. All customer, dealer, and factory events are securely processed with 256-bit cryptographic validation across our multi-region enterprise cloud infrastructure.
+                    </p>
+                  </div>
+
+                  <div class="flex items-center gap-2">
+                    <span class="px-3.5 py-1.5 rounded-xl bg-slate-950 border border-emerald-500/40 text-emerald-400 text-xs font-mono font-bold flex items-center gap-2 shadow-md">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span id="erp-sync-badge">ERP Synchronizer: Online (18ms)</span>
+                    </span>
+                  </div>
+                </div>
+
+                <!-- 4 Professional Enterprise Pillars -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+                  <div class="p-4 rounded-2xl bg-slate-950 border border-purple-500/30 space-y-2">
+                    <div class="flex items-center gap-2 text-purple-300 font-bold text-sm">
+                      <span>🏛️</span>
+                      <span>Oracle Cloud ERP</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                      Autonomous ledger synchronization connecting US technology operations with RDNT Sparkle Industries manufacturing plants.
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-purple-300 flex items-center justify-between">
+                      <span>Autonomous DB</span>
+                      <span class="text-emerald-400 font-bold">✓ Active</span>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-2xl bg-slate-950 border border-blue-500/30 space-y-2">
+                    <div class="flex items-center gap-2 text-blue-300 font-bold text-sm">
+                      <span>⚡</span>
+                      <span>Sub-Second Edge</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                      High-concurrency dealer intake microservices powering instant order routing and real-time inventory reconciliation.
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-blue-300 flex items-center justify-between">
+                      <span>Multi-Region Edge</span>
+                      <span class="text-emerald-400 font-bold">✓ 99.99% SLA</span>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-2xl bg-slate-950 border border-amber-500/30 space-y-2">
+                    <div class="flex items-center gap-2 text-amber-300 font-bold text-sm">
+                      <span>📦</span>
+                      <span>Amazon FBA &amp; Fleet</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                      Direct integration with Amazon fulfillment hubs and regional refrigerated electric logistics with automated Code-128 tracking.
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-amber-300 flex items-center justify-between">
+                      <span>Prime Sort Center</span>
+                      <span class="text-emerald-400 font-bold">✓ HYD1 Linked</span>
+                    </div>
+                  </div>
+
+                  <div class="p-4 rounded-2xl bg-slate-950 border border-emerald-500/30 space-y-2">
+                    <div class="flex items-center gap-2 text-emerald-300 font-bold text-sm">
+                      <span>🛡️</span>
+                      <span>Statutory Compliance</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400 leading-relaxed">
+                      Statutory 28% GST invoicing with IRN hash generation and FSSAI Central Food Safety License #10126999000142 audit readiness.
+                    </p>
+                    <div class="pt-2 border-t border-slate-800 text-[10px] font-mono text-emerald-300 flex items-center justify-between">
+                      <span>FSSAI &amp; GSTN</span>
+                      <span class="text-emerald-400 font-bold">✓ Verified</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Discreet Admin / Enterprise Operator Console Toggle -->
+                <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+                  <div class="text-[11px] font-mono text-slate-400 flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Background ERP Sync: <strong class="text-white" id="erp-last-sync">Real-time Synchronized</strong></span>
+                    <span class="text-slate-600">·</span>
+                    <span class="text-slate-400">Status: <strong class="text-cyan-400">Active</strong></span>
+                  </div>
+
+                  <button
+                    type="button"
+                    onclick="toggleItConsole()"
+                    class="text-[11px] font-mono text-slate-400 hover:text-purple-300 flex items-center gap-1.5 self-start sm:self-auto py-1.5 px-3 rounded-lg bg-slate-950 border border-slate-800 hover:border-purple-500/50 transition-colors"
+                  >
+                    <span id="it-btn-label">🔒 Enterprise IT Console (Marcus Vance)</span>
+                  </button>
+                </div>
+
+                <!-- Collapsible IT Console -->
+                <div id="it-console-panel" class="hidden p-5 rounded-2xl bg-slate-950 border border-purple-500/40 space-y-4">
+                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-3">
+                    <div>
+                      <span class="text-xs font-mono font-bold text-purple-300 uppercase tracking-wider flex items-center gap-1.5">
+                        <span>⚙️</span> Enterprise IT Gateway Status (Restricted Operator View)
+                      </span>
+                      <p class="text-[11px] text-slate-400 mt-0.5">
+                        Active background link connects dealer orders and inventory balances directly to your cloud pipeline.
+                      </p>
+                    </div>
+                    <a
+                      href="/oracle_schema.sql"
+                      download="oracle_schema.sql"
+                      class="px-3 py-1.5 rounded-lg bg-purple-600 hover:bg-purple-500 text-white font-mono text-xs font-bold transition-colors inline-flex items-center gap-1.5 self-start sm:self-auto shadow-md"
+                    >
+                      <span>💾 Download oracle_schema.sql</span>
+                    </a>
+                  </div>
+
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono">
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                      <span class="text-slate-400 text-[10px] block">Oracle Cloud Region</span>
+                      <strong class="text-white text-xs">us-ashburn-1</strong>
+                      <span class="text-emerald-400 text-[10px] block mt-0.5">OIC Connected</span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                      <span class="text-slate-400 text-[10px] block">Dispatcher Pipeline</span>
+                      <strong class="text-cyan-300 text-xs">Automated Real-Time</strong>
+                      <span class="text-slate-400 text-[10px] block mt-0.5">Multi-Cloud Bridge</span>
+                    </div>
+                    <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+                      <span class="text-slate-400 text-[10px] block">Last Transaction Trace</span>
+                      <strong class="text-amber-300 text-xs truncate block" id="it-trace-id">OIC-SYNC-INITIALIZED</strong>
+                      <span class="text-emerald-400 text-[10px] block mt-0.5">Sub-Second Latency</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- THE 10 AI EMPLOYEES DIRECTORY -->
+            <section id="brain-employees" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+                    The 10 Autonomous AI Employees
+                  </h3>
+                  <p class="text-xs sm:text-sm text-slate-400 mt-1">
+                    Specialized AI roles driving corporate efficiency, zero-latency workflows, and compliance across Radiant Spark LLC and RDNT Sparkle Industries LLP.
+                  </p>
+                </div>
+                
+                <!-- Department Filter Pills -->
+                <div class="flex flex-wrap gap-1.5 text-xs">
+                  <button onclick="filterAgents('all')" class="agent-flt px-3 py-1 rounded-full bg-purple-600 text-white font-bold">All (10)</button>
+                  <button onclick="filterAgents('intake')" class="agent-flt px-3 py-1 rounded-full bg-slate-900 text-slate-300 font-bold hover:bg-slate-800">Sales &amp; D2C</button>
+                  <button onclick="filterAgents('manufacturing')" class="agent-flt px-3 py-1 rounded-full bg-slate-900 text-slate-300 font-bold hover:bg-slate-800">Manufacturing</button>
+                  <button onclick="filterAgents('finance')" class="agent-flt px-3 py-1 rounded-full bg-slate-900 text-slate-300 font-bold hover:bg-slate-800">Finance &amp; GST</button>
+                  <button onclick="filterAgents('logistics')" class="agent-flt px-3 py-1 rounded-full bg-slate-900 text-slate-300 font-bold hover:bg-slate-800">Cold-Chain</button>
+                </div>
+              </div>
+
+              <!-- 10 Employee Grid -->
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="agents-grid">
+                
+                <!-- Agent 1: Maya Chen -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-purple-500/30 space-y-3" data-dept="leadership">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-purple-600/30 border border-purple-400/50 flex items-center justify-center text-2xl shadow-md">👩🏻‍💼</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Maya Chen</strong>
+                        <span class="text-xs text-purple-300 font-semibold block">Chief AI Operations Orchestrator</span>
+                        <span class="text-[10px] font-mono text-slate-400">Global Enterprise Operations</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Synthesizes cross-border directives, balances global production with sales momentum, and orchestrates the autonomous execution flow between the 10 AI employees.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-white">Global (USA + IN)</strong></span>
+                    <button onclick="quickAskAgent('Maya Chen')" class="text-purple-400 hover:text-purple-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 2: Arjun Reddy -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-blue-500/30 space-y-3" data-dept="intake">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-blue-600/30 border border-blue-400/50 flex items-center justify-center text-2xl shadow-md">👨🏽‍💼</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Arjun Reddy</strong>
+                        <span class="text-xs text-blue-300 font-semibold block">Head of Wholesale &amp; Dealer Intake</span>
+                        <span class="text-[10px] font-mono text-slate-400">India Beverage Distribution</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Manages dealer onboarding across Andhra Pradesh, Telangana &amp; Karnataka. Validates wholesale buyer GSTINs, assigns volume tier discounts (5%-18%), and confirms purchase orders.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-amber-300">India Regional</strong></span>
+                    <button onclick="quickAskAgent('Arjun Reddy')" class="text-blue-400 hover:text-blue-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 3: Sarah Jenkins -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-pink-500/30 space-y-3" data-dept="intake">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-pink-600/30 border border-pink-400/50 flex items-center justify-center text-2xl shadow-md">👩🏼‍💻</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Sarah Jenkins</strong>
+                        <span class="text-xs text-pink-300 font-semibold block">Global D2C Customer Experience Lead</span>
+                        <span class="text-[10px] font-mono text-slate-400">Worldwide Consumer Portals</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Ingests direct-to-consumer orders from sparkdeals.html and consumer storefronts, analyzes buyer sentiment, and manages real-time order tracking and notifications.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-white">Global (USA / IN)</strong></span>
+                    <button onclick="quickAskAgent('Sarah Jenkins')" class="text-pink-400 hover:text-pink-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 4: Rajesh Varma -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-amber-500/30 space-y-3" data-dept="manufacturing">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-amber-600/30 border border-amber-400/50 flex items-center justify-center text-2xl shadow-md">👨🏾‍🔬</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Rajesh Varma</strong>
+                        <span class="text-xs text-amber-300 font-semibold block">Director of Requisitions &amp; Bottling</span>
+                        <span class="text-[10px] font-mono text-slate-400">India Bottling Facilities</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Translates dealer orders into factory production runs at Visakhapatnam &amp; Chittoor plants, regulates 3.4 bar carbonation, hermetic sealing, and schedules automated requisition slips.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-amber-300">India Plants</strong></span>
+                    <button onclick="quickAskAgent('Rajesh Varma')" class="text-amber-400 hover:text-amber-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 5: Elena Rostova -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-emerald-500/30 space-y-3" data-dept="finance">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-emerald-600/30 border border-emerald-400/50 flex items-center justify-center text-2xl shadow-md">👩🏼‍💼</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Elena Rostova</strong>
+                        <span class="text-xs text-emerald-300 font-semibold block">Chief Financial Billing &amp; GST Specialist</span>
+                        <span class="text-[10px] font-mono text-slate-400">Corporate Treasury &amp; Tax</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Calculates statutory 28% GST for Sparkle Drinks (HSN 2202), issues compliant CGST 14% + SGST 14% or IGST 28% tax invoices, generates IRN hashes, and integrates with GST e-Way systems.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-white">Global &amp; India</strong></span>
+                    <button onclick="quickAskAgent('Elena Rostova')" class="text-emerald-400 hover:text-emerald-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 6: Capt. Vikram Naidu -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-cyan-500/30 space-y-3" data-dept="logistics">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-cyan-600/30 border border-cyan-400/50 flex items-center justify-center text-2xl shadow-md">👨🏽‍✈️</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Capt. Vikram Naidu</strong>
+                        <span class="text-xs text-cyan-300 font-semibold block">VP of Cold-Chain Fleet &amp; Logistics</span>
+                        <span class="text-[10px] font-mono text-slate-400">India National Logistics</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Commands the zero-emission refrigerated EV transport fleet (Tata Ace EV Reefer), schedules highway routes via NH-16, and maintains continuous 2°C - 4°C active telemetry with automated cold-chain waybills.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-cyan-300">India Fleet</strong></span>
+                    <button onclick="quickAskAgent('Capt. Vikram Naidu')" class="text-cyan-400 hover:text-cyan-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 7: Priya Sharma -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-teal-500/30 space-y-3" data-dept="manufacturing">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-teal-600/30 border border-teal-400/50 flex items-center justify-center text-2xl shadow-md">👩🏽‍🌾</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Priya Sharma</strong>
+                        <span class="text-xs text-teal-300 font-semibold block">Raw Materials Procurement Sentinel</span>
+                        <span class="text-[10px] font-mono text-slate-400">Supply Chain &amp; Ingredients</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Monitors botanical extract inventories, organic herbs, recyclable aluminium cans, and spring water reserves. Autonomously reorders buffer stock when thresholds dip below 20%.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-teal-300">India Supply Chain</strong></span>
+                    <button onclick="quickAskAgent('Priya Sharma')" class="text-teal-400 hover:text-teal-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 8: Marcus Vance -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-indigo-500/30 space-y-3" data-dept="leadership">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-indigo-600/30 border border-indigo-400/50 flex items-center justify-center text-2xl shadow-md">👨🏼‍💻</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Marcus Vance</strong>
+                        <span class="text-xs text-indigo-300 font-semibold block">Enterprise Systems &amp; ORDS Engineer</span>
+                        <span class="text-[10px] font-mono text-slate-400">Global Cloud &amp; IT Architecture</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Engineers Oracle Fusion REST Services, microservices pipelines, high-availability multi-region databases, and zero-trust API security bridging US enterprise IT with India telemetry.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-blue-300">USA Technology</strong></span>
+                    <button onclick="quickAskAgent('Marcus Vance')" class="text-indigo-400 hover:text-indigo-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 9: Ananya Iyer -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-yellow-500/30 space-y-3" data-dept="finance">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-yellow-600/30 border border-yellow-400/50 flex items-center justify-center text-2xl shadow-md">⚖️</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">Ananya Iyer</strong>
+                        <span class="text-xs text-yellow-300 font-semibold block">Statutory Legal &amp; FSSAI Sentinel</span>
+                        <span class="text-[10px] font-mono text-slate-400">Regulatory Affairs</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Guarantees strict statutory compliance with Section 79 IT Act, Section 16 CGST Act, FSSAI Central License #10126999000142, and DPDP Act 2023. Validates contracts and legal disclaimers.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-yellow-300">India &amp; USA Legal</strong></span>
+                    <button onclick="quickAskAgent('Ananya Iyer')" class="text-yellow-400 hover:text-yellow-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+                <!-- Agent 10: David Sterling -->
+                <div class="agent-card p-5 rounded-2xl bg-slate-900/80 border border-violet-500/30 space-y-3" data-dept="leadership">
+                  <div class="flex items-start justify-between">
+                    <div class="flex items-center gap-3">
+                      <div class="w-12 h-12 rounded-2xl bg-violet-600/30 border border-violet-400/50 flex items-center justify-center text-2xl shadow-md">👨🏼‍💼</div>
+                      <div>
+                        <strong class="text-sm font-bold text-white block">David Sterling</strong>
+                        <span class="text-xs text-violet-300 font-semibold block">Chief Revenue &amp; Expansion Strategist</span>
+                        <span class="text-[10px] font-mono text-slate-400">Global Business Development</span>
+                      </div>
+                    </div>
+                    <span class="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 font-mono text-[9px] font-bold">ONLINE</span>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    Analyzes global margin expansion, market penetration in Tier-1 and Tier-2 Indian beverage markets, wholesale credit terms, and cross-border tech service contracts.
+                  </p>
+                  <div class="pt-2 border-t border-slate-800 flex items-center justify-between text-[11px]">
+                    <span class="text-slate-400">Jurisdiction: <strong class="text-violet-300">Global Strategy</strong></span>
+                    <button onclick="quickAskAgent('David Sterling')" class="text-violet-400 hover:text-violet-300 font-bold">Query Agent ↗</button>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- LIVE INTERACTIVE AI AGENT TERMINAL / CHAT -->
+            <section id="brain-chat" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+              <div class="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border-2 border-purple-500/40 shadow-2xl space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-800 pb-4">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-purple-600/30 border border-purple-400/50 flex items-center justify-center text-xl shadow-md">
+                      🧠
+                    </div>
+                    <div>
+                      <h4 class="text-lg font-bold text-white">Direct AI Brain &amp; Agent Terminal</h4>
+                      <p class="text-xs text-slate-400">Consult any of the 10 AI Employees for instant operational advice, GST calculations, or cold-chain status.</p>
+                    </div>
+                  </div>
+
+                  <!-- Employee Selector -->
+                  <div class="flex items-center gap-2">
+                    <span class="text-xs font-mono text-slate-400">Target Agent:</span>
+                    <select id="chat-agent-select" class="px-3 py-1.5 rounded-xl bg-slate-950 border border-purple-500/40 text-purple-200 text-xs font-bold focus:outline-none">
+                      <option value="Maya Chen">Maya Chen (Chief Operations)</option>
+                      <option value="Arjun Reddy">Arjun Reddy (Wholesale &amp; Dealers)</option>
+                      <option value="Elena Rostova">Elena Rostova (GST 28% Invoicing)</option>
+                      <option value="Rajesh Varma">Rajesh Varma (Factory Bottling)</option>
+                      <option value="Capt. Vikram Naidu">Capt. Vikram Naidu (EV Fleet &amp; Cold-Chain)</option>
+                      <option value="Priya Sharma">Priya Sharma (Raw Materials)</option>
+                      <option value="Ananya Iyer">Ananya Iyer (Legal &amp; FSSAI)</option>
+                      <option value="Marcus Vance">Marcus Vance (Enterprise IT)</option>
+                      <option value="David Sterling">David Sterling (Revenue &amp; Growth)</option>
+                      <option value="Sarah Jenkins">Sarah Jenkins (D2C Customer)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Chat History Window -->
+                <div id="brain-chat-window" class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-3 min-h-[180px] max-h-[340px] overflow-y-auto text-xs">
+                  <div class="p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 text-purple-200">
+                    <strong class="text-white block mb-1">👩🏻‍💼 Maya Chen (Chief AI Operations Orchestrator):</strong>
+                    <span>"Enterprise Brain initialized. All 10 AI employees are active across Radiant Spark LLC (USA) and RDNT Sparkle Industries LLP (India). How can our team accelerate your business today?"</span>
+                  </div>
+                </div>
+
+                <!-- Quick Prompt Buttons -->
+                <div class="flex flex-wrap gap-2 text-xs">
+                  <button onclick="sendQuickPrompt('How is 28% GST calculated on Sparkle Drinks HSN 2202?')" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+                    💡 Explain 28% GST on HSN 2202
+                  </button>
+                  <button onclick="sendQuickPrompt('What are the wholesale dealer volume tiers for Sparkle Drinks?')" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+                    🏢 Wholesale Dealer Tiers
+                  </button>
+                  <button onclick="sendQuickPrompt('What temperature is maintained in the EV refrigerated fleet?')" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+                    🚚 Cold-Chain Reefer Specs
+                  </button>
+                  <button onclick="sendQuickPrompt('What is the FSSAI license number and food safety rating?')" class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+                    🛡️ FSSAI License &amp; Safety
+                  </button>
+                </div>
+
+                <!-- Input Box -->
+                <div class="flex gap-2">
+                  <input
+                    id="brain-chat-input"
+                    type="text"
+                    placeholder="Ask Maya Chen, Elena Rostova, or Capt. Vikram Naidu a question..."
+                    onkeydown="if(event.key === 'Enter') handleChatSubmit()"
+                    class="flex-1 px-4 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs focus:border-purple-500 focus:outline-none"
+                  />
+                  <button
+                    onclick="handleChatSubmit()"
+                    class="px-5 py-2.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs shadow-md transition-colors"
+                  >
+                    Send ↗
+                  </button>
+                </div>
+              </div>
+            </section>
+
+          </div>
 
         <!-- Footer -->
         <footer class="border-t border-slate-800/80 py-8 px-4 text-center text-xs text-slate-500 space-y-2">
           <p>© 2026 Radiant Spark Global. Operating as Radiant Spark LLC (USA) and RDNT Sparkle Industries LLP (India).</p>
-          <div class="flex items-center justify-center gap-4 text-[11px]">
+          <div class="flex items-center justify-center gap-4 text-[11px] flex-wrap">
             <button onclick="switchTab('global')" class="text-slate-400 hover:underline">Global</button>
             <span>•</span>
             <button onclick="switchTab('usa')" class="text-blue-400 hover:underline">Technology USA</button>
             <span>•</span>
             <button onclick="switchTab('india')" class="text-amber-400 hover:underline">Industries India (4 Divisions)</button>
+            <span>•</span>
+            <button onclick="switchTab('brain')" class="text-purple-400 hover:underline font-bold">🧠 AI Brain (10 Agents)</button>
             <span>•</span>
             <a href="/app.html" class="text-blue-400 hover:underline">SparkSync App</a>
             <span>•</span>
@@ -1198,6 +2442,20 @@
 
         <!-- Persistent Floating Controls matching image_ff37cf94.png -->
         <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2.5">
+          <!-- Floating AI Brain Launcher -->
+          <button
+            type="button"
+            onclick="switchTab('brain')"
+            class="group px-4 py-2.5 rounded-full bg-[#1c1033]/90 hover:bg-[#281749] text-[#d8b4fe] border border-[#a855f7]/50 font-bold text-xs shadow-xl shadow-purple-950/50 flex items-center gap-2 hover:scale-105 active:scale-95 transition-all backdrop-blur-md"
+            title="Open Autonomous AI Brain (10 AI Employees)"
+          >
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+            </span>
+            <span>🧠 AI Brain (10 Agents)</span>
+          </button>
+
           <!-- Floating Download Dedicated App Button -->
           <button
             type="button"
@@ -1329,7 +2587,7 @@
         }
 
         // Reset all tab button styles
-        const tabs = ['global', 'usa', 'india', 'sparkdeals'];
+        const tabs = ['global', 'usa', 'india', 'sparkdeals', 'brain'];
         tabs.forEach(t => {
           const btn = document.getElementById('tabBtn-' + t);
           if (!btn) return;
@@ -1342,10 +2600,14 @@
               btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/50 shadow-sm transition-all';
             } else if (t === 'sparkdeals') {
               btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider bg-amber-500 text-slate-950 shadow-sm transition-all flex items-center gap-1';
+            } else if (t === 'brain') {
+              btn.className = 'px-3.5 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider bg-purple-600/30 text-purple-200 border-2 border-purple-400 shadow-md shadow-purple-500/30 transition-all flex items-center gap-1.5';
             }
           } else {
             if (t === 'sparkdeals') {
               btn.className = 'px-3 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-amber-400 hover:text-amber-300 hover:bg-amber-500/10 transition-all flex items-center gap-1';
+            } else if (t === 'brain') {
+              btn.className = 'px-3 py-1.5 rounded-full text-[11px] font-extrabold uppercase tracking-wider text-purple-300 hover:text-white hover:bg-purple-600/20 border border-purple-500/40 transition-all flex items-center gap-1.5';
             } else {
               btn.className = 'px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider text-slate-300 hover:text-white hover:bg-slate-900/60 transition-all';
             }
@@ -1398,13 +2660,364 @@
       // Read initial URL hash on load
       window.addEventListener('DOMContentLoaded', () => {
         const hash = window.location.hash.replace('#', '');
-        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals') {
+        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals' || hash === 'brain') {
           switchTab(hash);
         }
       });
+      // ==============================================================
+      // AI BRAIN: SPARKLE DRINKS PIPELINE & AI EMPLOYEES CONTROLLER
+      // ==============================================================
+      const SKU_PRICES = {
+        'drk-1': { name: 'Botanical Berry Spritz (24x250ml)', price: 1560, hsn: '2202', fssai: '10126999000142' },
+        'drk-2': { name: 'Citrus Herbal Tonic (24x250ml)', price: 1440, hsn: '2202', fssai: '10126999000142' },
+        'drk-3': { name: 'Ginger Mint Sparkler (24x250ml)', price: 1320, hsn: '2202', fssai: '10126999000142' },
+        'drk-4': { name: 'Active Electrolyte Fusion (24x250ml)', price: 1680, hsn: '2202', fssai: '10126999000142' }
+      };
+
+      const DEALER_DISCOUNTS = {
+        'wholesale_a': 0.12,
+        'super_stockist': 0.18,
+        'dealer_c': 0.05,
+        'd2c': 0.00
+      };
+
+      function recalcOrderPipeline() {
+        const skuKey = document.getElementById('ord-sku')?.value || 'drk-1';
+        const sku = SKU_PRICES[skuKey] || SKU_PRICES['drk-1'];
+        const cases = Math.max(1, parseInt(document.getElementById('ord-cases')?.value || '200', 10));
+        const clientType = document.getElementById('ord-client-type')?.value || 'wholesale_a';
+        const discRate = DEALER_DISCOUNTS[clientType] ?? 0.12;
+        const clientName = document.getElementById('ord-client-name')?.value || 'Andhra Mega Distributors Ltd';
+        const gstin = document.getElementById('ord-gstin')?.value || '37AABCR9912C1Z4';
+        const dest = document.getElementById('ord-destination')?.value || 'Vijayawada Central Depot, Andhra Pradesh';
+
+        const gross = cases * sku.price;
+        const discountAmt = Math.round(gross * discRate);
+        const taxable = gross - discountAmt;
+        const cgst = taxable * 0.14;
+        const sgst = taxable * 0.14;
+        const total = taxable + cgst + sgst;
+
+        const fmt = num => '₹' + Number(num).toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        const fmtInt = num => Number(num).toLocaleString('en-IN');
+
+        if (document.getElementById('calc-cases')) document.getElementById('calc-cases').textContent = fmtInt(cases);
+        if (document.getElementById('calc-unit')) document.getElementById('calc-unit').textContent = fmtInt(sku.price);
+        if (document.getElementById('calc-gross')) document.getElementById('calc-gross').textContent = fmt(gross);
+        if (document.getElementById('calc-disc-pct')) document.getElementById('calc-disc-pct').textContent = Math.round(discRate * 100) + '%';
+        if (document.getElementById('calc-disc-amt')) document.getElementById('calc-disc-amt').textContent = '- ' + fmt(discountAmt);
+        if (document.getElementById('calc-taxable')) document.getElementById('calc-taxable').textContent = fmt(taxable);
+        if (document.getElementById('calc-cgst')) document.getElementById('calc-cgst').textContent = fmt(cgst);
+        if (document.getElementById('calc-sgst')) document.getElementById('calc-sgst').textContent = fmt(sgst);
+        if (document.getElementById('calc-total')) document.getElementById('calc-total').textContent = fmt(total);
+
+        // Update Document Inspector values
+        if (document.getElementById('doc-client-title')) document.getElementById('doc-client-title').textContent = clientName;
+        if (document.getElementById('doc-client-addr')) document.getElementById('doc-client-addr').textContent = dest;
+        if (document.getElementById('doc-client-gstin')) document.getElementById('doc-client-gstin').textContent = 'GSTIN: ' + gstin;
+        if (document.getElementById('doc-sku-title')) document.getElementById('doc-sku-title').textContent = sku.name;
+        if (document.getElementById('doc-qty')) document.getElementById('doc-qty').textContent = fmtInt(cases) + ' Cases (' + fmtInt(cases * 24) + ' Cans)';
+        if (document.getElementById('doc-rate')) document.getElementById('doc-rate').textContent = Number(sku.price).toFixed(2);
+        if (document.getElementById('doc-disc')) document.getElementById('doc-disc').textContent = Number(discountAmt).toFixed(2);
+        if (document.getElementById('doc-taxable')) document.getElementById('doc-taxable').textContent = Number(taxable).toFixed(2);
+        if (document.getElementById('doc-total')) document.getElementById('doc-total').textContent = Number(total).toFixed(2);
+        if (document.getElementById('doc-final-total')) document.getElementById('doc-final-total').textContent = fmt(total);
+
+        if (document.getElementById('req-cans-total')) {
+          document.getElementById('req-cans-total').textContent = fmtInt(cases * 24) + ' Cans (' + fmtInt(cases) + ' Cases)';
+        }
+
+        // On-Hand Stock Matrix Dynamic Check
+        if (document.getElementById('stock-check-cases')) {
+          document.getElementById('stock-check-cases').textContent = fmtInt(cases) + ' Cases';
+        }
+        if (document.getElementById('stock-check-buffer')) {
+          const bufferRemaining = Math.max(0, 29450 - cases);
+          document.getElementById('stock-check-buffer').textContent = '(' + fmtInt(bufferRemaining) + ' cs buffer)';
+        }
+
+        // Update Customer Receipt & GRN values
+        if (document.getElementById('rcp-client-name')) document.getElementById('rcp-client-name').textContent = clientName;
+        if (document.getElementById('rcp-dest')) document.getElementById('rcp-dest').textContent = dest;
+        if (document.getElementById('rcp-cases-deducted')) document.getElementById('rcp-cases-deducted').textContent = fmtInt(cases) + ' Cases (' + fmtInt(cases * 24) + ' Cans)';
+        if (document.getElementById('rcp-sku-name')) document.getElementById('rcp-sku-name').textContent = sku.name;
+        if (document.getElementById('rcp-cases')) document.getElementById('rcp-cases').textContent = fmtInt(cases);
+        if (document.getElementById('rcp-unit')) document.getElementById('rcp-unit').textContent = Number(sku.price).toFixed(2);
+        if (document.getElementById('rcp-disc')) document.getElementById('rcp-disc').textContent = Number(discountAmt).toFixed(2);
+        if (document.getElementById('rcp-total')) document.getElementById('rcp-total').textContent = Number(total).toFixed(2);
+        if (document.getElementById('rcp-final-total')) document.getElementById('rcp-final-total').textContent = fmt(total);
+        if (document.getElementById('rcp-pay-mode')) {
+          document.getElementById('rcp-pay-mode').textContent = clientType === 'd2c' ? 'Amazon Pay / UPI Verified' : 'Net-30 Commercial Transfer';
+        }
+
+        // Update Amazon Shipping Label values
+        if (document.getElementById('amz-buyer-name')) document.getElementById('amz-buyer-name').textContent = clientName;
+        if (document.getElementById('amz-dest')) document.getElementById('amz-dest').textContent = dest;
+        if (document.getElementById('amz-weight')) document.getElementById('amz-weight').textContent = Math.round(cases * 6.2).toLocaleString('en-IN') + ' KG';
+        if (document.getElementById('amz-contents')) {
+          document.getElementById('amz-contents').textContent = 'Contents: ' + fmtInt(cases) + ' Cases of ' + sku.name + ' (' + fmtInt(cases * 24) + ' Aluminum Cans)';
+        }
+      }
+
+      function handleClientTypeChange() {
+        const type = document.getElementById('ord-client-type')?.value;
+        const gstinEl = document.getElementById('ord-gstin');
+        if (type === 'd2c') {
+          if (gstinEl) gstinEl.value = 'CONSUMER-RETAIL-UNREGISTERED';
+        } else if (type === 'super_stockist') {
+          if (gstinEl) gstinEl.value = '36AAACT8821B1Z3';
+        } else if (type === 'wholesale_a') {
+          if (gstinEl) gstinEl.value = '37AABCR9912C1Z4';
+        }
+        recalcOrderPipeline();
+      }
+
+      function adjustCases(delta) {
+        const inp = document.getElementById('ord-cases');
+        if (inp) {
+          inp.value = Math.max(1, parseInt(inp.value || '0', 10) + delta);
+          recalcOrderPipeline();
+        }
+      }
+
+      function loadOrderPreset(preset) {
+        const nameEl = document.getElementById('ord-client-name');
+        const typeEl = document.getElementById('ord-client-type');
+        const gstinEl = document.getElementById('ord-gstin');
+        const destEl = document.getElementById('ord-destination');
+        const skuEl = document.getElementById('ord-sku');
+        const casesEl = document.getElementById('ord-cases');
+
+        if (preset === 'andhra') {
+          if (nameEl) nameEl.value = 'Andhra Mega Distributors Ltd';
+          if (typeEl) typeEl.value = 'wholesale_a';
+          if (gstinEl) gstinEl.value = '37AABCR9912C1Z4';
+          if (destEl) destEl.value = 'Vijayawada Central Depot, Andhra Pradesh';
+          if (skuEl) skuEl.value = 'drk-1';
+          if (casesEl) casesEl.value = '200';
+        } else if (preset === 'telangana') {
+          if (nameEl) nameEl.value = 'Telangana Beverage Super-Stockist';
+          if (typeEl) typeEl.value = 'super_stockist';
+          if (gstinEl) gstinEl.value = '36AAACT8821B1Z3';
+          if (destEl) destEl.value = 'Hyderabad Regional Hub, Telangana';
+          if (skuEl) skuEl.value = 'drk-2';
+          if (casesEl) casesEl.value = '500';
+        } else if (preset === 'bangalore') {
+          if (nameEl) nameEl.value = 'Bangalore Organic Retail Marts';
+          if (typeEl) typeEl.value = 'dealer_c';
+          if (gstinEl) gstinEl.value = '29AABCB1104D1Z2';
+          if (destEl) destEl.value = 'Indiranagar Hub, Bangalore, Karnataka';
+          if (skuEl) skuEl.value = 'drk-3';
+          if (casesEl) casesEl.value = '80';
+        } else if (preset === 'd2c') {
+          if (nameEl) nameEl.value = 'Kalyan Chakravarthy (Online Store Buyer)';
+          if (typeEl) typeEl.value = 'd2c';
+          if (gstinEl) gstinEl.value = 'CONSUMER-RETAIL-UNREGISTERED';
+          if (destEl) destEl.value = 'Visakhapatnam Beach Road Residence, AP';
+          if (skuEl) skuEl.value = 'drk-4';
+          if (casesEl) casesEl.value = '15';
+        }
+        recalcOrderPipeline();
+      }
+
+      function runAutonomousPipeline() {
+        const btn = document.getElementById('btn-run-pipeline');
+        const badge = document.getElementById('pipeline-status-badge');
+        const steps = ['step-1', 'step-2', 'step-3', 'step-4'];
+
+        if (btn) btn.disabled = true;
+        if (badge) {
+          badge.textContent = 'Processing (Autonomous)...';
+          badge.className = 'text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-bold animate-pulse';
+        }
+
+        // Animate sequential steps
+        steps.forEach((sId, idx) => {
+          const el = document.getElementById(sId);
+          if (el) {
+            el.className = 'p-2.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between opacity-50';
+          }
+          setTimeout(() => {
+            if (el) {
+              el.className = 'p-2.5 rounded-xl bg-purple-950/40 border border-purple-500/60 flex items-center justify-between shadow-md transition-all scale-[1.01]';
+              const icon = el.querySelector('.step-icon');
+              if (icon) icon.textContent = '⚡';
+            }
+          }, (idx + 1) * 350);
+        });
+
+        setTimeout(() => {
+          steps.forEach(sId => {
+            const el = document.getElementById(sId);
+            if (el) {
+              el.className = 'p-2.5 rounded-xl bg-emerald-950/30 border border-emerald-500/50 flex items-center justify-between transition-all';
+              const icon = el.querySelector('.step-icon');
+              if (icon) icon.textContent = '✅';
+            }
+          });
+          if (badge) {
+            badge.textContent = '100% DISPATCHED';
+            badge.className = 'text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-bold';
+          }
+          if (btn) btn.disabled = false;
+          
+          // Generate new invoice number and update receipt & tracking
+          const rand = Math.floor(1000 + Math.random() * 9000);
+          const traceId = 'OIC-SYNC-' + rand;
+          if (document.getElementById('doc-inv-no')) {
+            document.getElementById('doc-inv-no').textContent = 'INVOICE: INV-2026-' + rand;
+          }
+          if (document.getElementById('rcp-no')) {
+            document.getElementById('rcp-no').textContent = 'RCP-2026-' + rand;
+          }
+          if (document.getElementById('amz-tracking')) {
+            document.getElementById('amz-tracking').textContent = 'TRACKING: TBA3091829012-' + rand;
+          }
+          if (document.getElementById('erp-last-sync')) {
+            document.getElementById('erp-last-sync').textContent = new Date().toLocaleTimeString();
+          }
+          if (document.getElementById('it-trace-id')) {
+            document.getElementById('it-trace-id').textContent = traceId;
+          }
+
+          // Active background dispatch to Oracle OIC & Enterprise Cloud Backbone
+          try {
+            const oicEndpoint = 'https://design.integration.us-ashburn-1.ocp.oraclecloud.com/?integrationInstance=radiantspark-oic-id4w9yeg3jpw-ia';
+            fetch(oicEndpoint, {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                event: 'SPARKLE_DRINKS_ORDER_FULFILLED',
+                orderId: 'ORD-2026-' + rand,
+                traceId: traceId,
+                timestamp: new Date().toISOString()
+              })
+            }).catch(function() {});
+          } catch (e) {}
+
+          recalcOrderPipeline();
+        }, 1600);
+      }
+
+      function toggleItConsole() {
+        const panel = document.getElementById('it-console-panel');
+        const label = document.getElementById('it-btn-label');
+        if (!panel) return;
+        if (panel.classList.contains('hidden')) {
+          panel.classList.remove('hidden');
+          if (label) label.textContent = '▲ Hide IT Console';
+        } else {
+          panel.classList.add('hidden');
+          if (label) label.textContent = '🔒 Enterprise IT Console (Marcus Vance)';
+        }
+      }
+
+      function showDocTab(tab) {
+        ['inv', 'rcp', 'amz', 'req', 'way'].forEach(t => {
+          const panel = document.getElementById('docPanel-' + t);
+          const btn = document.getElementById('docTab-' + t);
+          if (panel) {
+            if (t === tab) panel.classList.remove('hidden');
+            else panel.classList.add('hidden');
+          }
+          if (btn) {
+            if (t === tab) {
+              btn.className = 'px-3 py-1 rounded-lg text-xs font-bold bg-purple-600 text-white transition-all';
+            } else {
+              btn.className = 'px-3 py-1 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all';
+            }
+          }
+        });
+      }
+
+      function filterAgents(dept) {
+        document.querySelectorAll('.agent-flt').forEach(b => {
+          b.className = 'agent-flt px-3 py-1 rounded-full bg-slate-900 text-slate-300 font-bold hover:bg-slate-800';
+        });
+        if (event && event.target) {
+          event.target.className = 'agent-flt px-3 py-1 rounded-full bg-purple-600 text-white font-bold';
+        }
+        document.querySelectorAll('.agent-card').forEach(card => {
+          const cDept = card.getAttribute('data-dept');
+          if (dept === 'all' || cDept === dept) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      function quickAskAgent(name) {
+        const sel = document.getElementById('chat-agent-select');
+        if (sel) sel.value = name;
+        const chatInput = document.getElementById('brain-chat-input');
+        if (chatInput) {
+          chatInput.value = 'What is your operational focus and how do you accelerate the business?';
+          chatInput.focus();
+        }
+        const chatSec = document.getElementById('brain-chat');
+        if (chatSec) chatSec.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      function sendQuickPrompt(txt) {
+        const inp = document.getElementById('brain-chat-input');
+        if (inp) {
+          inp.value = txt;
+          handleChatSubmit();
+        }
+      }
+
+      const AGENT_KNOWLEDGE = {
+        'Maya Chen': 'As Chief AI Operations Orchestrator, I oversee all 10 AI employees, synthesizing US enterprise tech pipelines with India beverage factory bottling. Our order-to-dispatch latency is currently 1.1s with 99.98% autonomous accuracy.',
+        'Arjun Reddy': 'I manage dealer onboarding across AP, Telangana & Karnataka. Wholesale dealers receive 12% off for 200+ cases and Super-Stockists receive 18% off for 500+ cases. All GSTINs are verified directly with the GSTN portal.',
+        'Elena Rostova': 'Sparkle Drinks fall under HSN 2202 attracting 28% GST (14% CGST + 14% SGST for intra-state Andhra Pradesh, or 28% IGST for interstate). Every invoice is automatically stamped with an IRN and QR code.',
+        'Rajesh Varma': 'At our Visakhapatnam Unit 02 and Chittoor bottling lines, we maintain 3.4 bar carbonation and hermetic sealing at 1.8°C. Our automated factory requisition slips reserve spring water and botanical extracts instantly.',
+        'Capt. Vikram Naidu': 'Our zero-emission Tata Ace EV Reefer fleet maintains an active 2.0°C to 4.0°C cold chain. IoT temperature sensors transmit live telematics every 60 seconds to guarantee freshness and FSSAI cold-chain compliance.',
+        'Priya Sharma': 'Raw material levels are continuously monitored. We keep 30 days of safety stock for berry extracts, herbal roots, and recyclable aluminum cans. Reorders trigger autonomously when inventory reaches 20%.',
+        'Ananya Iyer': 'We ensure 100% compliance with Section 16 CGST Act, FSSAI Central License #10126999000142, and DPDP Act 2023. All dealer contracts and D2C checkouts feature full legal enforceability.',
+        'Marcus Vance': 'Our cloud architecture uses Oracle Fusion REST Services, microservices pipelines, and resilient multi-region databases. We bridge US technology consulting with India factory IoT streams securely.',
+        'David Sterling': 'By automating order-to-dispatch and eliminating manual billing bottlenecks, Radiant Spark Global achieves 34% higher operational throughput and a 22% net margin expansion across wholesale and D2C channels.',
+        'Sarah Jenkins': 'Direct-to-consumer orders from sparkdeals.html and mobile apps are ingested within 50ms. Buyers receive real-time dispatch updates and cold-chain temperature verification directly on their phones.'
+      };
+
+      function handleChatSubmit() {
+        const inp = document.getElementById('brain-chat-input');
+        const win = document.getElementById('brain-chat-window');
+        const agent = document.getElementById('chat-agent-select')?.value || 'Maya Chen';
+        if (!inp || !inp.value.trim() || !win) return;
+
+        const query = inp.value.trim();
+        inp.value = '';
+
+        // Append User Message
+        const uMsg = document.createElement('div');
+        uMsg.className = 'p-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-right';
+        uMsg.innerHTML = '<strong class="text-blue-400 block mb-0.5 text-[11px]">You (Executive):</strong><span>' + escapeHtml(query) + '</span>';
+        win.appendChild(uMsg);
+
+        // Append Agent Response
+        setTimeout(() => {
+          const aMsg = document.createElement('div');
+          aMsg.className = 'p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 text-purple-200';
+          const defaultAnswer = AGENT_KNOWLEDGE[agent] || ('I am ' + agent + '. All operations are running autonomously with zero bottlenecks.');
+          aMsg.innerHTML = '<strong class="text-white block mb-0.5 text-[11px]">🧠 ' + agent + ':</strong><span>' + defaultAnswer + '</span>';
+          win.appendChild(aMsg);
+          win.scrollTop = win.scrollHeight;
+        }, 300);
+      }
+
+      function escapeHtml(str) {
+        return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      }
+
+      // Initial calculation on load and hash change
+      window.addEventListener('DOMContentLoaded', () => {
+        recalcOrderPipeline();
+      });
       window.addEventListener('hashchange', () => {
         const hash = window.location.hash.replace('#', '');
-        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals' || hash === 'global') {
+        if (hash === 'india' || hash === 'usa' || hash === 'sparkdeals' || hash === 'global' || hash === 'brain') {
           switchTab(hash);
         }
       });
