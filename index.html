@@ -29,9 +29,9 @@
     <!-- Three.js CDN for standalone 3D Celestial Globe and Silicon Microchip Emitter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <style>body{color:#f8fafc;background-color:#030712;font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden}.font-mono{font-family:JetBrains Mono,monospace}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#030712}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:4px}</style>
-    <script type="module" crossorigin src="./assets/index-Pv1273St.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BOb6SCar.css">
+    <style>html,body{color:#f8fafc;background-color:#030712;height:auto;font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden auto}.font-mono{font-family:JetBrains Mono,monospace}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#030712}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:4px}@keyframes ticker{0%{transform:translate(0%)}to{transform:translate(-50%)}}.animate-ticker{will-change:transform;animation:32s linear infinite ticker;display:inline-flex}</style>
+    <script type="module" crossorigin src="./assets/index-BSpZHOZy.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bi0XI181.css">
   </head>
   <body class="bg-[#030712] text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white font-sans antialiased overflow-x-hidden">
     
@@ -344,6 +344,31 @@
                   <span class="font-bold text-emerald-400">▲ +3.20%</span>
                 </div>
               </div>
+            </div>
+
+            <!-- Right Action: TradingView Legal Shield & External Link -->
+            <div class="flex items-center shrink-0 border-l border-slate-800">
+              <button
+                type="button"
+                onclick="openModal('tradingViewLegalModal')"
+                class="px-3 py-2 bg-purple-950/80 hover:bg-purple-900 text-purple-200 border-r border-slate-800 text-[11px] font-bold transition-colors flex items-center gap-1.5"
+                title="View TradingView & Market Data Safe Harbor Legal Disclaimer"
+              >
+                <span>⚖️</span>
+                <span class="hidden lg:inline">TradingView Legal Shield</span>
+                <span class="lg:hidden">Legal</span>
+              </button>
+
+              <a
+                href="https://www.tradingview.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hidden md:flex items-center gap-1.5 px-3 py-2 bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white text-[11px] font-bold transition-colors"
+                title="TradingView Financial Market Data Platform"
+              >
+                <span>TradingView Live</span>
+                <span class="text-blue-400">↗</span>
+              </a>
             </div>
           </div>
         </div>
