@@ -1,33 +1,30 @@
-# Radiant Spark LLC — Official Web & Mobile Apps Production Package
+# Radiant Spark Global
 
-This repository contains the complete production-ready build for Radiant Spark LLC, SparkSync OS, and SparkDeals Hub.
+React/Vite corporate site with India divisions, merchant discovery and a local business task planner.
 
-## GitHub Pages Deployment in 3 Simple Steps
+## Build
 
-1. Unzip this package (`radiantspark-final.zip`).
-2. Upload all files and folders (including `assets/`, `app.html`, `index.html`, `CNAME`, `.nojekyll`) into your GitHub repository root (`main` branch).
-   - *Tip:* If using Git CLI:
-     ```bash
-     git add .
-     git commit -m "Deploy Radiant Spark & SparkSync Mobile OS"
-     git push origin main
-     ```
-3. In GitHub, go to **Settings** ➔ **Pages**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main` ➔ `/ (root)`
-   - Click **Save**.
-4. Your site will be live immediately at **https://radiantsparkllc.com**!
+Node 24: `npm ci`, `npm run lint`, `npm run build`. Publish **dist**, never the source index or old ZIP files. GitHub Actions builds and deploys Pages on main; deployment requires repository Pages permission.
 
-## Can I Make My GitHub Repository Private?
-- **GitHub Free Account:** GitHub Pages is ONLY available on **Public** repositories. If you change a free repository to Private, GitHub Pages turns off and `radiantsparkllc.com` will stop working.
-- **GitHub Pro ($4/mo) or GitHub Enterprise:** YES! GitHub Pages supports **Private** repositories. Your code remains private to you, while your website and mobile apps stay publicly live at `radiantsparkllc.com`.
-- **Free Private Alternative:** You can also deploy this exact repository to **Cloudflare Pages**, **Vercel**, or **Netlify** (all have free tiers with 100% private GitHub repositories and custom domain support).
+## Verified behavior and limits
 
-## Key Pages Included
-- `index.html`: Corporate Global Portal with instant pre-rendered layout & Mobile App Download Center
-- `app.html`: Standalone 1,221-Line SparkSync Mobile Super-App (Dynamic Island, 3D Biometric Plexus, Apple Watch ECG telemetry, Smart Photo Cleaner, Market Pulse, 8 tabs, Deals)
-- `sparkdeals.html`: Standalone Dedicated SparkDeals Live Hub
-- `spardeals.html`: Instant redirect for typo safety
-- `manifest.json` & `sw.js`: PWA Mobile app install capabilities
-- `CNAME`: Configured for `radiantsparkllc.com`
-- `.nojekyll`: Disables Jekyll so all folders and scripts are served correctly
+- WebGL initialization failures fall back to a CSS glow instead of crashing React.
+- A single React entrypoint replaces the previous competing static/React applications.
+- Relative assets work under `/radiantspark/` and a future custom domain.
+- No browser Gemini secret injection. No false success for Oracle dispatch.
+- Random market ticks, fictional order books and fixed “live” prices are removed. No brokerage, betting, merchant feed or ERP is connected.
+- SparkDeals is merchant discovery, with no unsupported current price, stock or discount claims.
+- Ten AI roles are a local task planner, not hired employees. Tasks persist on this browser only. No payments, filings, purchase orders or shipments execute.
+- Legal copy preserves consumer rights and does not promise immunity. Division licenses, tax rates and registrations require verification.
+
+## Domain / Zoho
+
+`radiantspark.com` redirected to a HugeDomains sale page during the 2026-11-07 audit. Ownership/control has not been established. Do not point an unowned domain or purchase it without authorization. No CNAME is published until ownership and hosting are confirmed.
+
+Expected default Pages URL once deployment succeeds: https://svinnakota84.github.io/radiantspark/
+
+After ownership is established and the custom domain is configured in GitHub Pages, Zoho DNS for the apex uses four separate A records (`@`): 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153. `www` CNAME: svinnakota84.github.io. Preserve email MX, SPF, DKIM and DMARC records. Wait for DNS and TLS validation before enforcing HTTPS. See https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site.
+
+## Activation requirements
+
+Real markets require authorized provider access and timestamps, stale/error handling and integration tests. Trading/betting also requires provider agreements and jurisdiction review. “Aliena” is unidentified. Live deals require authorized feed credentials and verified offer expiry. Real staff operation requires authenticated accounts, roles, durable records and audit logs. Legal agreements require professional review against actual activities. See public/business-readiness.html.

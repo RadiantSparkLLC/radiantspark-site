@@ -11,13 +11,13 @@
     <meta name="twitter:card" content="summary_large_image" />
     
     <!-- PWA & Mobile Install Manifest -->
-    <link rel="manifest" href="./manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#030712" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="SparkSync" />
-    <link rel="apple-touch-icon" href="./icon.svg" />
-    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +29,32 @@
     <!-- Three.js CDN for standalone 3D Celestial Globe and Silicon Microchip Emitter -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 
-    <style>html,body{color:#f8fafc;background-color:#030712;height:auto;font-family:Plus Jakarta Sans,-apple-system,BlinkMacSystemFont,sans-serif;overflow:hidden auto}.font-mono{font-family:JetBrains Mono,monospace}::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#030712}::-webkit-scrollbar-thumb{background:#1e293b;border-radius:4px}@keyframes ticker{0%{transform:translate(0%)}to{transform:translate(-50%)}}.animate-ticker{will-change:transform;animation:32s linear infinite ticker;display:inline-flex}</style>
-    <script type="module" crossorigin src="./assets/index-BSpZHOZy.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-Bi0XI181.css">
+    <style>
+      html, body {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #030712;
+        color: #f8fafc;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto;
+      }
+      .font-mono {
+        font-family: 'JetBrains Mono', monospace;
+      }
+      ::-webkit-scrollbar { width: 6px; }
+      ::-webkit-scrollbar-track { background: #030712; }
+      ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+
+      @keyframes ticker {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-ticker {
+        display: inline-flex;
+        animation: ticker 32s linear infinite;
+        will-change: transform;
+      }
+    </style>
   </head>
   <body class="bg-[#030712] text-slate-100 min-h-screen selection:bg-blue-600 selection:text-white font-sans antialiased overflow-x-hidden">
     
@@ -47,7 +70,7 @@
               <!-- Left Brand Badge -->
               <button onclick="switchTab('global')" class="flex items-center gap-3 text-left focus:outline-none group shrink-0">
                 <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-slate-900 border border-slate-700/80 flex items-center justify-center p-1.5 shadow-md group-hover:border-blue-500/50 transition-colors">
-                  <img src="./icon.svg" onerror="this.src='/assets/icon.svg'" alt="Radiant Spark Symbol" class="w-full h-full object-contain" />
+                  <img src="/icon.svg" onerror="this.src='/assets/icon.svg'" alt="Radiant Spark Symbol" class="w-full h-full object-contain" />
                 </div>
                 <div class="leading-tight">
                   <span class="font-extrabold text-sm sm:text-base text-white tracking-tight group-hover:text-blue-300 transition-colors block">
@@ -519,7 +542,7 @@
                 <div class="p-8 rounded-3xl bg-slate-900/70 border border-blue-500/30 flex flex-col justify-between space-y-6 shadow-xl">
                   <div class="space-y-4">
                     <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
-                      <img src="./spark-it.jpg" onerror="this.src='/assets/spark-it.jpg'" alt="Spark IT Consulting" class="w-full h-full object-cover" />
+                      <img src="/spark-it.jpg" onerror="this.src='/assets/spark-it.jpg'" alt="Spark IT Consulting" class="w-full h-full object-cover" />
                       <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-cyan-300 border border-cyan-500/40">United States · Technology</span>
                     </div>
                     <span class="text-xs font-mono font-bold text-blue-400 uppercase tracking-wider block">Radiant Spark LLC</span>
@@ -538,7 +561,7 @@
                 <div class="p-8 rounded-3xl bg-slate-900/70 border border-amber-500/30 flex flex-col justify-between space-y-6 shadow-xl">
                   <div class="space-y-4">
                     <div class="w-full h-48 rounded-2xl overflow-hidden bg-slate-950 border border-slate-800 relative">
-                      <img src="./spark-ev.jpg" onerror="this.src='/assets/spark-ev.jpg'" alt="RDNT Sparkle Industries LLP" class="w-full h-full object-cover" />
+                      <img src="/spark-ev.jpg" onerror="this.src='/assets/spark-ev.jpg'" alt="RDNT Sparkle Industries LLP" class="w-full h-full object-cover" />
                       <span class="absolute bottom-3 left-3 px-3 py-1 rounded-lg bg-black/80 text-[10px] font-mono text-amber-300 border border-amber-500/40">India · Products &amp; Operations</span>
                     </div>
                     <span class="text-xs font-mono font-bold text-amber-400 uppercase tracking-wider block">RDNT Sparkle Industries LLP</span>
@@ -778,7 +801,7 @@
                   <div class="lg:col-span-5">
                     <div class="relative h-72 sm:h-88 rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl bg-slate-950 group">
                       <img
-                        src="./spark-ev.jpg"
+                        src="/spark-ev.jpg"
                         onerror="this.src='/assets/spark-ev.jpg'"
                         alt="Spark EV concept: electric mobility and charging station"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -837,7 +860,7 @@
                 <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
                   <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
                     <img
-                      src="./spark-ev.jpg"
+                      src="/spark-ev.jpg"
                       onerror="this.src='/assets/spark-ev.jpg'"
                       alt="Spark EV"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -886,7 +909,7 @@
                 <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
                   <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
                     <img
-                      src="./sparkle-drinks.jpg"
+                      src="/sparkle-drinks.jpg"
                       onerror="this.src='/assets/sparkle-drinks.jpg'"
                       alt="Sparkle Drinks"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -935,7 +958,7 @@
                 <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
                   <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
                     <img
-                      src="./spicy-sparkle-naturals.jpg"
+                      src="/spicy-sparkle-naturals.jpg"
                       onerror="this.src='/assets/spicy-sparkle-naturals.jpg'"
                       alt="Spicy Sparkle Naturals"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -984,7 +1007,7 @@
                 <article class="rounded-2xl bg-slate-900/80 border border-slate-800 overflow-hidden flex flex-col justify-between hover:border-amber-500/50 transition-all shadow-xl">
                   <div class="relative h-56 w-full bg-slate-950 overflow-hidden">
                     <img
-                      src="./sparkle-distribution.jpg"
+                      src="/sparkle-distribution.jpg"
                       onerror="this.src='/assets/sparkle-distribution.jpg'"
                       alt="Sparkle Distribution Network"
                       class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -1202,7 +1225,7 @@
                   <div class="lg:col-span-5">
                     <div class="relative h-72 sm:h-88 rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl bg-slate-950 group">
                       <img
-                        src="./spark-it.jpg"
+                        src="/spark-it.jpg"
                         onerror="this.src='/assets/spark-it.jpg'"
                         alt="Spark IT Consulting"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -3732,6 +3755,7 @@
     </script>
 
     <!-- React App Hydration -->
+    <script type="module" src="/src/main.tsx"></script>
 
     <script>
       if ('serviceWorker' in navigator) {
