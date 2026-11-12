@@ -1,25 +1,30 @@
-# Radiant Spark website
+# Radiant Spark Global
 
-The complete Vite/React source imported from both identical uploaded ZIPs is in `website/`. GitHub Pages serves the compiled files at repository root.
+React/Vite corporate site with India divisions, merchant discovery and a local business task planner.
 
-## Build and check
+## Build
 
-Node 24:
+Node 24: `npm ci`, `npm run lint`, `npm run build`. Publish **dist**, never the source index or old ZIP files. GitHub Actions builds and deploys Pages on main; deployment requires repository Pages permission.
 
-```sh
-npm --prefix website ci
-npm run lint
-npm run build
-```
+## Verified behavior and limits
 
-Publish source and regenerated root files together with a normal fast-forward commit. Preserve CNAME (`radiantsparkllc.com`). Never upload an uncompiled TypeScript index as the public homepage.
+- WebGL initialization failures fall back to a CSS glow instead of crashing React.
+- A single React entrypoint replaces the previous competing static/React applications.
+- Relative assets work under `/radiantspark/` and a future custom domain.
+- No browser Gemini secret injection. No false success for Oracle dispatch.
+- Random market ticks, fictional order books and fixed “live” prices are removed. No brokerage, betting, merchant feed or ERP is connected.
+- SparkDeals is merchant discovery, with no unsupported current price, stock or discount claims.
+- Ten AI roles are a local task planner, not hired employees. Tasks persist on this browser only. No payments, filings, purchase orders or shipments execute.
+- Legal copy preserves consumer rights and does not promise immunity. Division licenses, tax rates and registrations require verification.
 
-## Verified behavior
+## Domain / Zoho
 
-One React entrypoint, bundled local hero images, relative compiled assets, theme control, six hash routes, local draft forms, official merchant search links, local task planner. Old service-worker caches are retired. No card fields or simulated payment success.
+`radiantspark.com` redirected to a HugeDomains sale page during the 2026-11-07 audit. Ownership/control has not been established. Do not point an unowned domain or purchase it without authorization. No CNAME is published until ownership and hosting are confirmed.
 
-## Integration limits
+Expected default Pages URL once deployment succeeds: https://svinnakota84.github.io/radiantspark/
 
-Live offers, Stripe Checkout, AI coaching, Oracle execution, private owner dashboard, automated daily updates and form delivery are not connected. Industry capabilities are demonstrations. No transaction or message is executed by these pages. No legal immunity or licensing verification is promised.
+After ownership is established and the custom domain is configured in GitHub Pages, Zoho DNS for the apex uses four separate A records (`@`): 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153. `www` CNAME: svinnakota84.github.io. Preserve email MX, SPF, DKIM and DMARC records. Wait for DNS and TLS validation before enforcing HTTPS. See https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site.
 
-Both uploaded ZIP archives contained identical bytes. Missing source structure, dependencies and build scripts were restored. Unsupported success messages and invented deals were removed rather than represented as live integrations.
+## Activation requirements
+
+Real markets require authorized provider access and timestamps, stale/error handling and integration tests. Trading/betting also requires provider agreements and jurisdiction review. “Aliena” is unidentified. Live deals require authorized feed credentials and verified offer expiry. Real staff operation requires authenticated accounts, roles, durable records and audit logs. Legal agreements require professional review against actual activities. See public/business-readiness.html.

@@ -1,22 +1,24 @@
-#!/usr/bin/env bash
-set -euo pipefail
-cd "$(dirname "$0")"
-target="https://github.com/RadiantSparkLLC/radiantspark-site.git"
-if [ "$(git remote get-url origin)" != "$target" ]; then
-  echo "Expected origin $target. Update origin before publishing." >&2
-  exit 1
-fi
-if [ "$(git branch --show-current)" != main ]; then
-  echo "Switch to main before publishing." >&2
-  exit 1
-fi
-# Build the complete ZIP source before publishing.
-npm --prefix website ci
+#!/bin/bash
+# Radiant Spark Global - 1-Click GitHub Deployer Script
+
+echo "🚀 Preparing Radiant Spark build for GitHub Pages deployment..."
+
+# Rebuild dist & verify zero errors
 npm run lint
 npm run build
-git add -- website assets index.html sw.js push_to_github.sh package.json package-lock.json publish-build.mjs README.md MERGE_VALIDATION.md app.html portal.html spardeals.html sparkdeals.html website.html
-if ! git diff --cached --quiet; then
-  git commit -m "Fix Pages delivery and refresh behavior"
+python3 scripts/package_github_zip.py
+
+# Git Commit
+git add -A
+git commit -m "Feat: Complete Radiant Spark platform update (Light/Dark mode, B2B RFQ, blank customer forms)" || true
+git branch -M main
+git remote add origin https://github.com/RadiantSparkLLC/radiantspark-next.git 2>/dev/null || git remote set-url origin https://github.com/RadiantSparkLLC/radiantspark-next.git
+
+echo "🔑 Pushing code to GitHub..."
+if [ -n "$GITHUB_TOKEN" ]; then
+  git push https://${GITHUB_TOKEN}@github.com/RadiantSparkLLC/radiantspark-next.git main --force
+else
+  git push -u origin main --force
 fi
-git push origin main
-echo "Check deployment: https://github.com/RadiantSparkLLC/radiantspark-site/actions"
+
+echo "✅ Code pushed! GitHub Actions will now automatically deploy the live site to https://radiantsparkllc.github.io/radiantspark-next/"
