@@ -15,3 +15,7 @@
 
 - All six routes passed automated server-render checks using the built source: Global, USA, India, SparkDeals, AI Brain and Lifestyle.
 - Automatic review blocked the original inquiry form for its hardcoded WhatsApp recipient; replaced with a local-only draft and rebuilt successfully.
+
+## Post-deployment browser checks
+
+The public deployed website was reachable after Pages deployment succeeded. All six portal views were opened in the live browser. Light/dark toggle changed state, Christmas-gifts filtering updated all three merchant search URLs, Lifestyle intake fields were blank, subscription availability opened the accurate checkout-unavailable dialog, and the business inquiry modal showed a local-only draft. No payments, messages or customer data were submitted. This supersedes the earlier local-preview connectivity limitation for these specific checks; it is not a full mobile, accessibility or real-integration test.
