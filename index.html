@@ -1355,28 +1355,99 @@
           <!-- VIEW: LIFESTYLE & WELLNESS PORTAL (lifestyle.radiantsparkllc.com) -->
           <!-- ============================================================== -->
           <div id="view-lifestyle" class="view-panel hidden">
-            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
-              <div class="rounded-3xl border border-emerald-500/40 bg-gradient-to-br from-emerald-950/80 via-slate-900 to-slate-950 p-7 sm:p-10 shadow-2xl">
-                <p class="text-xs font-mono uppercase tracking-widest text-emerald-300 mb-3">LIFESTYLE HUB · FOOD, FITNESS &amp; FASHION</p>
-                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Build a lifestyle<br><span class="font-serif italic text-emerald-200">you look forward to.</span></h1>
-                <p class="text-sm text-slate-300 max-w-2xl mt-5 leading-relaxed">Discover meal ideas, home and gym routines, and everyday style inspiration. Explore the actual Lifestyle Hub below, or open it in its own page for membership plans.</p>
-                <div class="flex flex-wrap gap-3 mt-6">
-                  <a href="https://lifestyle.radiantsparkllc.com/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full bg-emerald-400 text-slate-950 font-bold text-sm">Open Lifestyle Hub ↗</a>
-                  <a href="https://lifestyle.radiantsparkllc.com/diet-plan" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-full border border-emerald-400/40 text-emerald-200 font-bold text-sm">Explore diet &amp; membership plans ↗</a>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-                  <div class="p-4 rounded-2xl bg-slate-950/50 border border-emerald-500/15"><h2 class="font-bold text-emerald-200">Food &amp; diet</h2><p class="text-xs text-slate-400 mt-2">Practical recipes and ideas to make everyday meals easier.</p></div>
-                  <div class="p-4 rounded-2xl bg-slate-950/50 border border-emerald-500/15"><h2 class="font-bold text-emerald-200">Fitness &amp; gym</h2><p class="text-xs text-slate-400 mt-2">Explore movement, workout content and a routine that fits your day.</p></div>
-                  <div class="p-4 rounded-2xl bg-slate-950/50 border border-emerald-500/15"><h2 class="font-bold text-emerald-200">Fashion &amp; style</h2><p class="text-xs text-slate-400 mt-2">Outfit inspiration, colour combinations and ways to use your wardrobe.</p></div>
+            <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+              <div class="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-emerald-950/70 via-slate-900 to-teal-950/70 border-2 border-emerald-500/50 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                  <div class="space-y-3 max-w-3xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-xs font-mono font-bold">
+                      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                      <span>LIFESTYLE.RADIANTSPARKLLC.COM · AI HEALTH &amp; WELLNESS PLATFORM</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+                      Personalized AI Diet, Fashion &amp; Daily Lifestyle Subscription
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      Powered by <strong class="text-white">Lifestyle Hub and your AI wellness guide</strong>. Explore food, fitness and style content. Paid enrollment, AI coaching and WhatsApp delivery require secure service activation.
+                    </p>
+                  </div>
+
+                  <div class="p-4 rounded-2xl bg-slate-950/80 border border-emerald-500/40 text-center shrink-0 space-y-2">
+                    <span class="text-[10px] font-mono text-emerald-400 font-bold uppercase tracking-wider block">ElevenLabs Voice AI Agent</span>
+                    <button onclick="alert('Voice coaching is not connected yet. No audio session has started.')" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-lg">
+                      Listen to Voice Coach 🔊
+                    </button>
+                  </div>
                 </div>
               </div>
-              <div class="p-4 rounded-2xl bg-amber-950/30 border border-amber-500/30 text-xs text-amber-100 leading-relaxed" role="status">Enrollment activation pending. Card details belong only in Stripe-hosted checkout once the secure subscription service is connected. No payment or membership is activated by viewing this page. AI coaching is also awaiting activation.</div>
-              <iframe src="https://lifestyle.radiantsparkllc.com/" title="Lifestyle Hub — food, fitness, fashion and diet plans" loading="lazy" style="display:block;width:100%;height:1050px;min-height:80vh;border:1px solid #254b42;border-radius:24px;background:#faf7f2"></iframe>
-              <p class="text-center text-xs text-slate-400">Prefer a full-screen experience? <a href="https://lifestyle.radiantsparkllc.com/" target="_blank" rel="noopener noreferrer" class="text-emerald-300">Open Lifestyle Hub ↗</a>. Daily inspiration currently rotates from a curated library.</p>
+
+              <!-- Blank Intake Form & Live Plan Generator -->
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <div class="lg:col-span-7 p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-emerald-500/40 shadow-xl space-y-6">
+                  <div class="border-b border-slate-800 pb-4">
+                    <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest block mb-1">New Customer Registration &amp; Diet Customizer</span>
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-white">Your Preferences &amp; Lifestyle Plans</h3>
+                    <p class="text-xs text-slate-400 mt-1">Explore your preferences below. Open Lifestyle Hub to review membership availability. No payment is taken by this form.</p>
+                  </div>
+
+                  <form onsubmit="event.preventDefault(); window.open('https://lifestyle.radiantsparkllc.com/diet-plan', '_blank', 'noopener,noreferrer');" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Full Name *</label>
+                        <input type="text" placeholder="Enter your full name..." required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-emerald-500 focus:outline-none" />
+                      </div>
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Email Address *</label>
+                        <input type="email" placeholder="name@example.com..." required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold focus:border-emerald-500 focus:outline-none" />
+                      </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-1">WhatsApp Number *</label>
+                        <input type="tel" placeholder="+1 (555) 000-0000 or +91 9876543210..." required class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-mono font-semibold focus:border-emerald-500 focus:outline-none" />
+                      </div>
+                      <div>
+                        <label class="block text-xs font-bold text-slate-300 uppercase mb-1">Dietary Preference</label>
+                        <select class="w-full px-3.5 py-2.5 rounded-xl bg-slate-950 border border-slate-700 text-white text-xs font-semibold">
+                          <option>High Protein &amp; Botanical Lean</option>
+                          <option>Pure Vegetarian &amp; Sattvik Herbal</option>
+                          <option>100% Organic Vegan</option>
+                          <option>Keto &amp; Healthy Fats</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-1 text-xs text-slate-300">
+                      <strong class="text-emerald-400 block font-bold font-mono">Stripe Multi-Currency Billing (USD Base):</strong>
+                      <p className="text-[11px] text-slate-400">Secure checkout activation is pending. The connected Stripe account supports card charges, but this website does not yet have a working subscription checkout. Supported currencies and payment methods will be shown by Stripe when configured.</p>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-black text-sm uppercase tracking-wider shadow-xl shadow-emerald-600/30">
+                      Explore Lifestyle Hub membership plans ↗
+                    </button>
+                  </form>
+                </div>
+
+                <div class="lg:col-span-5 p-6 rounded-3xl bg-slate-900 border border-emerald-500/40 space-y-4">
+                  <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                    <span class="text-2xl">🧘‍♀️</span>
+                    <div>
+                      <h4 class="text-sm font-extrabold text-white">Coach Maya Chen</h4>
+                      <span class="text-[10px] font-mono text-emerald-400 block font-semibold">AI wellness guide · activation pending</span>
+                    </div>
+                  </div>
+                  <p class="text-xs text-slate-300 leading-relaxed">
+                    "Explore practical meal, movement and style ideas in Lifestyle Hub. Private AI coaching and daily subscriber delivery will be available after the secure membership service is connected."
+                  </p>
+                  <a href="https://lifestyle.radiantsparkllc.com/" target="_blank" rel="noopener noreferrer" class="inline-flex px-4 py-2 rounded-xl bg-emerald-600 text-white text-xs font-bold">Open Lifestyle Hub ↗</a>
+                </div>
+              </div>
             </section>
           </div>
 
-          <!-- SparkDeals remains a separate shopping destination. -->
+          <!-- ============================================================== -->
+          <!-- VIEW 4: SPARKDEALS LIVE HUB                                    -->
+          <!-- ============================================================== -->
           <div id="view-sparkdeals" class="view-panel hidden">
             <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
               <iframe id="sparkdeals-frame" src="./sparkdeals.html?embed=1&amp;v=20261114-electronics" title="SparkDeals live offers" style="display:block;width:100%;height:1800px;border:0;overflow:hidden" scrolling="no"></iframe>

@@ -22,5 +22,5 @@ $('plan-form').addEventListener('submit',e=>{e.preventDefault();prefs={food:$('f
 $('clear').addEventListener('click',()=>{try{localStorage.removeItem(key);localStorage.removeItem(habitKey)}catch{}prefs={food:'balanced',move:'home',style:'casual'};$('food-pref').value=prefs.food;$('move-pref').value=prefs.move;$('style-pref').value=prefs.style;daily();$('save-status').textContent='Saved preferences and checklist cleared.'});
 let installEvent;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEvent=e});$('install').addEventListener('click',async()=>{if(installEvent){await installEvent.prompt();await installEvent.userChoice;installEvent=null}else $('install-dialog').showModal()});$('close-install').addEventListener('click',()=>$('install-dialog').close());
 function online(){$('online').textContent=navigator.onLine?'● Online':'○ Offline'}window.addEventListener('online',online);window.addEventListener('offline',online);
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./lifespark-sw.js',{scope:'./app.html'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./lifespark-sw.js',{scope:location.pathname.endsWith('/lifespark.html')?'./lifespark.html':'./app.html'}).catch(()=>{});
 daily();online();activate();setInterval(()=>{if(dateKey()!==day)daily()},60000);

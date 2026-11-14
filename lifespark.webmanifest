@@ -1,9 +1,9 @@
 {
-  "id": "/app.html",
+  "id": "/lifespark.html",
   "name": "LifeSpark by Radiant Spark",
   "short_name": "LifeSpark",
   "description": "Food, fitness, fashion and everyday wellbeing. Your daily lifestyle companion.",
-  "start_url": "/app.html?source=installed#home",
+  "start_url": "/lifespark.html?source=installed#home",
   "scope": "/",
   "display": "standalone",
   "background_color": "#08151b",
@@ -25,11 +25,11 @@
   "shortcuts": [
     {
       "name": "My starter plan",
-      "url": "/app.html#plan"
+      "url": "/lifespark.html#plan"
     },
     {
       "name": "Lifestyle Hub",
-      "url": "/app.html#lifestyle"
+      "url": "/lifespark.html#lifestyle"
     }
   ]
 }
