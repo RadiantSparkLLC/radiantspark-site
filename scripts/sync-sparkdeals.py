@@ -121,8 +121,9 @@ def main():
     # Preserve publisher titles, descriptions, links and referral codes intact.
     unique={}
     for d in deals:
-        if d['url'] not in unique:unique[d['url']]=d
-        elif d.get('feedName')=='DealNews Electronics':unique[d['url']]['category']='Electronics'
+        identity=d['source']+':'+(urlparse(d['id']).path if d['source']=='DealNews' else d['id'])
+        if identity not in unique:unique[identity]=d
+        elif d.get('feedName')=='DealNews Electronics':unique[identity]['category']='Electronics'
     data=dict(source='DealNews + Slickdeals RSS',fetchedAt=now.isoformat(),refreshMinutes=15,sources=sources,deals=sorted(unique.values(),key=lambda d:d['publishedAt'],reverse=True))
     output.parent.mkdir(exist_ok=True);temp=output.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');temp.replace(output)
     print('Fetched',len(data['deals']),'RSS listings from',success,'sources at',data['fetchedAt'])
