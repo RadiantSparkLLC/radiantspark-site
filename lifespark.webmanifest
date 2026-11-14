@@ -1,1 +1,35 @@
-{"id":"/app.html","name":"LifeSpark by Radiant Spark","short_name":"LifeSpark","description":"Food, fitness, fashion and fresh deals. Your daily lifestyle companion.","start_url":"/app.html?source=installed#home","scope":"/","display":"standalone","background_color":"#08151b","theme_color":"#08151b","icons":[{"src":"/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},{"src":"/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"}],"shortcuts":[{"name":"Fresh offers","url":"/app.html#deals"},{"name":"My starter plan","url":"/app.html#plan"},{"name":"Lifestyle Hub","url":"/app.html#lifestyle"}]}
+{
+  "id": "/app.html",
+  "name": "LifeSpark by Radiant Spark",
+  "short_name": "LifeSpark",
+  "description": "Food, fitness, fashion and everyday wellbeing. Your daily lifestyle companion.",
+  "start_url": "/app.html?source=installed#home",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#08151b",
+  "theme_color": "#08151b",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "My starter plan",
+      "url": "/app.html#plan"
+    },
+    {
+      "name": "Lifestyle Hub",
+      "url": "/app.html#lifestyle"
+    }
+  ]
+}

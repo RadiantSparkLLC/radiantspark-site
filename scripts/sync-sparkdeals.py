@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 
 DEALNEWS = 'https://www.dealnews.com/rss/todays-edition'
+ELECTRONICS = 'https://www.dealnews.com/c142/Electronics/?rss=1'
 SOURCE = 'https://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1'
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -104,13 +105,16 @@ def main():
     try:previous=json.loads(output.read_text())
     except (OSError,ValueError):previous={}
     sources=[];deals=[];success=0
-    for name,url,parser in [('Slickdeals',SOURCE,lambda raw:parse_feed(raw,now)['deals']),('DealNews',DEALNEWS,lambda raw:parse_dealnews(raw,now))]:
+    for name,url,parser in [('Slickdeals',SOURCE,lambda raw:parse_feed(raw,now)['deals']),('DealNews',DEALNEWS,lambda raw:parse_dealnews(raw,now)),('DealNews Electronics',ELECTRONICS,lambda raw:parse_dealnews(raw,now))]:
         try:
             items=parser(fetch(url));success+=1
+            for item in items:
+                item['feedName']=name
+                if name=='DealNews Electronics': item['category']='Electronics'
             sources.append(dict(name=name,url=url,status='ok',fetchedAt=now.isoformat(),count=len(items)))
         except Exception as exc:
             print(name,'refresh failed:',type(exc).__name__)
-            items=[d for d in previous.get('deals',[]) if d.get('source')==name and now-dt.datetime.fromisoformat(d.get('fetchedAt',previous.get('fetchedAt'))) < dt.timedelta(hours=6)]
+            items=[d for d in previous.get('deals',[]) if d.get('feedName',d.get('source'))==name and now-dt.datetime.fromisoformat(d.get('fetchedAt',previous.get('fetchedAt'))) < dt.timedelta(hours=6)]
             sources.append(dict(name=name,url=url,status='delayed',fetchedAt=items[0].get('fetchedAt') if items else None,count=len(items)))
         deals.extend(items)
     if not success:raise RuntimeError('All feeds failed; preserve last successful file')
@@ -118,6 +122,7 @@ def main():
     unique={}
     for d in deals:
         if d['url'] not in unique:unique[d['url']]=d
+        elif d.get('feedName')=='DealNews Electronics':unique[d['url']]['category']='Electronics'
     data=dict(source='DealNews + Slickdeals RSS',fetchedAt=now.isoformat(),refreshMinutes=15,sources=sources,deals=sorted(unique.values(),key=lambda d:d['publishedAt'],reverse=True))
     output.parent.mkdir(exist_ok=True);temp=output.with_suffix('.tmp');temp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n');temp.replace(output)
     print('Fetched',len(data['deals']),'RSS listings from',success,'sources at',data['fetchedAt'])
