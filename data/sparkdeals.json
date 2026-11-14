@@ -1,9 +1,19 @@
 {
   "source": "Slickdeals Frontpage RSS",
   "sourceUrl": "https://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1",
-  "fetchedAt": "2026-11-14T19:43:20.894473+00:00",
+  "fetchedAt": "2026-11-14T19:45:03.362175+00:00",
   "refreshMinutes": 15,
   "deals": [
+    {
+      "id": "thread-20306352",
+      "title": "Calvin Klein Women's Faux Fur Pom Winter Beanie w/ Velboa Fleece Lining (2 colors) from $13.10",
+      "url": "https://slickdeals.net/f/20306352-calvin-klein-women-s-faux-fur-pom-winter-beanie-with-velboa-fleece-lining-cream-one-size-16-11?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355940.thumb",
+      "store": "Amazon",
+      "category": "Clothing",
+      "publishedAt": "2026-11-14T19:43:42+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0FW5RBNWJ"
+    },
     {
       "id": "thread-20308083",
       "title": "The Super Mario Galaxy Movie: Collector's Edition (4K UHD + Blu-ray + Digital) $13",
@@ -19,10 +29,10 @@
       "title": "Osprey Daylite Expandable 26+6 Travel Pack (Tunnel Vision Grey) $71.50 + Free S&H",
       "url": "https://slickdeals.net/f/20302719-osprey-daylite-expandable-26-6-travel-pack-tunnel-vision-grey-71-50-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "image": "https://static.slickdealscdn.com/attachment/4/8/2/3/7/7/300x300/22355835.thumb",
-      "store": "See source",
+      "store": "Amazon",
       "category": "More deals",
       "publishedAt": "2026-11-14T19:26:44+00:00",
-      "merchantUrl": null
+      "merchantUrl": "https://www.amazon.com/dp/B0DSQX5N64"
     },
     {
       "id": "thread-20301771",
@@ -59,7 +69,7 @@
       "title": "GrubHub+ Members: Savings on $35+ Grocery Orders: 50% Off (max $20) (Taxes & Fees Apply)",
       "url": "https://slickdeals.net/f/20308698-grubhub-50-off-grocery-up-to-20-off-with-code-plus50-ends-nov-18?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355664.thumb",
-      "store": "Grubhub",
+      "store": "See source",
       "category": "More deals",
       "publishedAt": "2026-11-14T19:04:15+00:00",
       "merchantUrl": null
@@ -229,10 +239,10 @@
       "title": "6-Qt. Shark Ninja Crispi Pro 6-in-1 1800W Glass Air Fryer $260 + Free S&H",
       "url": "https://slickdeals.net/f/20286837-ninja-crispi-pro-glass-air-fryer-6-in-1-amazon-exclusive-bone-champagne-max-crisp-air-fry-bake-roast-recrisp-dehydrate-1800w-450f-max-6qt-2-5qt-glassware-259-99?utm_source=rss&utm_content=fp&utm_medium=RSS2",
       "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355061.thumb",
-      "store": "See source",
+      "store": "Amazon",
       "category": "More deals",
       "publishedAt": "2026-11-14T17:33:48+00:00",
-      "merchantUrl": null
+      "merchantUrl": "https://www.amazon.com/dp/B0HBF7NS25"
     },
     {
       "id": "thread-20307849",
@@ -243,16 +253,6 @@
       "category": "More deals",
       "publishedAt": "2026-11-14T17:21:57+00:00",
       "merchantUrl": "https://www.amazon.com/dp/B0G5RRPGFF"
-    },
-    {
-      "id": "thread-20285388",
-      "title": "140W 3-Port TALIX 20000mAh Laptop Power Bank w/ Built-In USB-C Cable $30 + Free S&H",
-      "url": "https://slickdeals.net/f/20285388-3-port-talix-20000mah-laptop-power-bank-w-built-in-usb-c-cable-140w-max-up-to-190w-29-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
-      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22354767.thumb",
-      "store": "See source",
-      "category": "Electronics",
-      "publishedAt": "2026-11-14T17:13:16+00:00",
-      "merchantUrl": null
     }
   ]
 }
