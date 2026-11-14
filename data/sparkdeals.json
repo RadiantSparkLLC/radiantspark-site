@@ -1,0 +1,258 @@
+{
+  "source": "Slickdeals Frontpage RSS",
+  "sourceUrl": "https://slickdeals.net/newsearch.php?mode=frontpage&searcharea=deals&searchin=first&rss=1",
+  "fetchedAt": "2026-11-14T19:43:20.894473+00:00",
+  "refreshMinutes": 15,
+  "deals": [
+    {
+      "id": "thread-20308083",
+      "title": "The Super Mario Galaxy Movie: Collector's Edition (4K UHD + Blu-ray + Digital) $13",
+      "url": "https://slickdeals.net/f/20308083-new-12-99-the-super-mario-galaxy-movie-collector-s-edition-4k-ultra-hd-blu-ray-digital-4k-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/4/8/2/3/7/7/300x300/22355919.thumb",
+      "store": "Amazon",
+      "category": "Electronics",
+      "publishedAt": "2026-11-14T19:38:02+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0GQT6DWXN"
+    },
+    {
+      "id": "thread-20302719",
+      "title": "Osprey Daylite Expandable 26+6 Travel Pack (Tunnel Vision Grey) $71.50 + Free S&H",
+      "url": "https://slickdeals.net/f/20302719-osprey-daylite-expandable-26-6-travel-pack-tunnel-vision-grey-71-50-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/4/8/2/3/7/7/300x300/22355835.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T19:26:44+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20301771",
+      "title": "259-Pc LEGO Botanicals Botanical Collection Water Lilies $25.50",
+      "url": "https://slickdeals.net/f/20301771-259-pc-lego-botanicals-botanical-collection-water-lilies-11511-25-49-free-shipping-w-walmart-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/4/1/3/2/6/0/300x300/22332753.thumb",
+      "store": "Walmart, Target",
+      "category": "Toys & gifts",
+      "publishedAt": "2026-11-14T19:23:38+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20295060",
+      "title": "WORKPRO 25-Pc 3.6V Cordless Screwdriver & Driver Bit Set w/ Case $17",
+      "url": "https://slickdeals.net/f/20295060-16-99-workpro-3-6v-white-cordless-screwdriver-set-w-5pcs-drill-driver-accessories-at-walmart?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/2/9/8/1/5/7/1/1/300x300/22312278.thumb",
+      "store": "Walmart",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T19:15:52+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20308656",
+      "title": "adidas Men's Tiro 24 Training Pants (Team Navy Blue 2 / White, Limited Sizes) $16.80 + Free S&H",
+      "url": "https://slickdeals.net/f/20308656-16-80-adidas-mens-tiro-24-training-pants?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/2/1/9/3/4/6/6/300x300/22351581.thumb",
+      "store": "Ebay",
+      "category": "Clothing",
+      "publishedAt": "2026-11-14T19:10:23+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20308698",
+      "title": "GrubHub+ Members: Savings on $35+ Grocery Orders: 50% Off (max $20) (Taxes & Fees Apply)",
+      "url": "https://slickdeals.net/f/20308698-grubhub-50-off-grocery-up-to-20-off-with-code-plus50-ends-nov-18?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355664.thumb",
+      "store": "Grubhub",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T19:04:15+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20301864",
+      "title": "Select Stores: Open Box Excellent: Samsung HW-B650F 3.1-Ch Soundbar w/ Sub (2025) $150 & More + Free Pickup (Limited Stock)",
+      "url": "https://slickdeals.net/f/20301864-samsung-b-series-hw-b650f-3-1-ch-dts-virtual-x-soundbar-open-box-excellent-149-99?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/4/8/2/3/7/7/300x300/22355604.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:49:39+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20304984",
+      "title": "Chaps Men's Everyday Fleece Pullover Hoodie Sweatshirt $15",
+      "url": "https://slickdeals.net/f/20304984-15-chaps-men-s-everyday-fleece-pullover-hoodie-sweatshirt-sizes-s-2xl?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/2/1/9/3/4/6/6/300x300/22342461.thumb",
+      "store": "Walmart",
+      "category": "Clothing",
+      "publishedAt": "2026-11-14T18:41:56+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20305212",
+      "title": "Wide Beam Rechargeable LED Knit Beanie (Black) $6 + Free S&H",
+      "url": "https://slickdeals.net/f/20305212-wide-beam-rechargeable-led-knit-beanie-black-6-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/3/0/6/6/3/5/5/9/300x300/22343076.thumb",
+      "store": "That Daily Deal",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:41:05+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20296026",
+      "title": "Simzlife Countertop Ice Nugget Maker w/ Removable Water Tank $160 + Free S&H",
+      "url": "https://slickdeals.net/f/20296026-159-99-simzlife-countertop-nugget-ice-maker-44-lbs-day-self-cleaning-stainless-steel-black-at-walmart?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/2/9/8/1/5/7/1/1/300x300/22315113.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:31:29+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20260830",
+      "title": "Ultramic 16W Stereo Portable LED Karaoke Machine w/ 2x Wireless Microphones $27 + Free S&H",
+      "url": "https://slickdeals.net/f/20260830-ultramic-16w-stereo-portable-led-karaoke-machine-w-2x-wireless-microphones-27-free-s-h?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355418.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:23:52+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0H8CT2MSL"
+    },
+    {
+      "id": "thread-20303337",
+      "title": "2-Pc 6\" RYOBI Diamond Grit Impact Drive PH2 Phillips #2 Bits $5 + Free S&H",
+      "url": "https://slickdeals.net/f/20303337-ryobi-2-piece-6-in-diamond-grit-impact-drive-bits-home-depot-4-97?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/4/2/8/1/6/300x300/22349187.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:16:03+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20291292",
+      "title": "2-ct Taiofan Magnetic Rechargeable Hand Warmers w/ LED Display (Black) $7",
+      "url": "https://slickdeals.net/f/20291292-2-count-taiofan-magnetic-rechargeable-hand-warmers-w-led-display-4-heat-settings-black-6-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355331.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:13:39+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0FKTH4V7V"
+    },
+    {
+      "id": "thread-20305701",
+      "title": "313-Piece Mega Pokémon Mini Motion Golbat w/ Wing Flapping Motion Building Set $9",
+      "url": "https://slickdeals.net/f/20305701-313-piece-mega-pok-mon-action-figure-building-set-mini-motion-golbat-w-wing-flapping-movement-8-93-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/5/7/4/5/9/6/3/300x300/22344582.thumb",
+      "store": "Amazon, Macys",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:13:06+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0CB6JK37M"
+    },
+    {
+      "id": "thread-20308038",
+      "title": "Milwaukee M18 FUEL 3/8\" Impact Wrench w/ 2x 5.0Ah Batteries, Charger & Socket Set $298 + Free S&H",
+      "url": "https://slickdeals.net/f/20308038-milwaukee-m18-fuel-18v-3-8-cordless-impact-wrench-w-2-5-0ah-batteries-charger-43-piece-impact-socket-set-298-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/4/8/2/3/7/7/300x300/22355325.thumb",
+      "store": "The Home Depot",
+      "category": "Electronics",
+      "publishedAt": "2026-11-14T18:12:35+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20084739",
+      "title": "G Gradual Men's Quick Dry Athletic Shorts w/ Zipper Pockets (Various) $10",
+      "url": "https://slickdeals.net/f/20084739-g-gradual-men-s-7-athletic-running-shorts-w-2-zipper-pockets-various-9-99-free-shipping-w-prime-or-on-35?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355292.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:04:23+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0DT9BG2NG"
+    },
+    {
+      "id": "thread-20298159",
+      "title": "Southwest Nonstop Round-Trip Flights: Long Beach, CA to/from Phoenix, AZ $117 (Travel Dec 2026 - Mar 2027)",
+      "url": "https://slickdeals.net/f/20298159-southwest-nonstop-round-trip-flights-long-beach-ca-to-from-phoenix-az-117-travel-dec-2026-mar-2027?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/7/8/1/9/300x300/22321953.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T18:03:00+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20308248",
+      "title": "EF ECOFLOW Rapid Pro 146W 4-Port GaN Charging Block (3x USB-C + USB-A) $38 + Free S&H",
+      "url": "https://slickdeals.net/f/20308248-37-99-ef-ecoflow-rapid-pro-146w-4-port-gan-charging-block-3x-usb-c-usb-a-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/1/7/1/5/2/7/300x300/22350732.thumb",
+      "store": "Amazon",
+      "category": "Electronics",
+      "publishedAt": "2026-11-14T17:59:01+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0FDGTG8HP"
+    },
+    {
+      "id": "thread-20294709",
+      "title": "12-Pk 13.8-Oz Campbell's Condensed Soup (Vegetable Beef) $14.90 w/ S&S",
+      "url": "https://slickdeals.net/f/20294709-12-pack-campbell-s-condensed-vegetable-beef-soup-13-8-oz-cans-30-larger-than-10-5oz-cans-less-w-ss-lowest-ever-1-30-can-0-09-oz-15-68?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/1/4/9/4/2/4/0/300x300/22311225.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:58:20+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0G1N79K17"
+    },
+    {
+      "id": "thread-20291085",
+      "title": "2.12\" CVLIFE Stainless Steel Blade Compact Pocket Folding Knife $17.95",
+      "url": "https://slickdeals.net/f/20291085-2-12-cvlife-stainless-steel-blade-compact-pocket-folding-knife-17-95?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355262.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:53:48+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0HBQHGL36"
+    },
+    {
+      "id": "thread-20300139",
+      "title": "2-Ct 10.8-Oz Kitty City Slow-Feed Elevated Cat Bowls $7.50",
+      "url": "https://slickdeals.net/f/20300139-chewy-kitty-city-slow-feed-elevated-cat-bowls-white-grey-10-oz-2-count-7-49?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/3/8/8/1/8/1/300x300/22355163.thumb",
+      "store": "Chewy, Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:42:56+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0CJ9T3DDF"
+    },
+    {
+      "id": "thread-20286765",
+      "title": "Suzume 3/8\" Drive Digital Torque Wrench (5.02-99.57 Ft-Lb) $48 + Free S&H",
+      "url": "https://slickdeals.net/f/20286765-suzume-3-8-drive-digital-torque-wrench-5-02-99-57-ft-lb-48-01-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355148.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:42:22+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0CWNRVYQN"
+    },
+    {
+      "id": "thread-20286837",
+      "title": "6-Qt. Shark Ninja Crispi Pro 6-in-1 1800W Glass Air Fryer $260 + Free S&H",
+      "url": "https://slickdeals.net/f/20286837-ninja-crispi-pro-glass-air-fryer-6-in-1-amazon-exclusive-bone-champagne-max-crisp-air-fry-bake-roast-recrisp-dehydrate-1800w-450f-max-6qt-2-5qt-glassware-259-99?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22355061.thumb",
+      "store": "See source",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:33:48+00:00",
+      "merchantUrl": null
+    },
+    {
+      "id": "thread-20307849",
+      "title": "SAROS (PS5) $42 + Free S&H",
+      "url": "https://slickdeals.net/f/20307849-saros-ps5-41-99-free-s-h-at-amazon?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/2/9/8/1/5/7/1/1/300x300/22349820.thumb",
+      "store": "Amazon",
+      "category": "More deals",
+      "publishedAt": "2026-11-14T17:21:57+00:00",
+      "merchantUrl": "https://www.amazon.com/dp/B0G5RRPGFF"
+    },
+    {
+      "id": "thread-20285388",
+      "title": "140W 3-Port TALIX 20000mAh Laptop Power Bank w/ Built-In USB-C Cable $30 + Free S&H",
+      "url": "https://slickdeals.net/f/20285388-3-port-talix-20000mah-laptop-power-bank-w-built-in-usb-c-cable-140w-max-up-to-190w-29-99-free-shipping?utm_source=rss&utm_content=fp&utm_medium=RSS2",
+      "image": "https://static.slickdealscdn.com/attachment/1/8/6/3/2/3/2/300x300/22354767.thumb",
+      "store": "See source",
+      "category": "Electronics",
+      "publishedAt": "2026-11-14T17:13:16+00:00",
+      "merchantUrl": null
+    }
+  ]
+}
