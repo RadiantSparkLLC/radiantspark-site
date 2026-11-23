@@ -8,6 +8,7 @@ on:
     paths:
       - '.github/workflows/sparkdeals-refresh.yml'
       - 'scripts/sync-sparkdeals.py'
+      - 'sparkdeals.html'
 permissions:
   contents: write
 concurrency:
