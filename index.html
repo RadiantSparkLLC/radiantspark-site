@@ -45,6 +45,20 @@
       ::-webkit-scrollbar-track { background: #030712; }
       ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
 
+      .kids-studio { box-sizing: border-box; max-width: 80rem; margin: 2rem auto; padding: 0 1rem; }
+      .kids-studio-card { display: grid; grid-template-columns: minmax(0, 1fr); overflow: hidden; border: 1px solid #334155; border-radius: 1.5rem; background: #0f172a; }
+      .kids-studio-card > img { display: block; width: 100%; height: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+      .kids-studio-copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: .9rem; padding: clamp(1.25rem, 4vw, 2.5rem); }
+      .kids-studio-copy h2 { margin: 0; color: #fff; font-size: clamp(1.6rem, 3vw, 2.4rem); line-height: 1.12; font-weight: 800; }
+      .kids-studio-copy p { margin: 0; color: #cbd5e1; line-height: 1.6; }
+      .kids-studio-copy a { display: inline-flex; align-items: center; gap: .55rem; min-height: 44px; padding: .65rem 1.05rem; border-radius: .7rem; background: #fcd34d; color: #0f172a; font-weight: 800; font-size: .9rem; text-decoration: none; }
+      .kids-studio-copy a:hover { background: #fde68a; }
+      .kids-studio-copy a:focus-visible { outline: 2px solid #fde68a; outline-offset: 4px; }
+      @media (min-width: 640px) {
+        .kids-studio { padding: 0 1.5rem; }
+        .kids-studio-card { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+
       @keyframes ticker {
         0% { transform: translateX(0%); }
         100% { transform: translateX(-50%); }
@@ -501,6 +515,18 @@
                   </button>
                 </div>
 
+              </div>
+            </section>
+
+            <section aria-labelledby="kids-studio-title" class="kids-studio">
+              <div class="kids-studio-card">
+                <img src="./assets/benny-mia-pip.webp" width="720" height="405" loading="lazy" decoding="async"
+                  alt="Benny, Mia and Pip watching a colorful wooden snack train" />
+                <div class="kids-studio-copy">
+                  <h2 id="kids-studio-title">Benny, Mia &amp; Pip</h2>
+                  <p>Animated preschool stories with playful adventures, counting and songs.</p>
+                  <a href="https://www.youtube.com/@RadiantSparkGlobal/videos"><span aria-hidden="true">▶</span> Watch on YouTube</a>
+                </div>
               </div>
             </section>
 
